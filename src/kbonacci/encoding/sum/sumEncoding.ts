@@ -3,20 +3,6 @@ import { OutOfBoundsError } from "../../../error/outOfBoundsError";
 import { NumericOps } from "../../../ops/numericOps";
 import { EncodingFormat, Encoding } from "../encoding";
 
-/*
-K = 4
-    2c-b   2b-a  a-b-c-d [      d     c       b         a] z  2z-d 4z-2d-c
-         2c+b-a    b-c-d [  a-b-c   c+d     b+c       a+b]
-                     c-d [    b-c   a-b   b+c+d     a+b+c]
-                       d [      c     b       a   a+b+c+d]
-
-K = 5
-    2d-c   2c-b     2b-a a-b-c-d-e [      e     d     c       b         a] z  2z-e 4z-2e-d 8z-4e-2d-c
-         2d+c-b   2c+b-a   b-c-d-e [a-b-c-d   d+e   c+d     b+c       a+b]
-                2d+c+b-a     c-d-e [  b-c-d a-b-c c+d+e   b+c+d     a+b+c]
-                               d-e [    c-d   b-c   a-b b+c+d+e   a+b+c+d]
-                                 e [      d     c     b       a a+b+c+d+e]
-*/
 export class SumEncoding<T> implements Encoding<T, T[]> {
   public readonly format = EncodingFormat.Sum;
 
