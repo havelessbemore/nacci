@@ -18,13 +18,14 @@ export class KPowerGetter<K, V> implements Getter<K, V> {
     private indexOps: NumericOps<K>,
     private valueOps: NumericOps<V>,
     private encoding: Encoding<V, unknown>,
-    customs?: V[]
+    customs?: V[],
+    private cached = true
   ) {
     tryK(K);
     this.customs = [];
     this.isStd = false;
-    this.neg = new Powers(encoding.genNegK(K), indexOps, encoding, true);
-    this.pos = new Powers(encoding.genK(K), indexOps, encoding, true);
+    this.neg = new Powers(encoding.genNegK(K), indexOps, encoding, cached);
+    this.pos = new Powers(encoding.genK(K), indexOps, encoding, cached);
     this.zero = encoding.genZero(K);
     this.v0 = encoding.toValue(this.zero, 0);
     this.setCustoms(customs);
@@ -64,8 +65,18 @@ export class KPowerGetter<K, V> implements Getter<K, V> {
     return this.encoding.toValue(data, iOps.toNumber(delta), customs);
   }
 
+  getCached(): boolean {
+    return this.cached;
+  }
+
   getCustoms(): V[] {
     return this.customs;
+  }
+
+  setCached(value: boolean): void {
+    this.cached = value;
+    this.neg.setCached(value);
+    this.pos.setCached(value);
   }
 
   setCustoms(customs?: V[]): void {
