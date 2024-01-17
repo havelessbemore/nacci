@@ -1,6 +1,6 @@
 {
   "name": "nacci",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generate number sequences where each term is the sum of the K preceding terms",
   "files": [
     "dist"
