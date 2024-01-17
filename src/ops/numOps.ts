@@ -5,9 +5,6 @@ export class NumOps implements NumericOps<number> {
   cast(a: unknown): number {
     return Number(a);
   }
-  compare(a: number, b: number): number {
-    return a < b ? -1 : +(a > b);
-  }
   dividedBy(a: number, b: number): number {
     return a / b;
   }

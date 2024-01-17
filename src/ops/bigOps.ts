@@ -5,9 +5,6 @@ export class BigOps implements NumericOps<bigint> {
   cast(a: bigint | boolean | number | string): bigint {
     return BigInt(a);
   }
-  compare(a: bigint, b: bigint): number {
-    return a < b ? -1 : +(a > b);
-  }
   dividedBy(a: bigint, b: bigint): bigint {
     return a / b;
   }

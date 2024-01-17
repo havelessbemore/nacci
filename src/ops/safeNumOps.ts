@@ -6,9 +6,6 @@ export class SafeNumOps implements NumericOps<number> {
   cast(a: unknown): number {
     return trySafe(Number(a));
   }
-  compare(a: number, b: number): number {
-    return a < b ? -1 : +(a > b);
-  }
   dividedBy(a: number, b: number): number {
     return trySafe(a / b);
   }

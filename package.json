@@ -43,6 +43,7 @@
     "sequence"
   ],
   "author": "Michael Rojas <dev.michael.rojas@gmail.com> (https://github.com/havelessbemore)",
+  "homepage": "https://github.com/havelessbemore/nacci",
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/jsdom": "^21.1.1",

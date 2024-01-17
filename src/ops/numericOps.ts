@@ -4,7 +4,7 @@ export interface NumericOps<T = unknown> {
   toNumber(a: T): number;
 
   // Comparison
-  compare(a: T, b: T): number;
+  // compare(a: T, b: T): number;
   equal(a: T, b: T): boolean;
   larger(a: T, b: T): boolean;
   largerEq(a: T, b: T): boolean;

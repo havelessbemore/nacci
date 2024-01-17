@@ -39,11 +39,11 @@ export class SlidingWindowGetter<K, V> implements Getter<K, V> {
   get(N: K): V {
     // Shift window
     const ops = this.indexOps;
-    if (ops.compare(N, this.minN) < 0) {
+    if (ops.smaller(N, this.minN)) {
       this.reverse(ops.minus(this.minN, N));
     } else {
       const maxN = ops.plus(this.minN, ops.cast(this.K));
-      if (ops.compare(N, maxN) >= 0) {
+      if (ops.largerEq(N, maxN)) {
         this.forward(ops.plus1(ops.minus(N, maxN)));
       }
     }
@@ -56,9 +56,8 @@ export class SlidingWindowGetter<K, V> implements Getter<K, V> {
   private forward(i: K): void {
     const iOps = this.indexOps;
     const vOps = this.valueOps;
-    const _1 = iOps.cast(1);
 
-    while (iOps.compare(i, _1) >= 0) {
+    while (iOps.sign(i) > 0) {
       const temp = this.values[this.maxV];
       this.values[this.maxV] = this.next;
       this.next = vOps.plus(this.next, vOps.minus(this.next, temp));
@@ -71,9 +70,8 @@ export class SlidingWindowGetter<K, V> implements Getter<K, V> {
   private reverse(i: K): void {
     const iOps = this.indexOps;
     const vOps = this.valueOps;
-    const _1 = iOps.cast(1);
 
-    while (iOps.compare(i, _1) >= 0) {
+    while (iOps.sign(i) > 0) {
       const maxV = (this.maxV - 1 + this.K) % this.K;
       const value = this.values[maxV];
       const newValue = vOps.plus(vOps.minus(value, this.next), value);
