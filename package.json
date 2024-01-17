@@ -13,7 +13,7 @@
       "import": "./dist/nacci.mjs"
     }
   },
-  "types": "dist/nacci.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite --host",
     "build": "rimraf dist && tsc && vite build",
