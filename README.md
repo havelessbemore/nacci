@@ -18,7 +18,7 @@ npm install nacci
 
 - **Custom Terms**: Sequences can be created with custom initial terms.
 
-- **Negative Indices**: Sequences extend in both the positive and negative direction. Getting the -100th index is just as simple as getting the 100th index. 
+- **Negative Indices**: Sequences extend in both the positive and negative direction. Getting the -100th index is just as simple as getting the 100th index.
 
 - **Agnostic Numeric Types**: Whether you need sequences with standard numbers, BigInts, or a custom numeric type, `Nacci` has you covered. Sequences are independent to the numeric type used. Any type is supported as long as some basic type operations are provided (See [NumericOps](./src/ops/numericOps.ts)).
 
@@ -31,14 +31,14 @@ Here's how you can use `Nacci` in your project:
 ### Fibonacci
 
 ```javascript
-const nacci = require('nacci');
+const nacci = require("nacci");
 
 const fib = new nacci.Fibonacci();
 console.log(fib.get(10)); // 55
 ```
 
 ```javascript
-const nacci = require('nacci');
+const nacci = require("nacci");
 
 const bigFib = new nacci.BigFibonacci();
 console.log(bigFib.get(128n)); // 251,728,825,683,549,488,150,424,261n
@@ -47,29 +47,30 @@ console.log(bigFib.get(128n)); // 251,728,825,683,549,488,150,424,261n
 ### Lucas
 
 ```javascript
-const nacci = require('nacci');
+const nacci = require("nacci");
 
 const lucas = new nacci.Fibonacci([2, 1]);
 console.log(lucas.get(10)); // 123
 ```
 
 ```javascript
-const nacci = require('nacci');
+const nacci = require("nacci");
 
 const bigLucas = new nacci.BigFibonacci([2n, 1n]);
 console.log(bigLucas.get(128n)); // 562,882,766,124,611,619,513,723,647n
 ```
 
 ## Kbonacci
+
 ```javascript
-const nacci = require('nacci');
+const nacci = require("nacci");
 
 const penta = new nacci.Kbonacci(5);
 console.log(penta.get(10)); // 236
 ```
 
 ```javascript
-const nacci = require('nacci');
+const nacci = require("nacci");
 
 const bigPenta = new nacci.BigKbonacci(5, [2n, 3n, 5n, 7n, 11n]);
 console.log(bigPenta.get(128n)); // 34,793,317,941,356,809,321,160,944,117,101,129,141n
@@ -78,33 +79,46 @@ console.log(bigPenta.get(128n)); // 34,793,317,941,356,809,321,160,944,117,101,1
 ## Advanced
 
 ### Example 1
+
 Create a Fibonacci sequence with the following setup:
+
 - Use `number` for indices
 - Use `bigint` for values
 - Turn off caching
 - Use the [KPowerGetter](./src/kbonacci/getter/kPowerGetter.ts) strategy with [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts)
 
 ```javascript
-const nacci = require('nacci');
+const nacci = require("nacci");
 
 const cached = false;
 const customs = undefined;
 const indexOps = new nacci.ops.SafeNumOps();
 const valueOps = new nacci.ops.BigOps();
 const encoding = new nacci.enc.MatrixEncoding(valueOps);
-const fib = new nacci.getter.KPowerGetter(2, indexOps, valueOps, encoding, customs, cached);
+const fib = new nacci.getter.KPowerGetter(
+  2,
+  indexOps,
+  valueOps,
+  encoding,
+  customs,
+  cached
+);
 console.log(fib.get(128)); // 251,728,825,683,549,488,150,424,261n
 ```
 
 ### Example 2
+
 Iterate through a Lucas sequence with the [SlidingWindowGetter](./src/kbonacci/getter/slidingWindowGetter.ts) strategy:
 
 ```javascript
-const nacci = require('nacci');
+const nacci = require("nacci");
 
 const indexOps = new nacci.ops.SafeNumOps();
 const valueOps = new nacci.ops.BigOps();
-const lucas = new nacci.getter.SlidingWindowGetter(2, indexOps, valueOps, [2n, 1n]);
+const lucas = new nacci.getter.SlidingWindowGetter(2, indexOps, valueOps, [
+  2n,
+  1n,
+]);
 
 const min = -100;
 const max = 100;
@@ -121,7 +135,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   https://www.apache.org/licenses/LICENSE-2.0
+https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,

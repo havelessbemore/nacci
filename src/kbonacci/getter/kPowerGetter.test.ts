@@ -10,7 +10,12 @@ import { TermEncoding } from "../encoding/term/termEncoding";
 
 (() => {
   const ops = [new BigOps(), new NumOps(), new SafeNumOps()];
-  const encodingClasses = [MatrixEncoding, RevSumEncoding, SumEncoding, TermEncoding];
+  const encodingClasses = [
+    MatrixEncoding,
+    RevSumEncoding,
+    SumEncoding,
+    TermEncoding,
+  ];
 
   for (const indexOps of ops) {
     for (const valueOps of ops) {
