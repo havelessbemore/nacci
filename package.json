@@ -2,19 +2,21 @@
   "name": "nacci",
   "version": "0.0.1",
   "description": "Generate number sequences where each term is the sum of the K preceding terms",
-  "files":["dist"],
-  "main": "./dist/nacci.umd.js",
-  "module": "./dist/nacci.es.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/nacci.cjs",
+  "module": "./dist/nacci.mjs",
   "exports": {
     ".": {
-      "require": "./dist/nacci.umd.js",
-      "import": "./dist/nacci.es.js"
+      "require": "./dist/nacci.cjs",
+      "import": "./dist/nacci.mjs"
     }
   },
   "types": "dist/nacci.d.ts",
   "scripts": {
     "dev": "vite --host",
-    "build": "rimraf dist && tsc && vite build && dts-bundle-generator --config ./dts-bundle-generator.config.ts",
+    "build": "rimraf dist && tsc && vite build",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
     "lint:scripts": "eslint . --ext .ts",
@@ -48,7 +50,6 @@
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "@vitest/coverage-v8": "^0.34.1",
-    "dts-bundle-generator": "^8.0.1",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
@@ -66,6 +67,7 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.7.1",
     "vitest": "^0.34.1"
   }
 }
