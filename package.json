@@ -2,12 +2,13 @@
   "name": "nacci",
   "version": "0.0.1",
   "description": "Generate number sequences where each term is the sum of the K preceding terms",
-  "main": "./dist/naci.cjs",
-  "module": "./dist/naci.mjs",
+  "files":["dist"],
+  "main": "./dist/nacci.umd.js",
+  "module": "./dist/nacci.es.js",
   "exports": {
     ".": {
-      "require": "./dist/naci.cjs",
-      "import": "./dist/naci.mjs"
+      "require": "./dist/nacci.umd.js",
+      "import": "./dist/nacci.es.js"
     }
   },
   "types": "dist/nacci.d.ts",
