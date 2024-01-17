@@ -209,7 +209,7 @@ export function run<K, V>(
         const N = values.length;
         for (let i = 0; i < N; ++i) {
           const k = indexOps.cast(i);
-          const v = indexOps.cast(values[i]);
+          const v = valueOps.cast(values[i]);
           expect(getter.get(k)).toBe(v);
         }
       });
@@ -220,7 +220,7 @@ export function run<K, V>(
         const values = [1, 0, 1, 0, -1, 2, -1, -2, 5, -4, -3];
         for (let i = 1; i < values.length; ++i) {
           const k = indexOps.cast(-i);
-          const v = indexOps.cast(values[i]);
+          const v = valueOps.cast(values[i]);
           expect(getter.get(k)).toBe(v);
         }
       });
@@ -231,7 +231,7 @@ export function run<K, V>(
         const values = [5, 2, 7, 14, 23, 44, 81, 148, 273, 502, 923];
         for (let i = 0; i < values.length; ++i) {
           const k = indexOps.cast(i);
-          const v = indexOps.cast(values[i]);
+          const v = valueOps.cast(values[i]);
           expect(getter.get(k)).toBe(v);
         }
       });
@@ -242,7 +242,7 @@ export function run<K, V>(
         const values = [4, 4, 8, 16, 28, 52, 96, 176, 324, 596, 1096];
         for (let i = 0; i < values.length; ++i) {
           const k = indexOps.cast(i);
-          const v = indexOps.cast(values[i]);
+          const v = valueOps.cast(values[i]);
           expect(getter.get(k)).toBe(v);
         }
       });

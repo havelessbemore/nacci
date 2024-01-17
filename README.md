@@ -88,10 +88,11 @@ Create a Fibonacci sequence with the following setup:
 const nacci = require('nacci');
 
 const cached = false;
+const customs = undefined;
 const indexOps = new nacci.ops.SafeNumOps();
 const valueOps = new nacci.ops.BigOps();
 const encoding = new nacci.enc.MatrixEncoding(valueOps);
-const fib = new nacci.getter.KPowerGetter(2, indexOps, valueOps, encoding, cached);
+const fib = new nacci.getter.KPowerGetter(2, indexOps, valueOps, encoding, customs, cached);
 console.log(fib.get(128)); // 251,728,825,683,549,488,150,424,261n
 ```
 
@@ -101,12 +102,12 @@ Iterate through a Lucas sequence with the [SlidingWindowGetter](./src/kbonacci/g
 ```javascript
 const nacci = require('nacci');
 
-const indexOps = new nacci.ops.BigOps();
+const indexOps = new nacci.ops.SafeNumOps();
 const valueOps = new nacci.ops.BigOps();
 const lucas = new nacci.getter.SlidingWindowGetter(2, indexOps, valueOps, [2n, 1n]);
 
-const min = -100n;
-const max = 100n;
+const min = -100;
+const max = 100;
 for (let i = min; i <= max; ++i) {
   console.log(`${i}: ${lucas.get(i)}`);
 }

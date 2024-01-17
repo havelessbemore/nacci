@@ -35,6 +35,7 @@ export default defineConfig({
       formats,
       name: getPackageNameCamelCase(),
     },
+    sourcemap: true,
   },
   plugins: [dts()]
 });

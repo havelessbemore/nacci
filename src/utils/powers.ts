@@ -3,9 +3,10 @@ import { Getter } from "../type/getter";
 
 export interface KeyOps<T> {
   cast(value: unknown): T;
-  half(a: T): T;
   equal(a: T, b: T): boolean;
+  half(a: T): T;
   isOdd(a: T): boolean;
+  sign(a: T): number;
   trunc(a: T): T;
 }
 
@@ -15,8 +16,6 @@ export interface ValueOps<T> {
 }
 
 export class Powers<K, V> implements Getter<K, V> {
-  protected _0: K;
-  protected _1: K;
   protected cached: boolean;
   protected keyOps: KeyOps<K>;
   protected valOps: ValueOps<V>;
@@ -27,8 +26,6 @@ export class Powers<K, V> implements Getter<K, V> {
     this.keyOps = keyOps;
     this.pows = [value];
     this.valOps = valOps;
-    this._0 = keyOps.cast(0);
-    this._1 = keyOps.cast(1);
   }
 
   get size(): number {
@@ -40,14 +37,13 @@ export class Powers<K, V> implements Getter<K, V> {
   }
 
   get(N: K): V {
-    const _0 = this._0;
     const keyOps = this.keyOps;
     const valOps = this.valOps;
 
     const pows = this.cached ? this.pows : [this.pows[0]];
     let value: V | undefined = undefined;
 
-    for (let i = 0; !keyOps.equal(N, _0); ++i) {
+    for (let i = 0; keyOps.sign(N) > 0; ++i) {
       if (pows[i] == null) {
         pows[i] = valOps.square(pows[i - 1]);
       }
@@ -62,7 +58,7 @@ export class Powers<K, V> implements Getter<K, V> {
     }
 
     if (value == null) {
-      throw new OutOfBoundsError(N, this._1);
+      throw new OutOfBoundsError(N, keyOps.cast(1));
     }
 
     return value;
