@@ -96,10 +96,7 @@ console.log(fib.get(128)); // 251,728,825,683,549,488,150,424,261n
 ```
 
 ### Example 2
-Iterate through a Lucas sequence with the following setup:
-- Use `bigint` for indices
-- Use `number` for values
-- Use the [SlidingWindowGetter](./src/kbonacci/getter/slidingWindowGetter.ts) strategy
+Iterate through a Lucas sequence with the [SlidingWindowGetter](./src/kbonacci/getter/slidingWindowGetter.ts) strategy:
 
 ```javascript
 const nacci = require('nacci');
