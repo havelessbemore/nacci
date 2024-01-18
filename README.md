@@ -39,48 +39,48 @@ Here's how you can use `Nacci` in your project:
 ### Fibonacci
 
 ```javascript
-const nacci = require("nacci");
+const { Fibonacci } = require("nacci");
 
-const fib = new nacci.Fibonacci();
+const fib = new Fibonacci();
 console.log(fib.get(10)); // 55
 ```
 
 ```javascript
-const nacci = require("nacci");
+const { BigFibonacci } = require("nacci");
 
-const bigFib = new nacci.BigFibonacci();
+const bigFib = new BigFibonacci();
 console.log(bigFib.get(128n)); // 251,728,825,683,549,488,150,424,261n
 ```
 
 ### Lucas
 
 ```javascript
-const nacci = require("nacci");
+const { Fibonacci } = require("nacci");
 
-const lucas = new nacci.Fibonacci([2, 1]);
+const lucas = new Fibonacci([2, 1]);
 console.log(lucas.get(10)); // 123
 ```
 
 ```javascript
-const nacci = require("nacci");
+const { BigFibonacci } = require("nacci");
 
-const bigLucas = new nacci.BigFibonacci([2n, 1n]);
+const bigLucas = new BigFibonacci([2n, 1n]);
 console.log(bigLucas.get(128n)); // 562,882,766,124,611,619,513,723,647n
 ```
 
 ## Kbonacci
 
 ```javascript
-const nacci = require("nacci");
+const { Kbonacci } = require("nacci");
 
-const penta = new nacci.Kbonacci(5);
+const penta = new Kbonacci(5);
 console.log(penta.get(10)); // 236
 ```
 
 ```javascript
-const nacci = require("nacci");
+const { BigKbonacci } = require("nacci");
 
-const bigPenta = new nacci.BigKbonacci(5, [2n, 3n, 5n, 7n, 11n]);
+const bigPenta = new BigKbonacci(5, [2n, 3n, 5n, 7n, 11n]);
 console.log(bigPenta.get(128n)); // 34,793,317,941,356,809,321,160,944,117,101,129,141n
 ```
 
