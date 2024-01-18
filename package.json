@@ -5,19 +5,26 @@
   "files": [
     "dist"
   ],
+  "type": "module",
   "main": "./dist/nacci.cjs",
   "module": "./dist/nacci.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/nacci.cjs",
-      "import": "./dist/nacci.mjs"
+      "require": {
+        "default": "./dist/nacci.cjs",
+        "types": "./dist/index.d.ts"
+      },
+      "import": {
+        "default": "./dist/nacci.mjs",
+        "types": "./dist/index.d.ts"
+      }
     }
   },
-  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite --host",
     "build": "rimraf dist && tsc && vite build",
-    "test": "vitest",
+    "test": "vitest --run",
     "test:coverage": "vitest --coverage",
     "lint:scripts": "eslint . --ext .ts",
     "lint:styles": "stylelint ./**/*.{css,scss}",
@@ -45,6 +52,10 @@
   ],
   "author": "Michael Rojas <dev.michael.rojas@gmail.com> (https://github.com/havelessbemore)",
   "homepage": "https://github.com/havelessbemore/nacci",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/havelessbemore/nacci.git"
+  },
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/jsdom": "^21.1.1",
