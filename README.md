@@ -1,6 +1,11 @@
 # Nacci
 
-`Nacci` is a flexible NPM package that provides efficient and easy-to-use implementations for Kbonacci sequences (Fibonacci, Tribonacci, etc.). Whether you're working on mathematical problems, coding challenges, or just exploring numerical sequences, `Nacci` offers a robust solution.
+`Nacci` provides efficient and easy-to-use implementations of Kbonacci sequences (Fibonacci, Tribonacci, etc.). Whether you're working on mathematical problems, coding challenges, or just exploring numerical sequences, `Nacci` offers a robust solution.
+
+[![Version](https://img.shields.io/npm/v/nacci.svg)](https://www.npmjs.com/package/nacci)
+[![Downloads](https://img.shields.io/npm/dm/nacci.svg)](https://www.npmjs.com/package/nacci)
+[![Maintenance](https://img.shields.io/maintenance/yes/2024.svg)](https://github.com/havelessbemore/nacci/graphs/commit-activity)
+[![License](https://img.shields.io/github/license/havelessbemore/nacci.svg)](https://github.com/havelessbemore/nacci/blob/master/LICENSE)
 
 ## Installation
 
