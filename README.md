@@ -185,17 +185,16 @@ This depends on the generation strategy, encoding, data types, caching, initial 
 
 That said, the upper bound for convenience classes are:
 
-- 54 for `new Kbonacci(k)`. This is due to encountering number overflow for larger Ks.
+- 53 for `new Kbonacci(k)`. This is due to encountering number overflow for larger Ks.
 - ~181,400 for `new BigKbonacci(k)`. This was due to "JavaScript heap out of memory". It is likely to be more or less in your environment.
 
 #### Q: What is the range for indices?
 
-This depends on the generation strategy, encoding, data types, caching, initial terms and environment. If a large index is needed, it is advisable to test your use case locally.
+This depends on the generation strategy, encoding, data types, caching, K, initial terms and environment. If a large index is needed, it is advisable to test your use case locally.
 
 Some things to consider are:
 
 - Can the index be represented by its data type?
-- Does the sequence diverge from its starting point as indices grow larger?
 - Can the value be represented by its data type?
 - Is there enough memory for the index, value and generation?
 
