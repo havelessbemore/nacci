@@ -13,12 +13,12 @@ import {
   TRIB_NEG,
   TRIB_POS,
 } from "../../utils/constants";
-import { NumericOps } from "../../ops/numericOps";
+import { Ops } from "../../ops/ops";
 import { K_MIN } from "../../globals";
-import { Getter } from "../../type/getter";
+import { Generator } from "./generator";
 import { BigOps } from "../../ops/bigOps";
 
-function castArray<T>(array: unknown[], ops: NumericOps<T>): T[] {
+function castArray<T>(array: unknown[], ops: Ops<T>): T[] {
   const N = array.length;
   const out = new Array<T>(N);
   for (let i = 0; i < N; ++i) {
@@ -29,14 +29,14 @@ function castArray<T>(array: unknown[], ops: NumericOps<T>): T[] {
 
 export function run<K, V>(
   name: string,
-  indexOps: NumericOps<K>,
-  valueOps: NumericOps<V>,
+  indexOps: Ops<K>,
+  valueOps: Ops<V>,
   ctor: (
     K: number,
-    indexOps: NumericOps<K>,
-    valueOps: NumericOps<V>,
+    indexOps: Ops<K>,
+    valueOps: Ops<V>,
     customs?: V[]
-  ) => Getter<K, V>
+  ) => Generator<K, V>
 ): void {
   describe(name, () => {
     describe("new ()", () => {

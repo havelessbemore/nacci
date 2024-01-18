@@ -1,23 +1,31 @@
 import { padStart } from "../../utils/array";
 import { tryK, tryNumTerms } from "../../utils/try";
-import { Getter } from "../../type/getter";
-import { NumericOps } from "../../ops/numericOps";
+import { Generator } from "./generator";
+import { Ops } from "../../ops/ops";
 import { getSum } from "../../utils/array";
+import { GenConfig } from "./genConfig";
 
-export class SlidingWindowGetter<K, V> implements Getter<K, V> {
-  private K: number;
-  private maxV: number;
+export class SlidingWindowGen<K, V> implements Generator<K, V> {
+  private delta: number;
+  private indexOps: Ops<K>;
+  private _K: number;
   private minN: K;
   private next: V;
+  private valueOps: Ops<V>;
   private values: V[];
 
-  constructor(
-    K: number,
-    private indexOps: NumericOps<K>,
-    private valueOps: NumericOps<V>,
-    customs?: V[]
-  ) {
+  constructor(K: number, config: GenConfig<K, V, never>) {
     tryK(K);
+
+    let customs = config.customs ?? [];
+    const indexOps = config.indexOps ?? config.ops;
+    const valueOps = config.valueOps ?? config.ops;
+    if (indexOps == null) {
+      throw new TypeError(`Missing index operations`);
+    }
+    if (valueOps == null) {
+      throw new TypeError(`Missing value operations`);
+    }
 
     const _0 = valueOps.cast(0);
     if (customs == null || customs.length < 1) {
@@ -28,12 +36,18 @@ export class SlidingWindowGetter<K, V> implements Getter<K, V> {
     }
 
     // Initialize properties
-    this.K = K;
-    this.maxV = 0;
+    this.delta = 0;
+    this.indexOps = indexOps;
+    this._K = K;
+    this.valueOps = valueOps;
     this.minN = indexOps.minus(indexOps.cast(customs.length), indexOps.cast(K));
     this.next = getSum(customs, valueOps) ?? _0;
     this.values = Array.from(customs);
     padStart(this.values, K, _0);
+  }
+
+  get K(): number {
+    return this._K;
   }
 
   get(N: K): V {
@@ -49,7 +63,7 @@ export class SlidingWindowGetter<K, V> implements Getter<K, V> {
     }
 
     // Return value
-    const i = ops.plus(ops.minus(N, this.minN), ops.cast(this.maxV));
+    const i = ops.plus(ops.minus(N, this.minN), ops.cast(this.delta));
     return this.values[ops.toNumber(i) % this.K];
   }
 
@@ -58,10 +72,10 @@ export class SlidingWindowGetter<K, V> implements Getter<K, V> {
     const vOps = this.valueOps;
 
     while (iOps.sign(i) > 0) {
-      const temp = this.values[this.maxV];
-      this.values[this.maxV] = this.next;
+      const temp = this.values[this.delta];
+      this.values[this.delta] = this.next;
       this.next = vOps.plus(this.next, vOps.minus(this.next, temp));
-      this.maxV = (this.maxV + 1) % this.K;
+      this.delta = (this.delta + 1) % this.K;
       this.minN = iOps.plus1(this.minN);
       i = iOps.minus1(i);
     }
@@ -72,13 +86,13 @@ export class SlidingWindowGetter<K, V> implements Getter<K, V> {
     const vOps = this.valueOps;
 
     while (iOps.sign(i) > 0) {
-      const maxV = (this.maxV - 1 + this.K) % this.K;
-      const value = this.values[maxV];
+      const delta = (this.delta - 1 + this.K) % this.K;
+      const value = this.values[delta];
       const newValue = vOps.plus(vOps.minus(value, this.next), value);
       this.minN = iOps.minus1(this.minN);
       this.next = value;
-      this.maxV = maxV;
-      this.values[maxV] = newValue;
+      this.delta = delta;
+      this.values[delta] = newValue;
       i = iOps.minus1(i);
     }
   }

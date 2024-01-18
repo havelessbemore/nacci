@@ -1,6 +1,6 @@
 # Nacci
 
-`Nacci` provides efficient and easy-to-use implementations of Kbonacci sequences (Fibonacci, Tribonacci, etc.). Whether you're working on mathematical problems, coding challenges, or just exploring numerical sequences, `Nacci` offers a robust solution.
+Generate numbers in a k-bonacci sequence (where each term is the sum of the previous k terms) with customizable k, initial terms, strategies and data types (number, bigint, etc).
 
 [![Version](https://img.shields.io/npm/v/nacci.svg)](https://www.npmjs.com/package/nacci)
 [![Downloads](https://img.shields.io/npm/dm/nacci.svg)](https://www.npmjs.com/package/nacci)
@@ -9,133 +9,224 @@
 [![codecov](https://codecov.io/gh/havelessbemore/nacci/graph/badge.svg?token=F362G7C9U0)](https://codecov.io/gh/havelessbemore/nacci)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/nacci)
 
-## Installation
+## Features
 
-npm:
+- **Convenience**: Convenience classes let you quickly create sequences of Fibonacci, Tribonacci and beyond.
+
+- **K-bonacci**: Generate any k-bonacci sequence for any `k >= 2`. If you've ever wanted to create a Dodecanacci sequence (`k = 12`) or Hectonacci (`k = 100`), now you can!
+
+- **Custom Terms**: Sequences can be created with custom initial terms.
+
+- **Negative Indices**: Sequences extend in both the positive and negative direction. Generate the -100th term just as easily as the 100th.
+
+- **Data-Type Agnostic**: Whether you need sequences with standard numbers, BigInts, or a custom type, `Nacci` has you covered. Any type can be used as long as type operations are provided (See [NumericOps](./src/ops/numericOps.ts)).
+
+- **Performance**: Go beyond traditional generation methods with advanced strategies. These offer improved performance for rapid access to deeper term values.
+
+## Install
+
+Using npm:
 
 ```bash
 npm install nacci
 ```
 
-## Features
+Using yarn:
 
-- **Convenience**: Convenience classes let you quickly create sequences. They are made with safety in mind and will throw an [UnsafeError](./src/error/unsafeError.ts) if an operation results in overflow (i.e. outside `Number.MIN_SAFE_INTEGER` and `Number.MAX_SAFE_INTEGER`).
-
-- **K-bonacci**: Generate any K-bonacci sequence for an integer `K >= 2`. If you've ever wanted to create a Dodecanacci sequence (K = 12) or Hectonacci (K = 100), now you can!
-
-- **Custom Terms**: Sequences can be created with custom initial terms.
-
-- **Negative Indices**: Sequences extend in both the positive and negative direction. Getting the -100th index is just as simple as getting the 100th index.
-
-- **Agnostic Numeric Types**: Whether you need sequences with standard numbers, BigInts, or a custom numeric type, `Nacci` has you covered. Sequences are independent to the numeric type used. Any type is supported as long as some basic type operations are provided (See [NumericOps](./src/ops/numericOps.ts)).
-
-- **Performance**: Go beyond traditional methods with more advanced generation strategies. These strategies allow for efficient sequence generation without the need to iterate through each index, enabling rapid access to deeper sequence values.
+```bash
+yarn install nacci
+```
 
 ## Usage
 
-Here's how you can use `Nacci` in your project:
+Here are some examples for getting started.
 
-### Fibonacci
+#### Fibonacci
+
+Create a standard Fibonacci sequence
 
 ```javascript
 const { Fibonacci } = require("nacci");
 
 const fib = new Fibonacci();
-console.log(fib.get(10)); // 55
+
+// Get the 10th term
+console.log(fib.get(10));
+// = 55
 ```
+
+#### BigFibonacci
+
+Create a Fibonacci sequence with bigints
 
 ```javascript
 const { BigFibonacci } = require("nacci");
 
 const bigFib = new BigFibonacci();
+
+// Get the 256th term
 console.log(bigFib.get(256n));
-// 141,693,817,714,056,513,234,709,965,875,411,919,657,707,794,958,199,867n
+// = 141,693,817,714,056,513,234,709,965,875,411,919,657,707,794,958,199,867n
 ```
 
-### Lucas
+#### Negative terms
+
+```javascript
+const { Fibonacci } = require("nacci");
+
+const fib = new Fibonacci();
+
+// Get the -10th term
+console.log(fib.get(-10));
+// = -55
+```
+
+#### Custom initial terms
+
+Create the [Lucas numbers](https://en.wikipedia.org/wiki/Lucas_number)
 
 ```javascript
 const { Fibonacci } = require("nacci");
 
 const lucas = new Fibonacci([2, 1]);
-console.log(lucas.get(10)); // 123
+
+// Get the 10th term
+console.log(lucas.get(10));
+// = 123
 ```
 
-```javascript
-const { BigFibonacci } = require("nacci");
+#### K-bonacci
 
-const bigLucas = new BigFibonacci([2n, 1n]);
-console.log(bigLucas.get(128n)); // 562,882,766,124,611,619,513,723,647n
-```
-
-## Kbonacci
+Create a k-bonacci sequence with a given k
 
 ```javascript
 const { Kbonacci } = require("nacci");
 
+// Initialize a pentanacci sequence (K = 5)
 const penta = new Kbonacci(5);
-console.log(penta.get(10)); // 236
+
+// Get the 10th term
+console.log(penta.get(10));
+// = 236
 ```
+
+Create another sequence, this time with bigints and custom initial terms.
 
 ```javascript
 const { BigKbonacci } = require("nacci");
 
 const bigPenta = new BigKbonacci(5, [2n, 3n, 5n, 7n, 11n]);
-console.log(bigPenta.get(128n)); // 34,793,317,941,356,809,321,160,944,117,101,129,141n
+
+// Get the 128th term
+console.log(bigPenta.get(128n));
+// = 34,793,317,941,356,809,321,160,944,117,101,129,141n
 ```
 
-## Advanced
+#### Caching
 
-### Example 1
+Caching is enabled by default to potentially improve subsequent calls. This can be turned on or off.
 
-Create a Fibonacci sequence with the following setup:
+```javascript
+const { Tribonacci } = require("nacci");
 
-- Use `number` for indices
-- Use `bigint` for values
-- Turn off caching
-- Use the [KPowerGetter](./src/kbonacci/getter/kPowerGetter.ts) strategy with [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts)
+// Create with caching off
+const customs = [1, 2, 3];
+const seq = new Tribonacci(customs, false);
+
+// Turn on caching
+seq.setCached(true);
+```
+
+## Advanced Usage
+
+For more control over your sequence, we will venture away from the above convenience classes and define more of the generation details. These are primarily:
+
+- [Generation strategy](./src/kbonacci/gen)
+- [Encoding strategy](./src/kbonacci/encoding)
+- [Index type / ops](./src/ops)
+- [Value type / ops](./src/ops)
+
+#### Dodecanacci
 
 ```javascript
 const nacci = require("nacci");
 
-const cached = false;
-const customs = undefined;
+// Set K for a dodecanacci
+const K = 12;
+
+// Use numbers for indices
 const indexOps = new nacci.ops.SafeNumOps();
+
+// Use bigints for values
 const valueOps = new nacci.ops.BigOps();
-const encoding = new nacci.enc.MatrixEncoding(valueOps);
-const fib = new nacci.getter.KPowerGetter(
-  2,
-  indexOps,
-  valueOps,
+
+// Create the encoding
+const encoding = new nacci.enc.RevSumEncoding(valueOps);
+
+// Create the strategy
+const seq = new nacci.gen.KPowerGen(2, {
   encoding,
-  customs,
-  cached
-);
-console.log(fib.get(128)); // 251,728,825,683,549,488,150,424,261n
-```
-
-### Example 2
-
-Iterate through a Lucas sequence with the [SlidingWindowGetter](./src/kbonacci/getter/slidingWindowGetter.ts) strategy:
-
-```javascript
-const nacci = require("nacci");
-
-const customs = [2n, 1n];
-const indexOps = new nacci.ops.SafeNumOps();
-const valueOps = new nacci.ops.BigOps();
-const lucas = new nacci.getter.SlidingWindowGetter(
-  2,
   indexOps,
   valueOps,
-  customs
-);
+});
 
-const min = -100;
-const max = 100;
-for (let i = min; i <= max; ++i) {
-  console.log(`${i}: ${lucas.get(i)}`);
-}
+// Get the 128th term.
+// The input is a number and
+// the output will be a bigint
+console.log(seq.get(128));
+// = 83,872,747,739,176,371,407,337,180,779,802,816,512n
+```
+
+## FAQ
+
+#### Q: What is the upper bound for K?
+
+This depends on the generation strategy, encoding, data types, caching, initial terms and environment. If a large K is needed, it is advisable to test your use case locally.
+
+That said, the upper bound for convenience classes are:
+
+- 54 for `new Kbonacci(k)`. This is due to encountering number overflow for larger Ks.
+- ~181,400 for `new BigKbonacci(k)`. This was due to "JavaScript heap out of memory". It is likely to be more or less in your environment.
+
+#### Q: What is the range for indices?
+
+This depends on the generation strategy, encoding, data types, caching, initial terms and environment. If a large index is needed, it is advisable to test your use case locally.
+
+Some things to consider are:
+
+- Can the index be represented by its data type?
+- Does the sequence diverge from its starting point as indices grow larger?
+- Can the value be represented by its data type?
+- Is there enough memory for the index, value and generation?
+
+For example, let's generate term 2^30th of the Fibonacci sequence. This might take a few seconds; as a string, the resulting value is ~200 MB!
+
+```javascript
+const { BigFibonacci } = require("nacci");
+
+const bigFib = new BigFibonacci();
+const index = 2n ** 30n; // 1,073,741,824
+
+console.log(`Generating...`);
+const t0 = performance.now();
+bigFib.get(index);
+const t1 = performance.now();
+console.log(`Generation took ${t1 - t0} ms`);
+```
+
+Now let's try generating term 2^31. This should fail due to BigInt overflow.
+
+```javascript
+const { BigFibonacci } = require("nacci");
+
+const bigFib = new BigFibonacci();
+const index = 2n ** 31n; // 2,147,483,648
+
+console.log(`Generating...`);
+const t0 = performance.now();
+bigFib.get(index); // throws "RangeError: Maximum BigInt size exceeded"
+const t1 = performance.now();
+console.log(`Generation took ${t1 - t0} ms`);
 ```
 
 ## License

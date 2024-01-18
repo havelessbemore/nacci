@@ -1,5 +1,5 @@
 import { DimensionError } from "../error/dimensionError";
-import { NumericOps } from "../ops/numericOps";
+import { Ops } from "../ops/ops";
 import { Matrix } from "../type/matrix";
 
 export function fillMatrix<T>(matrix: Matrix<T>, value: T): void {
@@ -20,7 +20,7 @@ export function initMatrix<T>(Y: number, X = Y): Matrix<T> {
 export function matrixMult<T>(
   A: Matrix<T>,
   B: Matrix<T>,
-  ops: NumericOps<T>,
+  ops: Ops<T>,
   zero: T = ops.cast(0)
 ): Matrix<T> {
   const M = A.length;

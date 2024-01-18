@@ -1,6 +1,4 @@
 import { OutOfBoundsError } from "../error/outOfBoundsError";
-import { Getter } from "../type/getter";
-
 export interface KeyOps<T> {
   cast(value: unknown): T;
   equal(a: T, b: T): boolean;
@@ -15,7 +13,7 @@ export interface ValueOps<T> {
   square(a: T): T;
 }
 
-export class Powers<K, V> implements Getter<K, V> {
+export class Powers<K, V> {
   protected cached: boolean;
   protected keyOps: KeyOps<K>;
   protected valOps: ValueOps<V>;

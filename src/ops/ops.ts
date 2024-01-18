@@ -1,4 +1,4 @@
-export interface NumericOps<T = unknown> {
+export interface Ops<T = unknown> {
   // Cast
   cast(value: unknown): T;
   toNumber(a: T): number;

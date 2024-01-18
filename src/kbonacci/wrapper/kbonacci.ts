@@ -1,27 +1,29 @@
 import { SafeNumOps } from "../../ops";
-import { Getter } from "../../type/getter";
+import { Generator } from "../gen/generator";
 import { SumEncoding } from "../encoding";
-import { KPowerGetter } from "../getter";
+import { KPowerGen } from "../gen";
 
-export class Kbonacci implements Getter<number, number> {
-  public K: Readonly<number>;
+export class Kbonacci implements Generator<number, number> {
   private customs: number[];
-  private getter: KPowerGetter<number, number>;
+  private gen: KPowerGen<number, number>;
 
   constructor(K: number, customs?: number[], cached = true) {
     const ops = new SafeNumOps();
     const encoding = new SumEncoding(ops);
-    this.K = K;
     this.customs = customs ?? [];
-    this.getter = new KPowerGetter(K, ops, ops, encoding, customs, cached);
+    this.gen = new KPowerGen(K, { cached, customs, encoding, ops });
+  }
+
+  get K(): number {
+    return this.gen.K;
   }
 
   get(index: number): number {
-    return this.getter.get(index);
+    return this.gen.get(index);
   }
 
   getCached(): boolean {
-    return this.getter.getCached();
+    return this.gen.getCached();
   }
 
   getCustoms(): number[] {
@@ -29,6 +31,6 @@ export class Kbonacci implements Getter<number, number> {
   }
 
   setCached(value: boolean): void {
-    this.getter.setCached(value);
+    this.gen.setCached(value);
   }
 }

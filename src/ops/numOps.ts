@@ -1,7 +1,6 @@
-import { NumericOps } from "./numericOps";
+import { Ops } from "./ops";
 
-export class NumOps implements NumericOps<number> {
-  constructor() {}
+export class NumOps implements Ops<number> {
   cast(a: unknown): number {
     return Number(a);
   }

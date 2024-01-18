@@ -1,12 +1,12 @@
 import { run } from "./tester";
-import { KPowerGetter } from "./kPowerGetter";
+import { PowerGen } from "./powerGen";
 import { BigOps } from "../../ops/bigOps";
-import { NumOps } from "../../ops/numOps";
-import { SafeNumOps } from "../../ops/safeNumOps";
 import { MatrixEncoding } from "../encoding/matrix/matrixEncoding";
 import { RevSumEncoding } from "../encoding/revSum/revSumEncoding";
 import { SumEncoding } from "../encoding/sum/sumEncoding";
 import { TermEncoding } from "../encoding/term/termEncoding";
+import { NumOps } from "../../ops/numOps";
+import { SafeNumOps } from "../../ops/safeNumOps";
 
 (() => {
   const ops = [new BigOps(), new NumOps(), new SafeNumOps()];
@@ -21,12 +21,12 @@ import { TermEncoding } from "../encoding/term/termEncoding";
     for (const valueOps of ops) {
       for (const encodingCls of encodingClasses) {
         run<unknown, unknown>(
-          KPowerGetter.name,
+          PowerGen.name,
           indexOps,
           valueOps,
           (K, indexOps, valueOps, customs?: unknown[]) => {
             const encoding = new encodingCls(valueOps);
-            return new KPowerGetter(K, indexOps, valueOps, encoding, customs);
+            return new PowerGen(K, { customs, encoding, indexOps, valueOps });
           }
         );
       }

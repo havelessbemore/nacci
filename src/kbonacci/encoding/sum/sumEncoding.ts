@@ -1,6 +1,6 @@
 import { DimensionError } from "../../../error/dimensionError";
 import { OutOfBoundsError } from "../../../error/outOfBoundsError";
-import { NumericOps } from "../../../ops/numericOps";
+import { Ops } from "../../../ops/ops";
 import { EncodingFormat, Encoding } from "../encoding";
 
 export class SumEncoding<T> implements Encoding<T, T[]> {
@@ -11,7 +11,7 @@ export class SumEncoding<T> implements Encoding<T, T[]> {
   private _1: T;
   private _2: T;
 
-  constructor(private ops: NumericOps<T>) {
+  constructor(private ops: Ops<T>) {
     this._neg1 = ops.cast(-1);
     this._0 = ops.cast(0);
     this._1 = ops.cast(1);

@@ -1,4 +1,4 @@
-export type { NumericOps } from "./numericOps";
+export type { Ops } from "./ops";
 export { BigOps } from "./bigOps";
 export { NumOps } from "./numOps";
 export { SafeNumOps } from "./safeNumOps";

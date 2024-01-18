@@ -1,4 +1,4 @@
-import { NumericOps } from "../ops/numericOps";
+import { Ops } from "../ops/ops";
 
 export function copy<T>(
   A: T[],
@@ -26,7 +26,7 @@ export function copy<T>(
   return B;
 }
 
-export function getSum<T>(arr: T[], ops: NumericOps<T>): T | undefined {
+export function getSum<T>(arr: T[], ops: Ops<T>): T | undefined {
   const N = arr.length;
   if (N < 1) {
     return undefined;

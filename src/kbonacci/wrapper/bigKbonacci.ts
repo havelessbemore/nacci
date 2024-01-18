@@ -1,27 +1,29 @@
 import { BigOps } from "../../ops/bigOps";
-import { Getter } from "../../type/getter";
 import { SumEncoding } from "../encoding";
-import { KPowerGetter } from "../getter";
+import { Generator } from "../gen";
+import { KPowerGen } from "../gen/kPowerGen";
 
-export class BigKbonacci implements Getter<bigint, bigint> {
-  public K: Readonly<number>;
+export class BigKbonacci implements Generator<bigint, bigint> {
   private customs: bigint[];
-  private getter: KPowerGetter<bigint, bigint>;
+  private gen: KPowerGen<bigint, bigint>;
 
   constructor(K: number, customs?: bigint[], cached = true) {
     const ops = new BigOps();
     const encoding = new SumEncoding(ops);
-    this.K = K;
     this.customs = customs ?? [];
-    this.getter = new KPowerGetter(K, ops, ops, encoding, customs, cached);
+    this.gen = new KPowerGen(K, { cached, customs, encoding, ops });
+  }
+
+  get K(): number {
+    return this.gen.K;
   }
 
   get(index: bigint): bigint {
-    return this.getter.get(index);
+    return this.gen.get(index);
   }
 
   getCached(): boolean {
-    return this.getter.getCached();
+    return this.gen.getCached();
   }
 
   getCustoms(): bigint[] {
@@ -29,6 +31,6 @@ export class BigKbonacci implements Getter<bigint, bigint> {
   }
 
   setCached(value: boolean): void {
-    this.getter.setCached(value);
+    this.gen.setCached(value);
   }
 }

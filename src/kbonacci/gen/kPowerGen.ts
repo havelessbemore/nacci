@@ -1,34 +1,58 @@
-import { Getter } from "../../type/getter";
-import { NumericOps } from "../../ops/numericOps";
+import { Generator } from "./generator";
+import { Ops } from "../../ops/ops";
 import { getSum } from "../../utils/array";
 import { tryK, tryNumTerms } from "../../utils/try";
 import { Powers } from "../../utils/powers";
 import { Encoding } from "../encoding/encoding";
+import { GenConfig } from "./genConfig";
 
-export class KPowerGetter<K, V> implements Getter<K, V> {
+export class KPowerGen<K, V> implements Generator<K, V> {
+  private cached: boolean;
   private customs: V[];
+  private encoding: Encoding<V, unknown>;
+  private indexOps: Ops<K>;
   private isStd: boolean;
+  private _K: number;
   private neg: Powers<K, unknown>;
   private pos: Powers<K, unknown>;
   private v0: V;
+  private valueOps: Ops<V>;
   private zero: unknown;
 
-  constructor(
-    private K: number,
-    private indexOps: NumericOps<K>,
-    private valueOps: NumericOps<V>,
-    private encoding: Encoding<V, unknown>,
-    customs?: V[],
-    private cached = true
-  ) {
+  constructor(K: number, config: GenConfig<K, V, unknown>) {
     tryK(K);
-    this.customs = [];
+
+    const cached = config.cached ?? true;
+    const customs = config.customs ?? [];
+    const encoding = config.encoding;
+    const indexOps = config.indexOps ?? config.ops;
+    const valueOps = config.valueOps ?? config.ops;
+    if (encoding == null) {
+      throw new TypeError(`Missing encoding`);
+    }
+    if (indexOps == null) {
+      throw new TypeError(`Missing index operations`);
+    }
+    if (valueOps == null) {
+      throw new TypeError(`Missing value operations`);
+    }
+
+    this.cached = cached;
+    this.customs = customs;
+    this.encoding = encoding;
+    this.indexOps = indexOps;
     this.isStd = false;
+    this._K = K;
     this.neg = new Powers(encoding.genNegK(K), indexOps, encoding, cached);
     this.pos = new Powers(encoding.genK(K), indexOps, encoding, cached);
     this.zero = encoding.genZero(K);
     this.v0 = encoding.toValue(this.zero, 0);
+    this.valueOps = valueOps;
     this.setCustoms(customs);
+  }
+
+  get K(): number {
+    return this._K;
   }
 
   get(N: K): V {

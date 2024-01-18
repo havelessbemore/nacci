@@ -1,6 +1,6 @@
 import { DimensionError } from "../../../error/dimensionError";
 import { OutOfBoundsError } from "../../../error/outOfBoundsError";
-import { NumericOps } from "../../../ops/numericOps";
+import { Ops } from "../../../ops/ops";
 import { copy } from "../../../utils/array";
 import { initMatrix, matrixMult } from "../../../utils/matrix";
 import { Matrix } from "../../../type/matrix";
@@ -28,7 +28,7 @@ export class MatrixEncoding<T> implements Encoding<T, Matrix<T>> {
   private _1: T;
   private _2: T;
 
-  constructor(private ops: NumericOps<T>) {
+  constructor(private ops: Ops<T>) {
     this._neg1 = ops.cast(-1);
     this._0 = ops.cast(0);
     this._1 = ops.cast(1);

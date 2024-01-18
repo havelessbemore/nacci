@@ -1,6 +1,6 @@
 import { DimensionError } from "../../../error/dimensionError";
 import { OutOfBoundsError } from "../../../error/outOfBoundsError";
-import { NumericOps } from "../../../ops/numericOps";
+import { Ops } from "../../../ops/ops";
 import { EncodingFormat, Encoding } from "../encoding";
 
 export class RevSumEncoding<T> implements Encoding<T, T[]> {
@@ -10,7 +10,7 @@ export class RevSumEncoding<T> implements Encoding<T, T[]> {
   private _0: T;
   private _1: T;
 
-  constructor(private ops: NumericOps<T>) {
+  constructor(private ops: Ops<T>) {
     this._neg1 = ops.cast(-1);
     this._0 = ops.cast(0);
     this._1 = ops.cast(1);

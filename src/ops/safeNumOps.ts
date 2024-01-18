@@ -1,8 +1,7 @@
 import { trySafe } from "../utils/try";
-import { NumericOps } from "./numericOps";
+import { Ops } from "./ops";
 
-export class SafeNumOps implements NumericOps<number> {
-  constructor() {}
+export class SafeNumOps implements Ops<number> {
   cast(a: unknown): number {
     return trySafe(Number(a));
   }

@@ -1,5 +1,5 @@
 import { run } from "./tester";
-import { SlidingWindowGetter } from "./slidingWindowGetter";
+import { SlidingWindowGen } from "./slidingWindowGen";
 import { BigOps } from "../../ops/bigOps";
 import { NumOps } from "../../ops/numOps";
 import { SafeNumOps } from "../../ops/safeNumOps";
@@ -10,11 +10,11 @@ import { SafeNumOps } from "../../ops/safeNumOps";
   for (const indexOps of ops) {
     for (const valueOps of ops) {
       run<unknown, unknown>(
-        SlidingWindowGetter.name,
+        SlidingWindowGen.name,
         indexOps,
         valueOps,
         (K, indexOps, valueOps, customs?: unknown[]) => {
-          return new SlidingWindowGetter(K, indexOps, valueOps, customs);
+          return new SlidingWindowGen(K, { customs, indexOps, valueOps });
         }
       );
     }

@@ -3,7 +3,7 @@ import { Matrix } from "../../../type/matrix";
 import { OutOfBoundsError } from "../../../error/outOfBoundsError";
 import { DimensionError } from "../../../error/dimensionError";
 import { EncodingFormat, Encoding } from "../encoding";
-import { NumericOps } from "../../../ops/numericOps";
+import { Ops } from "../../../ops/ops";
 import { getSum } from "../../../utils/array";
 
 export class TermEncoding<T> implements Encoding<T, T[]> {
@@ -14,7 +14,7 @@ export class TermEncoding<T> implements Encoding<T, T[]> {
   private _1: T;
   private _2: T;
 
-  constructor(private ops: NumericOps<T>) {
+  constructor(private ops: Ops<T>) {
     this._neg1 = ops.cast(-1);
     this._0 = ops.cast(0);
     this._1 = ops.cast(1);
@@ -139,7 +139,7 @@ export class TermEncoding<T> implements Encoding<T, T[]> {
   }
 }
 
-function toMatrix<T>(arr: T[], ops: NumericOps<T>): Matrix<T> {
+function toMatrix<T>(arr: T[], ops: Ops<T>): Matrix<T> {
   const N = arr.length;
   const mat = initMatrix<T>(N);
 

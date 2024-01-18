@@ -1,7 +1,6 @@
-import { NumericOps } from "./numericOps";
+import { Ops } from "./ops";
 
-export class BigOps implements NumericOps<bigint> {
-  constructor() {}
+export class BigOps implements Ops<bigint> {
   cast(a: bigint | boolean | number | string): bigint {
     return BigInt(a);
   }
