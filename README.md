@@ -9,7 +9,6 @@
 [![codecov](https://codecov.io/gh/havelessbemore/nacci/graph/badge.svg?token=F362G7C9U0)](https://codecov.io/gh/havelessbemore/nacci)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/nacci)
 
-
 ## Installation
 
 npm:
@@ -49,7 +48,8 @@ console.log(fib.get(10)); // 55
 const { BigFibonacci } = require("nacci");
 
 const bigFib = new BigFibonacci();
-console.log(bigFib.get(128n)); // 251,728,825,683,549,488,150,424,261n
+console.log(bigFib.get(256n));
+// 141,693,817,714,056,513,234,709,965,875,411,919,657,707,794,958,199,867n
 ```
 
 ### Lucas
@@ -121,12 +121,15 @@ Iterate through a Lucas sequence with the [SlidingWindowGetter](./src/kbonacci/g
 ```javascript
 const nacci = require("nacci");
 
+const customs = [2n, 1n];
 const indexOps = new nacci.ops.SafeNumOps();
 const valueOps = new nacci.ops.BigOps();
-const lucas = new nacci.getter.SlidingWindowGetter(2, indexOps, valueOps, [
-  2n,
-  1n,
-]);
+const lucas = new nacci.getter.SlidingWindowGetter(
+  2,
+  indexOps,
+  valueOps,
+  customs
+);
 
 const min = -100;
 const max = 100;
