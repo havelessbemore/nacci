@@ -1,41 +1,42 @@
-/// <reference types="vitest" />
-import path from "path";
-import { defineConfig } from "vite";
+import fs from 'fs';
+import path from 'path';
+import { defineConfig } from 'vite';
+import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
 
-import packageJson from "./package.json";
+import PACKAGE from './package.json';
 
-const getPackageName = () => {
-  return packageJson.name;
-};
+if (PACKAGE.name == null) {
+  throw new Error("'name' property missing from package.json");
+}
 
-const getPackageNameCamelCase = () => {
-  try {
-    return getPackageName().replace(/-./g, (char) => char[1].toUpperCase());
-  } catch (err) {
-    throw new Error("Name property in package.json is missing.");
-  }
-};
+const pkgName = PACKAGE.name;
+const pkgNameCamel = pkgName.replace(/(?<=-)./g, char => char.toUpperCase());
 
-const fileName = {
-  es: `${getPackageName()}.mjs`,
-  cjs: `${getPackageName()}.cjs`,
-  iife: `${getPackageName()}.iife.js`,
+const fileNames = {
+  es: `${pkgName}.mjs`,
+  cjs: `${pkgName}.cjs`,
+  iife: `${pkgName}.iife.js`,
 } as const;
-
-const formats = Object.keys(fileName) as Array<keyof typeof fileName>;
+const formats = Object.keys(fileNames) as Array<keyof typeof fileNames>;
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "./",
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
-      fileName: (format) => fileName[format],
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      fileName: (format) => fileNames[format],
       formats,
-      name: getPackageNameCamelCase(),
+      name: pkgNameCamel,
     },
     sourcemap: true,
+    
   },
-  plugins: [dts()]
+  plugins: [
+    dts(),
+    banner({
+      content: fs.readFileSync(path.resolve(__dirname, 'NOTICE'), 'utf-8')
+    })
+  ],
 });
