@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "Generate numbers in a kbonacci sequence (where each term is the sum of the previous k terms) with customizable k, initial terms, strategy and data types (number, bigint, etc)",
   "files": [
-    "dist"
+    "dist/",
+    "LICENSE",
+    "README.md"
   ],
   "type": "module",
   "main": "./dist/nacci.cjs",
@@ -11,14 +13,9 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": {
-        "default": "./dist/nacci.cjs",
-        "types": "./dist/index.d.ts"
-      },
-      "import": {
-        "default": "./dist/nacci.mjs",
-        "types": "./dist/index.d.ts"
-      }
+      "import": "./dist/nacci.mjs",
+      "require": "./dist/nacci.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
