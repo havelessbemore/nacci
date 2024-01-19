@@ -1,4 +1,4 @@
-# Nacci
+# ![logo](./static/img/favicon_64x64.png) ![nacci](./static/img/nacci_200x64.png)
 
 Generate numbers in a k-bonacci sequence (where each term is the sum of the previous k terms) with customizable k, initial terms, strategies and data types (number, bigint, etc).
 

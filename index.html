@@ -2,19 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/static/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nacci</title>
-    <!-- Make library accessible in console -->
-    <script defer src="/dist/nacci.iife.js"></script>
   </head>
   <body>
     <div id="app"></div>
-    <!-- Make library accessible for module import -->
     <script type="module" src="/src/index.ts"></script>
     <script type="module">
       import * as nacci from "/src/index";
-      // ...
+      window.nacci = nacci;
     </script>
   </body>
 </html>
