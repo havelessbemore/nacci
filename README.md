@@ -189,7 +189,7 @@ However, it is limited by 2 main factors. If large Ks are needed, it's advised t
 
 1. K is a `number` type, so it is able to [safely](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) represent up to `2^53 - 1` (~9.01 quadrillion); aka `Number.MAX_SAFE_INTEGER`.
 
-2. Available Memory
+1. Available Memory
 
    Encoding and generation strategies may need to store information whose size scales with K. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Since the maximum value for an [array's length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length) is `2^32-1` (~4.29 billion), K is lowered to this limit.
 
@@ -205,13 +205,31 @@ However, they are limited by 3 main factors. If large (based on distance from 0)
 
    For example, if using [SafeNumOps](./src/ops/safeNumOps.ts), the range is `Number.MIN_SAFE_INTEGER <= I <= Number.MAX_SAFE_INTEGER`. If using [BigOps](./src/ops/bigOps.ts), the range is based on [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)'s minimum and maximum values (yes, BigInt has limits! If reached, you can expect to encounter "RangeError: Maximum BigInt size exceeded").
 
-2. The value data type
+1. The value data type
 
    Similar to above, the generated value should also be representable. This is especially true for values as they grow quickly.
 
-3. Available memory
+1. Available memory
 
    Encoding and generation strategies may need to store many instances of the value's data type. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Depending on the environment, the amount of available memory may be exhausted, especially for deeper indices where the size of values grows quickly.
+
+### Q: What can I use this for?
+
+Use cases include:
+
+1. Computer Algorithms: Can be used in dynamic programming algorithms to solve specific types of problems, such as counting ways of tiling, different paths in a grid, or ways of partitioning objects.
+
+1. Cryptography: Sequences with good pseudo-random properties, such as k-bonacci sequences, can be used in cryptographic algorithms and for generating keys.
+
+1. Modeling: The Fibonacci sequence is well-known for appearing in natural phenomena, such as the branching of trees, the arrangement of leaves on a stem, or the fruit sprouts of a pineapple. For this and more, k-bonacci sequences can be used to model complex natural growth patterns.
+
+1. Financial Markets: Some traders and analysts use the Fibonacci sequence to predict stock market movements. k-bonacci sequences could potentially be applied in similar financial models to predict market dynamics.
+
+1. Mathematics: They provide interesting studies in the field of number theory and combinatorics, helping to understand the properties of numbers and arrangements.
+
+1. Queue Theory: In computing and mathematics, k-bonacci sequences can be applied to problems in queue theory where the arrival or service of customers follows a pattern similar to these sequences.
+
+1. Graph Theory: Can be used to calculate the number of paths between nodes in certain types of networks.
 
 ## License
 
