@@ -11,9 +11,9 @@ Generate numbers in a k-bonacci sequence (where each term is the sum of the prev
 
 ## Features
 
-- **Convenience**: Convenience classes let you quickly create sequences of Fibonacci, Tribonacci and beyond.
+- **Convenience**: Quickly create sequences of Fibonacci, Tribonacci and beyond.
 
-- **K-bonacci**: Generate any k-bonacci sequence for any `k >= 2`. If you've ever wanted to create a Dodecanacci sequence (`k = 12`) or Hectonacci (`k = 100`), now you can!
+- **K-bonacci**: Generate k-bonacci sequences for any `k >= 2`. If you've ever wanted to create a Dodecanacci (`k = 12`) or Hectonacci (`k = 100`), now you can!
 
 - **Custom Terms**: Sequences can be created with custom initial terms.
 
@@ -21,7 +21,7 @@ Generate numbers in a k-bonacci sequence (where each term is the sum of the prev
 
 - **Data-Type Agnostic**: Whether you need sequences with standard numbers, BigInts, or a custom type, `Nacci` has you covered. Any type can be used as long as type operations are provided (See [NumericOps](./src/ops/numericOps.ts)).
 
-- **Performance**: Go beyond traditional generation methods with advanced strategies. These offer improved performance for rapid access to deeper term values.
+- **Performance**: Go beyond traditional generation methods with advanced strategies. These offer improved time and space performance for efficient access to deeper indices.
 
 ## Install
 
@@ -139,14 +139,13 @@ seq.setCached(true);
 
 ## Advanced Usage
 
-For more control over your sequence, we will venture away from the above convenience classes and define more of the generation details. These are primarily:
+For more control over your sequences. Available options are:
 
-- [Generation strategy](./src/kbonacci/gen)
-- [Encoding strategy](./src/kbonacci/encoding)
-- [Index type / ops](./src/ops)
-- [Value type / ops](./src/ops)
+- [Generation strategies](./src/kbonacci/gen)
+- [Encoding strategies](./src/kbonacci/encoding)
+- [Data type operations](./src/ops)
 
-#### Dodecanacci
+#### Custom Dodecanacci
 
 ```javascript
 const nacci = require("nacci");
@@ -164,7 +163,7 @@ const valueOps = new nacci.ops.BigOps();
 const encoding = new nacci.enc.RevSumEncoding(valueOps);
 
 // Create the strategy
-const seq = new nacci.gen.KPowerGen(2, {
+const seq = new nacci.gen.PowerGen(2, {
   encoding,
   indexOps,
   valueOps,
