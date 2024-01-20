@@ -1,17 +1,17 @@
-import { SafeNumOps } from "../../ops";
+import { SafeNumOps } from "../../ops/safeNumOps";
 import { Generator } from "../gen/generator";
-import { SumEncoding } from "../encoding";
-import { KPowerGen } from "../gen";
+import { SumEncoding } from "../encoding/sum/sumEncoding";
+import { PowerGen } from "../gen/powerGen";
 
 export class Kbonacci implements Generator<number, number> {
   private customs: number[];
-  private gen: KPowerGen<number, number>;
+  private gen: PowerGen<number, number>;
 
   constructor(K: number, customs?: number[], cached = true) {
     const ops = new SafeNumOps();
     const encoding = new SumEncoding(ops);
     this.customs = customs ?? [];
-    this.gen = new KPowerGen(K, { cached, customs, encoding, ops });
+    this.gen = new PowerGen(K, { cached, customs, encoding, ops });
   }
 
   get K(): number {

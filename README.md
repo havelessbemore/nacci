@@ -179,54 +179,39 @@ console.log(seq.get(128));
 
 ## FAQ
 
-#### Q: What is the upper bound for K?
+### Q: What is the range for K?
 
-This depends on the generation strategy, encoding, data types, caching, initial terms and environment. If a large K is needed, it is advisable to test your use case locally.
+`2 <= K`
 
-That said, the upper bound for convenience classes are:
+There is no fixed upper bound for K. 
 
-- 53 for `new Kbonacci(k)`. This is due to encountering number overflow for larger Ks.
-- ~181,400 for `new BigKbonacci(k)`. This was due to "JavaScript heap out of memory". It is likely to be more or less in your environment.
+However, it is limited by 2 main factors. If large Ks are needed, it's advised to thoroughly test your use case.
 
-#### Q: What is the range for indices?
+1. K is a `number` type, so it is able to [safely](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) represent up to `2^53 - 1` (~9.01 quadrillion, aka `Number.MAX_SAFE_INTEGER`).
 
-This depends on the generation strategy, encoding, data types, caching, K, initial terms and environment. If a large index is needed, it is advisable to test your use case locally.
+2. Available Memory
 
-Some things to consider are:
+    Encoding and generation strategies may need to store information whose size scales with K. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Since the maximum value for an [array's length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length) is `2^32-1` (~4.29 billion), K is lowered to this limit.
 
-- Can the index be represented by its data type?
-- Can the value be represented by its data type?
-- Is there enough memory for the index, value and generation?
+    Depending on the environment, the amount of available memory for this information may lower K even further. For example, a quick test on my local machine encountered fatal errors ("JavaScript heap out of memory") at `K = 43,450,368`. The test ran with Node.js, heap size of ~2GB, and used [Kbonacci](./src/kbonacci/wrapper/kbonacci.ts).
 
-For example, let's generate term 2^30th of the Fibonacci sequence. This might take a few seconds; as a string, the resulting value is ~200 MB!
+### Q: What is the range for indices?
 
-```javascript
-const { BigFibonacci } = require("nacci");
+There are no fixed limits for indices. 
 
-const bigFib = new BigFibonacci();
-const index = 2n ** 30n; // 1,073,741,824
+However, they are limited by 3 main factors. If large (based on distance from 0) indices are needed, it's advised to thoroughly test your use case.
 
-console.log(`Generating...`);
-const t0 = performance.now();
-bigFib.get(index);
-const t1 = performance.now();
-console.log(`Generation took ${t1 - t0} ms`);
-```
+1. The index data type
 
-Now let's try generating term 2^31. This should fail due to BigInt overflow.
+    For example, if using [SafeNumOps](./src/ops/safeNumOps.ts), the range is `Number.MIN_SAFE_INTEGER <= I <= Number.MAX_SAFE_INTEGER`. If using [BigOps](./src/ops/bigOps.ts), the range is based on [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)'s minumum and maximum values (yes, BigInt has limits! If reached, you can expect to encounter "RangeError: Maximum BigInt size exceeded").
 
-```javascript
-const { BigFibonacci } = require("nacci");
+2. The value data type
 
-const bigFib = new BigFibonacci();
-const index = 2n ** 31n; // 2,147,483,648
+    Similar to above, the generated value should also be representable. This is especially true for values as they grow quickly.
 
-console.log(`Generating...`);
-const t0 = performance.now();
-bigFib.get(index); // throws "RangeError: Maximum BigInt size exceeded"
-const t1 = performance.now();
-console.log(`Generation took ${t1 - t0} ms`);
-```
+3. Available memory
+
+    Encoding and generation strategies may need to store many instances of the value's data type. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Depending on the environment, the amount of available memory may be exhausted, especially for deeper indices where the size of values grows quickly.
 
 ## License
 
