@@ -187,7 +187,7 @@ There is no fixed upper bound for K.
 
 However, it is limited by 2 main factors. If large Ks are needed, it's advised to thoroughly test your use case.
 
-1. K is a `number` type, so it is able to [safely](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) represent up to `2^53 - 1` (~9.01 quadrillion, aka `Number.MAX_SAFE_INTEGER`).
+1. K is a `number` type, so it is able to [safely](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) represent up to `2^53 - 1` (~9.01 quadrillion); aka `Number.MAX_SAFE_INTEGER`.
 
 2. Available Memory
 
@@ -203,7 +203,7 @@ However, they are limited by 3 main factors. If large (based on distance from 0)
 
 1. The index data type
 
-   For example, if using [SafeNumOps](./src/ops/safeNumOps.ts), the range is `Number.MIN_SAFE_INTEGER <= I <= Number.MAX_SAFE_INTEGER`. If using [BigOps](./src/ops/bigOps.ts), the range is based on [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)'s minumum and maximum values (yes, BigInt has limits! If reached, you can expect to encounter "RangeError: Maximum BigInt size exceeded").
+   For example, if using [SafeNumOps](./src/ops/safeNumOps.ts), the range is `Number.MIN_SAFE_INTEGER <= I <= Number.MAX_SAFE_INTEGER`. If using [BigOps](./src/ops/bigOps.ts), the range is based on [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)'s minimum and maximum values (yes, BigInt has limits! If reached, you can expect to encounter "RangeError: Maximum BigInt size exceeded").
 
 2. The value data type
 
