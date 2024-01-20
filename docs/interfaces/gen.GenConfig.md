@@ -6,11 +6,11 @@
 
 ## Type parameters
 
-| Name | Type      |
-| :--- | :-------- |
-| `I`  | `I`       |
-| `V`  | `I`       |
-| `D`  | `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `I` | `I` |
+| `V` | `I` |
+| `D` | `unknown` |
 
 ## Table of contents
 
@@ -31,9 +31,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:5](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L5)
+[src/kbonacci/gen/genConfig.ts:5](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/genConfig.ts#L5)
 
----
+___
 
 ### customs
 
@@ -41,9 +41,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:6](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L6)
+[src/kbonacci/gen/genConfig.ts:6](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/genConfig.ts#L6)
 
----
+___
 
 ### encoding
 
@@ -51,9 +51,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:7](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L7)
+[src/kbonacci/gen/genConfig.ts:7](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/genConfig.ts#L7)
 
----
+___
 
 ### indexOps
 
@@ -61,9 +61,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L10)
+[src/kbonacci/gen/genConfig.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/genConfig.ts#L10)
 
----
+___
 
 ### ops
 
@@ -71,9 +71,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L9)
+[src/kbonacci/gen/genConfig.ts:9](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/genConfig.ts#L9)
 
----
+___
 
 ### valueOps
 
@@ -81,4 +81,4 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L11)
+[src/kbonacci/gen/genConfig.ts:11](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/genConfig.ts#L11)

@@ -39,13 +39,13 @@
 
 #### Parameters
 
-| Name     | Type      | Default value     |
-| :------- | :-------- | :---------------- |
-| `actual` | `unknown` | `undefined`       |
-| `min?`   | `unknown` | `undefined`       |
-| `max?`   | `unknown` | `undefined`       |
-| `label`  | `string`  | `"index"`         |
-| `msg`    | `string`  | `"Out of bounds"` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `actual` | `unknown` | `undefined` |
+| `min?` | `unknown` | `undefined` |
+| `max?` | `unknown` | `undefined` |
+| `label` | `string` | `"index"` |
+| `msg` | `string` | `"Out of bounds"` |
 
 #### Returns
 
@@ -57,7 +57,7 @@ RangeError.constructor
 
 #### Defined in
 
-[src/error/outOfBoundsError.ts:2](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/error/outOfBoundsError.ts#L2)
+[src/error/outOfBoundsError.ts:2](https://github.com/havelessbemore/nacci/blob/13a7465/src/error/outOfBoundsError.ts#L2)
 
 ## Properties
 
@@ -73,7 +73,7 @@ RangeError.cause
 
 node_modules/typescript/lib/lib.es2022.error.d.ts:24
 
----
+___
 
 ### message
 
@@ -87,7 +87,7 @@ RangeError.message
 
 node_modules/typescript/lib/lib.es5.d.ts:1076
 
----
+___
 
 ### name
 
@@ -101,7 +101,7 @@ RangeError.name
 
 node_modules/typescript/lib/lib.es5.d.ts:1075
 
----
+___
 
 ### stack
 
@@ -115,7 +115,7 @@ RangeError.stack
 
 node_modules/typescript/lib/lib.es5.d.ts:1077
 
----
+___
 
 ### prepareStackTrace
 
@@ -135,9 +135,9 @@ Optional override for formatting stack traces
 
 ##### Parameters
 
-| Name          | Type         |
-| :------------ | :----------- |
-| `err`         | `Error`      |
+| Name | Type |
+| :------ | :------ |
+| `err` | `Error` |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -156,7 +156,7 @@ RangeError.prepareStackTrace
 
 node_modules/@types/node/globals.d.ts:28
 
----
+___
 
 ### stackTraceLimit
 
@@ -180,9 +180,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name              | Type       |
-| :---------------- | :--------- |
-| `targetObject`    | `object`   |
+| Name | Type |
+| :------ | :------ |
+| `targetObject` | `object` |
 | `constructorOpt?` | `Function` |
 
 #### Returns

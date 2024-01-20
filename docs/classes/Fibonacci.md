@@ -33,10 +33,10 @@
 
 #### Parameters
 
-| Name       | Type       |
-| :--------- | :--------- |
+| Name | Type |
+| :------ | :------ |
 | `customs?` | `number`[] |
-| `cached?`  | `boolean`  |
+| `cached?` | `boolean` |
 
 #### Returns
 
@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/fibonacci.ts:4](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/fibonacci.ts#L4)
+[src/kbonacci/wrapper/fibonacci.ts:4](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/fibonacci.ts#L4)
 
 ## Accessors
 
@@ -66,7 +66,7 @@ Kbonacci.K
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L17)
+[src/kbonacci/wrapper/kbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L17)
 
 ## Methods
 
@@ -76,8 +76,8 @@ Kbonacci.K
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `index` | `number` |
 
 #### Returns
@@ -90,9 +90,9 @@ Kbonacci.K
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L21)
+[src/kbonacci/wrapper/kbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L21)
 
----
+___
 
 ### getCached
 
@@ -108,9 +108,9 @@ Kbonacci.K
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L25)
+[src/kbonacci/wrapper/kbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L25)
 
----
+___
 
 ### getCustoms
 
@@ -126,9 +126,9 @@ Kbonacci.K
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L29)
+[src/kbonacci/wrapper/kbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L29)
 
----
+___
 
 ### setCached
 
@@ -136,8 +136,8 @@ Kbonacci.K
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
@@ -150,4 +150,4 @@ Kbonacci.K
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L33)
+[src/kbonacci/wrapper/kbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L33)

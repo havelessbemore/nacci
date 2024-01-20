@@ -44,11 +44,11 @@
 
 #### Parameters
 
-| Name       | Type       | Default value |
-| :--------- | :--------- | :------------ |
-| `K`        | `number`   | `undefined`   |
-| `customs?` | `number`[] | `undefined`   |
-| `cached`   | `boolean`  | `true`        |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `K` | `number` | `undefined` |
+| `customs?` | `number`[] | `undefined` |
+| `cached` | `boolean` | `true` |
 
 #### Returns
 
@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L10)
+[src/kbonacci/wrapper/kbonacci.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L10)
 
 ## Properties
 
@@ -66,17 +66,17 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:7](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L7)
+[src/kbonacci/wrapper/kbonacci.ts:7](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L7)
 
----
+___
 
 ### gen
 
-• `Private` **gen**: [`KPowerGen`](gen.KPowerGen.md)\<`number`, `number`\>
+• `Private` **gen**: [`PowerGen`](gen.PowerGen.md)\<`number`, `number`\>
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:8](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L8)
+[src/kbonacci/wrapper/kbonacci.ts:8](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L8)
 
 ## Accessors
 
@@ -94,7 +94,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L17)
+[src/kbonacci/wrapper/kbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L17)
 
 ## Methods
 
@@ -104,8 +104,8 @@
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `index` | `number` |
 
 #### Returns
@@ -118,9 +118,9 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L21)
+[src/kbonacci/wrapper/kbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L21)
 
----
+___
 
 ### getCached
 
@@ -132,9 +132,9 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L25)
+[src/kbonacci/wrapper/kbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L25)
 
----
+___
 
 ### getCustoms
 
@@ -146,9 +146,9 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L29)
+[src/kbonacci/wrapper/kbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L29)
 
----
+___
 
 ### setCached
 
@@ -156,8 +156,8 @@
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
@@ -166,4 +166,4 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L33)
+[src/kbonacci/wrapper/kbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L33)

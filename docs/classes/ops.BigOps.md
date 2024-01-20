@@ -55,9 +55,9 @@
 
 #### Parameters
 
-| Name | Type                                          |
-| :--- | :-------------------------------------------- |
-| `a`  | `string` \| `number` \| `bigint` \| `boolean` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `string` \| `number` \| `bigint` \| `boolean` |
 
 #### Returns
 
@@ -69,9 +69,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:4](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L4)
+[src/ops/bigOps.ts:4](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L4)
 
----
+___
 
 ### dividedBy
 
@@ -79,10 +79,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -94,9 +94,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:7](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L7)
+[src/ops/bigOps.ts:7](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L7)
 
----
+___
 
 ### equal
 
@@ -104,10 +104,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -119,9 +119,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L10)
+[src/ops/bigOps.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L10)
 
----
+___
 
 ### half
 
@@ -129,9 +129,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -143,9 +143,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L13)
+[src/ops/bigOps.ts:13](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L13)
 
----
+___
 
 ### isOdd
 
@@ -153,9 +153,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -167,9 +167,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:16](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L16)
+[src/ops/bigOps.ts:16](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L16)
 
----
+___
 
 ### larger
 
@@ -177,10 +177,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -192,9 +192,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:19](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L19)
+[src/ops/bigOps.ts:19](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L19)
 
----
+___
 
 ### largerEq
 
@@ -202,10 +202,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -217,9 +217,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:22](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L22)
+[src/ops/bigOps.ts:22](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L22)
 
----
+___
 
 ### minus
 
@@ -227,10 +227,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -242,9 +242,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:25](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L25)
+[src/ops/bigOps.ts:25](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L25)
 
----
+___
 
 ### minus1
 
@@ -252,9 +252,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -266,9 +266,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:28](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L28)
+[src/ops/bigOps.ts:28](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L28)
 
----
+___
 
 ### mod
 
@@ -276,10 +276,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -291,9 +291,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:31](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L31)
+[src/ops/bigOps.ts:31](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L31)
 
----
+___
 
 ### negative
 
@@ -301,9 +301,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -315,9 +315,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:34](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L34)
+[src/ops/bigOps.ts:34](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L34)
 
----
+___
 
 ### plus
 
@@ -325,10 +325,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -340,9 +340,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:37](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L37)
+[src/ops/bigOps.ts:37](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L37)
 
----
+___
 
 ### plus1
 
@@ -350,9 +350,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -364,9 +364,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:40](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L40)
+[src/ops/bigOps.ts:40](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L40)
 
----
+___
 
 ### sign
 
@@ -374,9 +374,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -388,9 +388,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:43](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L43)
+[src/ops/bigOps.ts:43](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L43)
 
----
+___
 
 ### smaller
 
@@ -398,10 +398,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -413,9 +413,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:46](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L46)
+[src/ops/bigOps.ts:46](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L46)
 
----
+___
 
 ### smallerEq
 
@@ -423,10 +423,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -438,9 +438,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:49](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L49)
+[src/ops/bigOps.ts:49](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L49)
 
----
+___
 
 ### square
 
@@ -448,9 +448,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -462,9 +462,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:52](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L52)
+[src/ops/bigOps.ts:52](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L52)
 
----
+___
 
 ### times
 
@@ -472,10 +472,10 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
-| `b`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
+| `b` | `bigint` |
 
 #### Returns
 
@@ -487,9 +487,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:55](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L55)
+[src/ops/bigOps.ts:55](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L55)
 
----
+___
 
 ### toNumber
 
@@ -497,9 +497,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -511,9 +511,9 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:58](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L58)
+[src/ops/bigOps.ts:58](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L58)
 
----
+___
 
 ### trunc
 
@@ -521,9 +521,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `a`  | `bigint` |
+| Name | Type |
+| :------ | :------ |
+| `a` | `bigint` |
 
 #### Returns
 
@@ -535,4 +535,4 @@
 
 #### Defined in
 
-[src/ops/bigOps.ts:61](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/bigOps.ts#L61)
+[src/ops/bigOps.ts:61](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/bigOps.ts#L61)

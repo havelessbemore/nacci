@@ -6,9 +6,9 @@
 
 ## Type parameters
 
-| Name | Type      |
-| :--- | :-------- |
-| `T`  | `unknown` |
+| Name | Type |
+| :------ | :------ |
+| `T` | `unknown` |
 
 ## Implemented by
 
@@ -49,8 +49,8 @@
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `unknown` |
 
 #### Returns
@@ -59,9 +59,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:3](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L3)
+[src/ops/ops.ts:3](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L3)
 
----
+___
 
 ### dividedBy
 
@@ -69,10 +69,10 @@
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `dividend` | `T`  |
-| `divisor`  | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `dividend` | `T` |
+| `divisor` | `T` |
 
 #### Returns
 
@@ -80,9 +80,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:15](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L15)
+[src/ops/ops.ts:15](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L15)
 
----
+___
 
 ### equal
 
@@ -91,9 +91,9 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
-| `b`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
+| `b` | `T` |
 
 #### Returns
 
@@ -101,9 +101,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:8](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L8)
+[src/ops/ops.ts:8](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L8)
 
----
+___
 
 ### half
 
@@ -111,9 +111,9 @@
 
 #### Parameters
 
-| Name    | Type |
-| :------ | :--- |
-| `value` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `value` | `T` |
 
 #### Returns
 
@@ -121,9 +121,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:16](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L16)
+[src/ops/ops.ts:16](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L16)
 
----
+___
 
 ### isOdd
 
@@ -131,9 +131,9 @@
 
 #### Parameters
 
-| Name    | Type |
-| :------ | :--- |
-| `value` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `value` | `T` |
 
 #### Returns
 
@@ -141,9 +141,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L17)
+[src/ops/ops.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L17)
 
----
+___
 
 ### larger
 
@@ -152,9 +152,9 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
-| `b`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
+| `b` | `T` |
 
 #### Returns
 
@@ -162,9 +162,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L9)
+[src/ops/ops.ts:9](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L9)
 
----
+___
 
 ### largerEq
 
@@ -173,9 +173,9 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
-| `b`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
+| `b` | `T` |
 
 #### Returns
 
@@ -183,9 +183,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L10)
+[src/ops/ops.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L10)
 
----
+___
 
 ### minus
 
@@ -193,10 +193,10 @@
 
 #### Parameters
 
-| Name         | Type |
-| :----------- | :--- |
-| `minuend`    | `T`  |
-| `subtrahend` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `minuend` | `T` |
+| `subtrahend` | `T` |
 
 #### Returns
 
@@ -204,9 +204,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:18](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L18)
+[src/ops/ops.ts:18](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L18)
 
----
+___
 
 ### minus1
 
@@ -215,8 +215,8 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
 
 #### Returns
 
@@ -224,9 +224,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:19](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L19)
+[src/ops/ops.ts:19](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L19)
 
----
+___
 
 ### mod
 
@@ -234,10 +234,10 @@
 
 #### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `dividend` | `T`  |
-| `divisor`  | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `dividend` | `T` |
+| `divisor` | `T` |
 
 #### Returns
 
@@ -245,9 +245,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:20](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L20)
+[src/ops/ops.ts:20](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L20)
 
----
+___
 
 ### negative
 
@@ -256,8 +256,8 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
 
 #### Returns
 
@@ -265,9 +265,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:21](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L21)
+[src/ops/ops.ts:21](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L21)
 
----
+___
 
 ### plus
 
@@ -276,9 +276,9 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
-| `b`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
+| `b` | `T` |
 
 #### Returns
 
@@ -286,9 +286,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:22](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L22)
+[src/ops/ops.ts:22](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L22)
 
----
+___
 
 ### plus1
 
@@ -297,8 +297,8 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
 
 #### Returns
 
@@ -306,9 +306,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:23](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L23)
+[src/ops/ops.ts:23](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L23)
 
----
+___
 
 ### sign
 
@@ -317,8 +317,8 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
 
 #### Returns
 
@@ -326,9 +326,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:24](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L24)
+[src/ops/ops.ts:24](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L24)
 
----
+___
 
 ### smaller
 
@@ -337,9 +337,9 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
-| `b`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
+| `b` | `T` |
 
 #### Returns
 
@@ -347,9 +347,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L11)
+[src/ops/ops.ts:11](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L11)
 
----
+___
 
 ### smallerEq
 
@@ -358,9 +358,9 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
-| `b`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
+| `b` | `T` |
 
 #### Returns
 
@@ -368,9 +368,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L12)
+[src/ops/ops.ts:12](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L12)
 
----
+___
 
 ### square
 
@@ -378,9 +378,9 @@
 
 #### Parameters
 
-| Name    | Type |
-| :------ | :--- |
-| `value` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `value` | `T` |
 
 #### Returns
 
@@ -388,9 +388,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:25](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L25)
+[src/ops/ops.ts:25](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L25)
 
----
+___
 
 ### times
 
@@ -399,9 +399,9 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
-| `b`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
+| `b` | `T` |
 
 #### Returns
 
@@ -409,9 +409,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:26](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L26)
+[src/ops/ops.ts:26](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L26)
 
----
+___
 
 ### toNumber
 
@@ -420,8 +420,8 @@
 #### Parameters
 
 | Name | Type |
-| :--- | :--- |
-| `a`  | `T`  |
+| :------ | :------ |
+| `a` | `T` |
 
 #### Returns
 
@@ -429,9 +429,9 @@
 
 #### Defined in
 
-[src/ops/ops.ts:4](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L4)
+[src/ops/ops.ts:4](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L4)
 
----
+___
 
 ### trunc
 
@@ -439,9 +439,9 @@
 
 #### Parameters
 
-| Name    | Type |
-| :------ | :--- |
-| `value` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `value` | `T` |
 
 #### Returns
 
@@ -449,4 +449,4 @@
 
 #### Defined in
 
-[src/ops/ops.ts:27](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/ops.ts#L27)
+[src/ops/ops.ts:27](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L27)

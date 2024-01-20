@@ -7,9 +7,9 @@
 ## Type parameters
 
 | Name |
-| :--- |
-| `K`  |
-| `V`  |
+| :------ |
+| `K` |
+| `V` |
 
 ## Implements
 
@@ -55,15 +55,15 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `K`  |
-| `V`  |
+| :------ |
+| `K` |
+| `V` |
 
 #### Parameters
 
-| Name     | Type                                                                                       |
-| :------- | :----------------------------------------------------------------------------------------- |
-| `K`      | `number`                                                                                   |
+| Name | Type |
+| :------ | :------ |
+| `K` | `number` |
 | `config` | [`GenConfig`](../interfaces/gen.GenConfig.md)\<[`K`](gen.KPowerGen.md#k), `V`, `unknown`\> |
 
 #### Returns
@@ -72,7 +72,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:20](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L20)
+[src/kbonacci/gen/kPowerGen.ts:20](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L20)
 
 ## Properties
 
@@ -82,9 +82,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:14](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L14)
+[src/kbonacci/gen/kPowerGen.ts:14](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L14)
 
----
+___
 
 ### cached
 
@@ -92,9 +92,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L9)
+[src/kbonacci/gen/kPowerGen.ts:9](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L9)
 
----
+___
 
 ### customs
 
@@ -102,9 +102,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L10)
+[src/kbonacci/gen/kPowerGen.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L10)
 
----
+___
 
 ### encoding
 
@@ -112,9 +112,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L11)
+[src/kbonacci/gen/kPowerGen.ts:11](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L11)
 
----
+___
 
 ### indexOps
 
@@ -122,9 +122,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L12)
+[src/kbonacci/gen/kPowerGen.ts:12](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L12)
 
----
+___
 
 ### isStd
 
@@ -132,9 +132,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L13)
+[src/kbonacci/gen/kPowerGen.ts:13](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L13)
 
----
+___
 
 ### neg
 
@@ -142,9 +142,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:15](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L15)
+[src/kbonacci/gen/kPowerGen.ts:15](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L15)
 
----
+___
 
 ### pos
 
@@ -152,9 +152,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:16](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L16)
+[src/kbonacci/gen/kPowerGen.ts:16](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L16)
 
----
+___
 
 ### v0
 
@@ -162,9 +162,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L17)
+[src/kbonacci/gen/kPowerGen.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L17)
 
----
+___
 
 ### zero
 
@@ -172,7 +172,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:18](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L18)
+[src/kbonacci/gen/kPowerGen.ts:18](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L18)
 
 ## Accessors
 
@@ -190,7 +190,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:47](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L47)
+[src/kbonacci/gen/kPowerGen.ts:47](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L47)
 
 ## Methods
 
@@ -200,9 +200,9 @@
 
 #### Parameters
 
-| Name | Type                      |
-| :--- | :------------------------ |
-| `N`  | [`K`](gen.KPowerGen.md#k) |
+| Name | Type |
+| :------ | :------ |
+| `N` | [`K`](gen.KPowerGen.md#k) |
 
 #### Returns
 
@@ -214,9 +214,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:51](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L51)
+[src/kbonacci/gen/kPowerGen.ts:51](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L51)
 
----
+___
 
 ### getCached
 
@@ -228,9 +228,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:85](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L85)
+[src/kbonacci/gen/kPowerGen.ts:85](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L85)
 
----
+___
 
 ### getCustoms
 
@@ -242,9 +242,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:89](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L89)
+[src/kbonacci/gen/kPowerGen.ts:89](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L89)
 
----
+___
 
 ### setCached
 
@@ -252,8 +252,8 @@
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `value` | `boolean` |
 
 #### Returns
@@ -262,9 +262,9 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:93](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L93)
+[src/kbonacci/gen/kPowerGen.ts:93](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L93)
 
----
+___
 
 ### setCustoms
 
@@ -272,8 +272,8 @@
 
 #### Parameters
 
-| Name       | Type  |
-| :--------- | :---- |
+| Name | Type |
+| :------ | :------ |
 | `customs?` | `V`[] |
 
 #### Returns
@@ -282,4 +282,4 @@
 
 #### Defined in
 
-[src/kbonacci/gen/kPowerGen.ts:99](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/kPowerGen.ts#L99)
+[src/kbonacci/gen/kPowerGen.ts:99](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/gen/kPowerGen.ts#L99)

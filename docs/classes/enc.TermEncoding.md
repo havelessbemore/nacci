@@ -7,8 +7,8 @@
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 ## Implements
 
@@ -51,13 +51,13 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name  | Type                                     |
-| :---- | :--------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `ops` | [`Ops`](../interfaces/ops.Ops.md)\<`T`\> |
 
 #### Returns
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L17)
+[src/kbonacci/encoding/term/termEncoding.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L17)
 
 ## Properties
 
@@ -76,9 +76,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L13)
+[src/kbonacci/encoding/term/termEncoding.ts:13](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L13)
 
----
+___
 
 ### \_1
 
@@ -86,9 +86,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:14](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L14)
+[src/kbonacci/encoding/term/termEncoding.ts:14](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L14)
 
----
+___
 
 ### \_2
 
@@ -96,9 +96,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:15](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L15)
+[src/kbonacci/encoding/term/termEncoding.ts:15](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L15)
 
----
+___
 
 ### \_neg1
 
@@ -106,13 +106,13 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L12)
+[src/kbonacci/encoding/term/termEncoding.ts:12](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L12)
 
----
+___
 
 ### format
 
-• `Readonly` **format**: `"term"`
+• `Readonly` **format**: ``"term"``
 
 #### Implementation of
 
@@ -120,9 +120,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L10)
+[src/kbonacci/encoding/term/termEncoding.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L10)
 
----
+___
 
 ### ops
 
@@ -130,7 +130,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L17)
+[src/kbonacci/encoding/term/termEncoding.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L17)
 
 ## Methods
 
@@ -140,9 +140,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `K`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `number` |
 
 #### Returns
 
@@ -154,9 +154,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:24](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L24)
+[src/kbonacci/encoding/term/termEncoding.ts:24](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L24)
 
----
+___
 
 ### genNegK
 
@@ -164,9 +164,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `K`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `number` |
 
 #### Returns
 
@@ -178,9 +178,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:32](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L32)
+[src/kbonacci/encoding/term/termEncoding.ts:32](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L32)
 
----
+___
 
 ### genNegOne
 
@@ -188,9 +188,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `K`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `number` |
 
 #### Returns
 
@@ -202,9 +202,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:43](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L43)
+[src/kbonacci/encoding/term/termEncoding.ts:43](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L43)
 
----
+___
 
 ### genOne
 
@@ -212,9 +212,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `K`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `number` |
 
 #### Returns
 
@@ -226,9 +226,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:52](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L52)
+[src/kbonacci/encoding/term/termEncoding.ts:52](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L52)
 
----
+___
 
 ### genZero
 
@@ -236,9 +236,9 @@
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `K`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `number` |
 
 #### Returns
 
@@ -250,9 +250,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:60](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L60)
+[src/kbonacci/encoding/term/termEncoding.ts:60](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L60)
 
----
+___
 
 ### pow
 
@@ -260,10 +260,10 @@
 
 #### Parameters
 
-| Name | Type  |
-| :--- | :---- |
-| `A`  | `T`[] |
-| `n`  | `T`   |
+| Name | Type |
+| :------ | :------ |
+| `A` | `T`[] |
+| `n` | `T` |
 
 #### Returns
 
@@ -275,9 +275,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:68](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L68)
+[src/kbonacci/encoding/term/termEncoding.ts:68](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L68)
 
----
+___
 
 ### shift
 
@@ -285,9 +285,9 @@
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
-| `A`     | `T`[]    |
+| Name | Type |
+| :------ | :------ |
+| `A` | `T`[] |
 | `delta` | `number` |
 
 #### Returns
@@ -300,9 +300,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:86](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L86)
+[src/kbonacci/encoding/term/termEncoding.ts:86](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L86)
 
----
+___
 
 ### square
 
@@ -310,9 +310,9 @@
 
 #### Parameters
 
-| Name | Type  |
-| :--- | :---- |
-| `A`  | `T`[] |
+| Name | Type |
+| :------ | :------ |
+| `A` | `T`[] |
 
 #### Returns
 
@@ -324,9 +324,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:112](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L112)
+[src/kbonacci/encoding/term/termEncoding.ts:112](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L112)
 
----
+___
 
 ### times
 
@@ -334,10 +334,10 @@
 
 #### Parameters
 
-| Name | Type  |
-| :--- | :---- |
-| `A`  | `T`[] |
-| `B`  | `T`[] |
+| Name | Type |
+| :------ | :------ |
+| `A` | `T`[] |
+| `B` | `T`[] |
 
 #### Returns
 
@@ -349,9 +349,9 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:116](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L116)
+[src/kbonacci/encoding/term/termEncoding.ts:116](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L116)
 
----
+___
 
 ### toValue
 
@@ -359,11 +359,11 @@
 
 #### Parameters
 
-| Name     | Type     | Default value |
-| :------- | :------- | :------------ |
-| `data`   | `T`[]    | `undefined`   |
-| `delta`  | `number` | `0`           |
-| `terms?` | `T`[]    | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `data` | `T`[] | `undefined` |
+| `delta` | `number` | `0` |
+| `terms?` | `T`[] | `undefined` |
 
 #### Returns
 
@@ -375,4 +375,4 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:120](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/term/termEncoding.ts#L120)
+[src/kbonacci/encoding/term/termEncoding.ts:120](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/term/termEncoding.ts#L120)
