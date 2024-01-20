@@ -1,10 +1,10 @@
 import { initMatrix, matrixMult } from "../../../utils/matrix";
 import { Matrix } from "../../../type/matrix";
 import { OutOfBoundsError } from "../../../error/outOfBoundsError";
-import { DimensionError } from "../../../error/dimensionError";
 import { EncodingFormat, Encoding } from "../encoding";
 import { Ops } from "../../../ops/ops";
 import { getSum } from "../../../utils/array";
+import { tryNumTerms } from "../../../utils/try";
 
 export class TermEncoding<T> implements Encoding<T, T[]> {
   public readonly format = EncodingFormat.Term;
@@ -126,13 +126,12 @@ export class TermEncoding<T> implements Encoding<T, T[]> {
     if (terms == null) {
       return data[x];
     }
-    if (terms.length !== K) {
-      throw new DimensionError(K, terms.length);
-    }
+    tryNumTerms(K, terms);
     let value = this._0;
+    const minY = K - terms.length;
     const mat = toMatrix(data, this.ops);
-    for (let y = 0; y < K; ++y) {
-      const temp = this.ops.times(terms[y], mat[y][x]);
+    for (let y = minY; y < K; ++y) {
+      const temp = this.ops.times(terms[y - minY], mat[y][x]);
       value = this.ops.plus(value, temp);
     }
     return value;

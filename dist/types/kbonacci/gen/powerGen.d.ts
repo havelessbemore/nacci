@@ -10,7 +10,6 @@ export declare class PowerGen<K, V> implements Generator<K, V> {
     private neg;
     private pos;
     private v0;
-    private valueOps;
     constructor(K: number, config: GenConfig<K, V, unknown>);
     get K(): number;
     get(N: K): V;

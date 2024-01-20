@@ -52,7 +52,7 @@ TypeError.constructor
 
 #### Defined in
 
-[src/error/integerError.ts:2](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/error/integerError.ts#L2)
+[src/error/integerError.ts:2](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/error/integerError.ts#L2)
 
 ## Properties
 

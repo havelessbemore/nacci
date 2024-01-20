@@ -32,7 +32,6 @@
 - [neg](gen.PowerGen.md#neg)
 - [pos](gen.PowerGen.md#pos)
 - [v0](gen.PowerGen.md#v0)
-- [valueOps](gen.PowerGen.md#valueops)
 
 ### Accessors
 
@@ -72,7 +71,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:21](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L21)
+[src/kbonacci/gen/powerGen.ts:19](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L19)
 
 ## Properties
 
@@ -82,7 +81,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:15](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L15)
+[src/kbonacci/gen/powerGen.ts:14](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L14)
 
 ___
 
@@ -92,7 +91,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:10](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L10)
+[src/kbonacci/gen/powerGen.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L9)
 
 ___
 
@@ -102,7 +101,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:11](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L11)
+[src/kbonacci/gen/powerGen.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L10)
 
 ___
 
@@ -112,7 +111,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:12](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L12)
+[src/kbonacci/gen/powerGen.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L11)
 
 ___
 
@@ -122,7 +121,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:13](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L13)
+[src/kbonacci/gen/powerGen.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L12)
 
 ___
 
@@ -132,7 +131,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:14](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L14)
+[src/kbonacci/gen/powerGen.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L13)
 
 ___
 
@@ -142,7 +141,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:16](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L16)
+[src/kbonacci/gen/powerGen.ts:15](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L15)
 
 ___
 
@@ -152,7 +151,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:17](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L17)
+[src/kbonacci/gen/powerGen.ts:16](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L16)
 
 ___
 
@@ -162,17 +161,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:18](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L18)
-
-___
-
-### valueOps
-
-• `Private` **valueOps**: [`Ops`](../interfaces/ops.Ops.md)\<`V`\>
-
-#### Defined in
-
-[src/kbonacci/gen/powerGen.ts:19](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L19)
+[src/kbonacci/gen/powerGen.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L17)
 
 ## Accessors
 
@@ -190,7 +179,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:53](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L53)
+[src/kbonacci/gen/powerGen.ts:46](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L46)
 
 ## Methods
 
@@ -214,7 +203,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:57](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L57)
+[src/kbonacci/gen/powerGen.ts:50](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L50)
 
 ___
 
@@ -228,7 +217,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:73](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L73)
+[src/kbonacci/gen/powerGen.ts:66](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L66)
 
 ___
 
@@ -242,7 +231,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:77](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L77)
+[src/kbonacci/gen/powerGen.ts:70](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L70)
 
 ___
 
@@ -262,7 +251,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:81](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L81)
+[src/kbonacci/gen/powerGen.ts:74](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L74)
 
 ___
 
@@ -282,4 +271,4 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:87](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/powerGen.ts#L87)
+[src/kbonacci/gen/powerGen.ts:80](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/powerGen.ts#L80)

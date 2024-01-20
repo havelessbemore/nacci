@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:9](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L9)
+[src/kbonacci/encoding/encoding.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L9)
 
 ## Methods
 
@@ -65,7 +65,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:10](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L10)
+[src/kbonacci/encoding/encoding.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L10)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:11](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L11)
+[src/kbonacci/encoding/encoding.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L11)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:12](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L12)
+[src/kbonacci/encoding/encoding.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L12)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:13](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L13)
+[src/kbonacci/encoding/encoding.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L13)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:14](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L14)
+[src/kbonacci/encoding/encoding.ts:14](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L14)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:15](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L15)
+[src/kbonacci/encoding/encoding.ts:15](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L15)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:16](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L16)
+[src/kbonacci/encoding/encoding.ts:16](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L16)
 
 ___
 
@@ -207,7 +207,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:17](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L17)
+[src/kbonacci/encoding/encoding.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L17)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:18](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L18)
+[src/kbonacci/encoding/encoding.ts:18](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L18)
 
 ___
 
@@ -250,4 +250,4 @@ ___
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:19](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/encoding/encoding.ts#L19)
+[src/kbonacci/encoding/encoding.ts:19](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/encoding.ts#L19)

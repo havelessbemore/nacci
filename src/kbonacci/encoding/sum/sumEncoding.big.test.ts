@@ -349,16 +349,27 @@ describe("Sum Encoding + Big", () => {
       expect(() => enc.toValue(data, invalidDelta)).toThrow(OutOfBoundsError);
     });
 
-    it("should throw DimensionError when terms length < data length", () => {
-      const data = [1n, 2n, 3n];
-      const terms = [4n, 5n];
-      expect(() => enc.toValue(data, 0, terms)).toThrow(DimensionError);
-    });
-
     it("should throw DimensionError when terms length > data length", () => {
       const data = [1n, 2n, 3n];
       const terms = [4n, 5n, 6n, 7n];
       expect(() => enc.toValue(data, 0, terms)).toThrow(DimensionError);
+    });
+
+    it("should return correct value when no terms given", () => {
+      const data = [2n, 5n, 10n];
+      expect(enc.toValue(data, 0, undefined)).toBe(5n);
+      expect(enc.toValue(data, -1, undefined)).toBe(3n);
+      expect(enc.toValue(data, -2, undefined)).toBe(2n);
+    });
+
+    it("should return correct value when terms given", () => {
+      const data = [2n, 5n, 10n];
+      expect(enc.toValue(data, 0, [1n])).toBe(10n);
+      expect(enc.toValue(data, 0, [1n, 1n])).toBe(18n);
+      expect(enc.toValue(data, 0, [1n, 1n, 2n])).toBe(33n);
+      expect(enc.toValue(data, 0, [2n])).toBe(20n);
+      expect(enc.toValue(data, 0, [2n, 3n])).toBe(46n);
+      expect(enc.toValue(data, 0, [2n, 3n, 5n])).toBe(84n);
     });
   });
 });

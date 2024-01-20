@@ -57,7 +57,7 @@ RangeError.constructor
 
 #### Defined in
 
-[src/error/outOfBoundsError.ts:2](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/error/outOfBoundsError.ts#L2)
+[src/error/outOfBoundsError.ts:2](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/error/outOfBoundsError.ts#L2)
 
 ## Properties
 

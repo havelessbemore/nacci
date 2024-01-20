@@ -1,5 +1,4 @@
 import { Ops } from "../../ops/ops";
-import { getSum } from "../../utils/array";
 import { Generator } from "./generator";
 import { tryK, tryNumTerms } from "../../utils/try";
 import { Powers } from "../../utils/powers";
@@ -16,7 +15,6 @@ export class PowerGen<K, V> implements Generator<K, V> {
   private neg: Powers<K, unknown>;
   private pos: Powers<K, unknown>;
   private v0: V;
-  private valueOps: Ops<V>;
 
   constructor(K: number, config: GenConfig<K, V, unknown>) {
     tryK(K);
@@ -25,15 +23,11 @@ export class PowerGen<K, V> implements Generator<K, V> {
     const customs = config.customs ?? [];
     const encoding = config.encoding;
     const indexOps = config.indexOps ?? config.ops;
-    const valueOps = config.valueOps ?? config.ops;
     if (encoding == null) {
       throw new TypeError(`Missing encoding`);
     }
     if (indexOps == null) {
       throw new TypeError(`Missing index operations`);
-    }
-    if (valueOps == null) {
-      throw new TypeError(`Missing value operations`);
     }
 
     this.cached = cached;
@@ -46,7 +40,6 @@ export class PowerGen<K, V> implements Generator<K, V> {
     const one = encoding.genOne(K);
     this.pos = new Powers(one, indexOps, encoding, cached);
     this.v0 = encoding.toValue(one, -1);
-    this.valueOps = valueOps;
     this.setCustoms(customs);
   }
 
@@ -85,23 +78,13 @@ export class PowerGen<K, V> implements Generator<K, V> {
   }
 
   setCustoms(customs?: V[]): void {
-    const vOps = this.valueOps;
     if (customs == null || customs.length < 1) {
       this.isStd = true;
       this.customs = [this.v0];
-      return;
+    } else {
+      tryNumTerms(this.K, customs);
+      this.isStd = false;
+      this.customs = customs;
     }
-    const K = this.K;
-    this.isStd = false;
-    tryNumTerms(K, customs);
-    customs = Array.from(customs);
-    if (customs.length < K) {
-      let value: V = getSum(customs, vOps)!;
-      for (let i = K - customs.length; i > 0; --i) {
-        customs.push(value);
-        value = vOps.plus(value, value);
-      }
-    }
-    this.customs = customs;
   }
 }

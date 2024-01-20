@@ -1,6 +1,5 @@
 import { Generator } from "./generator";
 import { Ops } from "../../ops/ops";
-import { getSum } from "../../utils/array";
 import { tryK, tryNumTerms } from "../../utils/try";
 import { Powers } from "../../utils/powers";
 import { Encoding } from "../encoding/encoding";
@@ -16,7 +15,6 @@ export class KPowerGen<K, V> implements Generator<K, V> {
   private neg: Powers<K, unknown>;
   private pos: Powers<K, unknown>;
   private v0: V;
-  private valueOps: Ops<V>;
   private zero: unknown;
 
   constructor(K: number, config: GenConfig<K, V, unknown>) {
@@ -26,15 +24,11 @@ export class KPowerGen<K, V> implements Generator<K, V> {
     const customs = config.customs ?? [];
     const encoding = config.encoding;
     const indexOps = config.indexOps ?? config.ops;
-    const valueOps = config.valueOps ?? config.ops;
     if (encoding == null) {
       throw new TypeError(`Missing encoding`);
     }
     if (indexOps == null) {
       throw new TypeError(`Missing index operations`);
-    }
-    if (valueOps == null) {
-      throw new TypeError(`Missing value operations`);
     }
 
     this.cached = cached;
@@ -47,7 +41,6 @@ export class KPowerGen<K, V> implements Generator<K, V> {
     this.pos = new Powers(encoding.genK(K), indexOps, encoding, cached);
     this.zero = encoding.genZero(K);
     this.v0 = encoding.toValue(this.zero, 0);
-    this.valueOps = valueOps;
     this.setCustoms(customs);
   }
 
@@ -104,23 +97,13 @@ export class KPowerGen<K, V> implements Generator<K, V> {
   }
 
   setCustoms(customs?: V[]): void {
-    const vOps = this.valueOps;
     if (customs == null || customs.length < 1) {
       this.isStd = true;
       this.customs = [this.v0];
-      return;
+    } else {
+      tryNumTerms(this.K, customs);
+      this.isStd = false;
+      this.customs = customs;
     }
-    const K = this.K;
-    this.isStd = false;
-    tryNumTerms(K, customs);
-    customs = Array.from(customs);
-    if (customs.length < K) {
-      let value: V = getSum(customs, vOps)!;
-      for (let i = K - customs.length; i > 0; --i) {
-        customs.push(value);
-        value = vOps.plus(value, value);
-      }
-    }
-    this.customs = customs;
   }
 }

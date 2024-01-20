@@ -16,37 +16,15 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 var R = Object.defineProperty;
-var G = (h, t, s) => t in h ? R(h, t, { enumerable: !0, configurable: !0, writable: !0, value: s }) : h[t] = s;
-var o = (h, t, s) => (G(h, typeof t != "symbol" ? t + "" : t, s), s);
-function Z(h, t, s = 0, e = 0, n = h.length) {
-  if (h === t)
-    return h.copyWithin(s, e, n);
-  for (s < 0 && (s = Math.max(0, t.length + s)), e < 0 && (e = Math.max(0, h.length + e)), n < 0 && (n = Math.max(0, h.length + n)), n = e + Math.max(0, Math.min(t.length - s, n - e)); e < n; )
-    t[s++] = h[e++];
-  return t;
-}
-function v(h, t) {
-  const s = h.length;
-  if (s < 1)
-    return;
-  let e = h[0];
-  for (let n = 1; n < s; ++n)
-    e = t.plus(e, h[n]);
-  return e;
-}
-function k(h, t, s) {
-  if (t <= h.length)
-    return;
-  const e = h.length, n = t - e;
-  h.length = t, h.fill(s, e, n), h.copyWithin(n, 0, e), h.fill(s, 0, Math.min(n, e));
-}
-class g extends RangeError {
+var G = (o, t, s) => t in o ? R(o, t, { enumerable: !0, configurable: !0, writable: !0, value: s }) : o[t] = s;
+var h = (o, t, s) => (G(o, typeof t != "symbol" ? t + "" : t, s), s);
+class _ extends RangeError {
   constructor(t, s, e = "!=") {
     const n = Array.isArray(t) ? t.join("x") : `${t}`, i = Array.isArray(s) ? s.join("x") : `${s}`;
     super(`Dimension mismatch. ${n} ${e} ${i}`);
   }
 }
-class T extends TypeError {
+class C extends TypeError {
   constructor(t, s = "Value") {
     super(`Not an integer. ${s}: ${String(t)}`);
   }
@@ -57,41 +35,41 @@ class c extends RangeError {
     (s != null || e != null) && (r.push(". Expected"), s != null && r.push(` ${String(s)} <=`), r.push(` ${n}`), e != null && r.push(` <= ${String(e)}`)), r.push(`. ${n}: ${String(t)}`), super(r.join(""));
   }
 }
-const b = 2, q = Number.MAX_SAFE_INTEGER, N = Number.MIN_SAFE_INTEGER;
-class $ extends c {
+const b = 2, q = Number.MAX_SAFE_INTEGER, T = Number.MIN_SAFE_INTEGER;
+class N extends c {
   constructor(t) {
-    super(t, N, q, "value", "Unsafe value");
+    super(t, T, q, "value", "Unsafe value");
   }
 }
-function W(h) {
-  return Number.isInteger(h);
+function Z(o) {
+  return Number.isInteger(o);
 }
-function B(h) {
-  return h >= N && h <= q;
+function k(o) {
+  return o >= T && o <= q;
 }
-function x(h) {
-  if (!W(h))
-    throw new T(h, "K");
-  if (h < b)
-    throw new c(h, b, void 0, "K");
-  return h;
+function y(o) {
+  if (!Z(o))
+    throw new C(o, "K");
+  if (o < b)
+    throw new c(o, b, void 0, "K");
+  return o;
 }
-function E(h, t) {
-  if (t.length > h)
-    throw new g(t.length, h, "<=");
+function p(o, t) {
+  if (t.length > o)
+    throw new _(t.length, o, "<=");
   return t;
 }
-function a(h) {
-  if (!B(h))
-    throw new $(h);
-  return h;
+function g(o) {
+  if (!k(o))
+    throw new N(o);
+  return o;
 }
-class w {
+class v {
   constructor(t, s, e, n = !0) {
-    o(this, "cached");
-    o(this, "keyOps");
-    o(this, "valOps");
-    o(this, "pows");
+    h(this, "cached");
+    h(this, "keyOps");
+    h(this, "valOps");
+    h(this, "pows");
     this.cached = n, this.keyOps = s, this.pows = [t], this.valOps = e;
   }
   get size() {
@@ -121,26 +99,23 @@ class w {
 }
 class S {
   constructor(t, s) {
-    o(this, "cached");
-    o(this, "customs");
-    o(this, "encoding");
-    o(this, "indexOps");
-    o(this, "isStd");
-    o(this, "_K");
-    o(this, "neg");
-    o(this, "pos");
-    o(this, "v0");
-    o(this, "valueOps");
-    o(this, "zero");
-    x(t);
-    const e = s.cached ?? !0, n = s.customs ?? [], i = s.encoding, r = s.indexOps ?? s.ops, u = s.valueOps ?? s.ops;
+    h(this, "cached");
+    h(this, "customs");
+    h(this, "encoding");
+    h(this, "indexOps");
+    h(this, "isStd");
+    h(this, "_K");
+    h(this, "neg");
+    h(this, "pos");
+    h(this, "v0");
+    h(this, "zero");
+    y(t);
+    const e = s.cached ?? !0, n = s.customs ?? [], i = s.encoding, r = s.indexOps ?? s.ops;
     if (i == null)
       throw new TypeError("Missing encoding");
     if (r == null)
       throw new TypeError("Missing index operations");
-    if (u == null)
-      throw new TypeError("Missing value operations");
-    this.cached = e, this.customs = n, this.encoding = i, this.indexOps = r, this.isStd = !1, this._K = t, this.neg = new w(i.genNegK(t), r, i, e), this.pos = new w(i.genK(t), r, i, e), this.zero = i.genZero(t), this.v0 = i.toValue(this.zero, 0), this.valueOps = u, this.setCustoms(n);
+    this.cached = e, this.customs = n, this.encoding = i, this.indexOps = r, this.isStd = !1, this._K = t, this.neg = new v(i.genNegK(t), r, i, e), this.pos = new v(i.genK(t), r, i, e), this.zero = i.genZero(t), this.v0 = i.toValue(this.zero, 0), this.setCustoms(n);
   }
   get K() {
     return this._K;
@@ -170,43 +145,29 @@ class S {
     this.cached = t, this.neg.setCached(t), this.pos.setCached(t);
   }
   setCustoms(t) {
-    const s = this.valueOps;
-    if (t == null || t.length < 1) {
-      this.isStd = !0, this.customs = [this.v0];
-      return;
-    }
-    const e = this.K;
-    if (this.isStd = !1, E(e, t), t = Array.from(t), t.length < e) {
-      let n = v(t, s);
-      for (let i = e - t.length; i > 0; --i)
-        t.push(n), n = s.plus(n, n);
-    }
-    this.customs = t;
+    t == null || t.length < 1 ? (this.isStd = !0, this.customs = [this.v0]) : (p(this.K, t), this.isStd = !1, this.customs = t);
   }
 }
-class D {
+class W {
   constructor(t, s) {
-    o(this, "cached");
-    o(this, "customs");
-    o(this, "encoding");
-    o(this, "indexOps");
-    o(this, "isStd");
-    o(this, "_K");
-    o(this, "neg");
-    o(this, "pos");
-    o(this, "v0");
-    o(this, "valueOps");
-    x(t);
-    const e = s.cached ?? !0, n = s.customs ?? [], i = s.encoding, r = s.indexOps ?? s.ops, u = s.valueOps ?? s.ops;
+    h(this, "cached");
+    h(this, "customs");
+    h(this, "encoding");
+    h(this, "indexOps");
+    h(this, "isStd");
+    h(this, "_K");
+    h(this, "neg");
+    h(this, "pos");
+    h(this, "v0");
+    y(t);
+    const e = s.cached ?? !0, n = s.customs ?? [], i = s.encoding, r = s.indexOps ?? s.ops;
     if (i == null)
       throw new TypeError("Missing encoding");
     if (r == null)
       throw new TypeError("Missing index operations");
-    if (u == null)
-      throw new TypeError("Missing value operations");
-    this.cached = e, this.customs = [], this.encoding = i, this.indexOps = r, this.isStd = !1, this._K = t, this.neg = new w(i.genNegOne(t), r, i, e);
-    const l = i.genOne(t);
-    this.pos = new w(l, r, i, e), this.v0 = i.toValue(l, -1), this.valueOps = u, this.setCustoms(n);
+    this.cached = e, this.customs = [], this.encoding = i, this.indexOps = r, this.isStd = !1, this._K = t, this.neg = new v(i.genNegOne(t), r, i, e);
+    const u = i.genOne(t);
+    this.pos = new v(u, r, i, e), this.v0 = i.toValue(u, -1), this.setCustoms(n);
   }
   get K() {
     return this._K;
@@ -229,30 +190,41 @@ class D {
     this.cached = t, this.neg.setCached(t), this.pos.setCached(t);
   }
   setCustoms(t) {
-    const s = this.valueOps;
-    if (t == null || t.length < 1) {
-      this.isStd = !0, this.customs = [this.v0];
-      return;
-    }
-    const e = this.K;
-    if (this.isStd = !1, E(e, t), t = Array.from(t), t.length < e) {
-      let n = v(t, s);
-      for (let i = e - t.length; i > 0; --i)
-        t.push(n), n = s.plus(n, n);
-    }
-    this.customs = t;
+    t == null || t.length < 1 ? (this.isStd = !0, this.customs = [this.v0]) : (p(this.K, t), this.isStd = !1, this.customs = t);
   }
+}
+function B(o, t, s = 0, e = 0, n = o.length) {
+  if (o === t)
+    return o.copyWithin(s, e, n);
+  for (s < 0 && (s = Math.max(0, t.length + s)), e < 0 && (e = Math.max(0, o.length + e)), n < 0 && (n = Math.max(0, o.length + n)), n = e + Math.max(0, Math.min(t.length - s, n - e)); e < n; )
+    t[s++] = o[e++];
+  return t;
+}
+function $(o, t) {
+  const s = o.length;
+  if (s < 1)
+    return;
+  let e = o[0];
+  for (let n = 1; n < s; ++n)
+    e = t.plus(e, o[n]);
+  return e;
+}
+function D(o, t, s) {
+  if (t <= o.length)
+    return;
+  const e = o.length, n = t - e;
+  o.length = t, o.fill(s, e, n), o.copyWithin(n, 0, e), o.fill(s, 0, Math.min(n, e));
 }
 class U {
   constructor(t, s) {
-    o(this, "delta");
-    o(this, "indexOps");
-    o(this, "_K");
-    o(this, "minN");
-    o(this, "next");
-    o(this, "valueOps");
-    o(this, "values");
-    x(t);
+    h(this, "delta");
+    h(this, "indexOps");
+    h(this, "_K");
+    h(this, "minN");
+    h(this, "next");
+    h(this, "valueOps");
+    h(this, "values");
+    y(t);
     let e = s.customs ?? [];
     const n = s.indexOps ?? s.ops, i = s.valueOps ?? s.ops;
     if (n == null)
@@ -264,8 +236,8 @@ class U {
       const u = i.cast(1);
       e = [r, u];
     } else
-      E(t, e);
-    this.delta = 0, this.indexOps = n, this._K = t, this.valueOps = i, this.minN = n.minus(n.cast(e.length), n.cast(t)), this.next = v(e, i) ?? r, this.values = Array.from(e), k(this.values, t, r);
+      p(t, e);
+    this.delta = 0, this.indexOps = n, this._K = t, this.valueOps = i, this.minN = n.minus(n.cast(e.length), n.cast(t)), this.next = $(e, i) ?? r, this.values = Array.from(e), D(this.values, t, r);
   }
   get K() {
     return this._K;
@@ -299,29 +271,29 @@ class U {
 const L = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   KPowerGen: S,
-  PowerGen: D,
+  PowerGen: W,
   SlidingWindowGen: U
 }, Symbol.toStringTag, { value: "Module" }));
-function p(h, t = h) {
-  const s = new Array(h);
-  for (let e = 0; e < h; ++e)
+function m(o, t = o) {
+  const s = new Array(o);
+  for (let e = 0; e < o; ++e)
     s[e] = new Array(t);
   return s;
 }
-function j(h, t, s, e = s.cast(0)) {
-  var l, f;
-  const n = h.length, i = ((l = h[0]) == null ? void 0 : l.length) ?? 0, r = ((f = t[0]) == null ? void 0 : f.length) ?? 0;
+function j(o, t, s, e = s.cast(0)) {
+  var l, a;
+  const n = o.length, i = ((l = o[0]) == null ? void 0 : l.length) ?? 0, r = ((a = t[0]) == null ? void 0 : a.length) ?? 0;
   if (i !== t.length)
-    throw new g([n, i], [t.length, r]);
-  const u = p(n, r);
-  for (let m = 0; m < n; ++m)
-    for (let _ = 0; _ < r; ++_) {
-      let y = e;
-      for (let d = 0; d < i; ++d) {
-        const F = s.times(h[m][d], t[d][_]);
-        y = s.plus(y, F);
+    throw new _([n, i], [t.length, r]);
+  const u = m(n, r);
+  for (let f = 0; f < n; ++f)
+    for (let d = 0; d < r; ++d) {
+      let x = e;
+      for (let w = 0; w < i; ++w) {
+        const F = s.times(o[f][w], t[w][d]);
+        x = s.plus(x, F);
       }
-      u[m][_] = y;
+      u[f][d] = x;
     }
   return u;
 }
@@ -333,15 +305,15 @@ const O = {
 };
 class X {
   constructor(t) {
-    o(this, "format", O.Matrix);
-    o(this, "_neg1");
-    o(this, "_0");
-    o(this, "_1");
-    o(this, "_2");
+    h(this, "format", O.Matrix);
+    h(this, "_neg1");
+    h(this, "_0");
+    h(this, "_1");
+    h(this, "_2");
     this.ops = t, this._neg1 = t.cast(-1), this._0 = t.cast(0), this._1 = t.cast(1), this._2 = t.cast(2);
   }
   genK(t) {
-    const s = p(t);
+    const s = m(t);
     if (--t < 0)
       return s;
     let e = this._0;
@@ -357,7 +329,7 @@ class X {
     return s;
   }
   genNegK(t) {
-    const s = p(t);
+    const s = m(t);
     if (--t < 0)
       return s;
     s[0][0] = this._2, s[0].fill(this._0, 1, t), s[0][t] = this._neg1;
@@ -366,7 +338,7 @@ class X {
     return s[t][t] = this._1, s;
   }
   genNegOne(t) {
-    const s = p(t);
+    const s = m(t);
     if (--t < 0)
       return s;
     for (let e = 0; e < t; ++e)
@@ -374,7 +346,7 @@ class X {
     return s[t][0] = this._1, s[t].fill(this._0, 1), s;
   }
   genOne(t) {
-    const s = p(t);
+    const s = m(t);
     if (--t < 0)
       return s;
     s[0].fill(this._0), s[0][t] = this._1;
@@ -383,7 +355,7 @@ class X {
     return s;
   }
   genZero(t) {
-    const s = p(t);
+    const s = m(t);
     for (let e = 0; e < t; ++e)
       s[e].fill(this._0), s[e][e] = this._1;
     return s;
@@ -408,9 +380,9 @@ class X {
     if (s <= -e || s > 0)
       throw new c(s, 1 - e, 0, "delta");
     s = -s;
-    const n = e - s, i = p(e);
+    const n = e - s, i = m(e);
     for (let r = 0; r < e; ++r)
-      i[r].fill(this._0, 0, s), Z(t[r], i[r], s, 0, n);
+      i[r].fill(this._0, 0, s), B(t[r], i[r], s, 0, n);
     for (const r = this.ops; s > 0; --s) {
       const u = i[0][s];
       for (let l = 1; l < e; ++l)
@@ -431,22 +403,22 @@ class X {
       throw new c(s, 1 - n, 0, "delta");
     if (e == null)
       return t[0][i];
-    if (e.length !== n)
-      throw new g(n, e.length);
+    p(n, e);
     let r = this._0;
-    for (let u = 0; u < n; ++u) {
-      const l = this.ops.times(e[u], t[u][i]);
-      r = this.ops.plus(r, l);
+    const u = n - e.length;
+    for (let l = u; l < n; ++l) {
+      const a = this.ops.times(e[l - u], t[l][i]);
+      r = this.ops.plus(r, a);
     }
     return r;
   }
 }
-class H {
+class Y {
   constructor(t) {
-    o(this, "format", O.RevSum);
-    o(this, "_neg1");
-    o(this, "_0");
-    o(this, "_1");
+    h(this, "format", O.RevSum);
+    h(this, "_neg1");
+    h(this, "_0");
+    h(this, "_1");
     this.ops = t, this._neg1 = t.cast(-1), this._0 = t.cast(0), this._1 = t.cast(1);
   }
   genK(t) {
@@ -508,7 +480,7 @@ class H {
   times(t, s) {
     const e = t.length;
     if (e !== s.length)
-      throw new g(e, s.length);
+      throw new _(e, s.length);
     const n = new Array(e);
     for (let i = 0; i < e; ++i) {
       let r = this._0;
@@ -526,23 +498,23 @@ class H {
       throw new c(s, 1 - n, 0, "delta");
     if (e == null)
       return this.get(t, 0, i);
-    if (e.length !== n)
-      throw new g(n, e.length);
+    p(n, e);
     let r = this._0;
-    for (let u = 0; u < n; ++u) {
-      const l = this.ops.times(this.get(t, u, i), e[u]);
-      r = this.ops.plus(r, l);
+    const u = n - e.length;
+    for (let l = u; l < n; ++l) {
+      const a = this.ops.times(e[l - u], this.get(t, l, i));
+      r = this.ops.plus(r, a);
     }
     return r;
   }
 }
-class M {
+class E {
   constructor(t) {
-    o(this, "format", O.Sum);
-    o(this, "_neg1");
-    o(this, "_0");
-    o(this, "_1");
-    o(this, "_2");
+    h(this, "format", O.Sum);
+    h(this, "_neg1");
+    h(this, "_0");
+    h(this, "_1");
+    h(this, "_2");
     this.ops = t, this._neg1 = t.cast(-1), this._0 = t.cast(0), this._1 = t.cast(1), this._2 = t.cast(2);
   }
   genK(t) {
@@ -603,7 +575,7 @@ class M {
   times(t, s) {
     const e = t.length;
     if (e !== s.length)
-      throw new g(e, s.length);
+      throw new _(e, s.length);
     const n = new Array(e);
     for (let i = 0; i < e; ++i) {
       let r = this._0;
@@ -621,23 +593,23 @@ class M {
       throw new c(s, 1 - n, 0, "delta");
     if (e == null)
       return this.get(t, 0, i);
-    if (e.length !== n)
-      throw new g(n, e.length);
+    p(n, e);
     let r = this._0;
-    for (let u = 0; u < n; ++u) {
-      const l = this.ops.times(e[u], this.get(t, u, i));
-      r = this.ops.plus(r, l);
+    const u = n - e.length;
+    for (let l = u; l < n; ++l) {
+      const a = this.ops.times(e[l - u], this.get(t, l, i));
+      r = this.ops.plus(r, a);
     }
     return r;
   }
 }
-class J {
+class H {
   constructor(t) {
-    o(this, "format", O.Term);
-    o(this, "_neg1");
-    o(this, "_0");
-    o(this, "_1");
-    o(this, "_2");
+    h(this, "format", O.Term);
+    h(this, "_neg1");
+    h(this, "_0");
+    h(this, "_1");
+    h(this, "_2");
     this.ops = t, this._neg1 = t.cast(-1), this._0 = t.cast(0), this._1 = t.cast(1), this._2 = t.cast(2);
   }
   genK(t) {
@@ -679,7 +651,7 @@ class J {
     s = -s;
     const i = Array.from(t);
     i.copyWithin(s, 0);
-    let r = v(t, this.ops) ?? this._0;
+    let r = $(t, this.ops) ?? this._0;
     for (let u = e - 1; s > 0; --u) {
       let l = this.ops.plus(t[u], t[u]);
       l = this.ops.minus(l, r), i[--s] = l, r = t[u];
@@ -690,7 +662,7 @@ class J {
     return this.times(t, t);
   }
   times(t, s) {
-    return j([t], C(s, this.ops), this.ops)[0];
+    return j([t], M(s, this.ops), this.ops)[0];
   }
   toValue(t, s = 0, e) {
     const n = t.length, i = n - 1 + s;
@@ -698,43 +670,42 @@ class J {
       throw new c(s, 1 - n, 0, "delta");
     if (e == null)
       return t[i];
-    if (e.length !== n)
-      throw new g(n, e.length);
+    p(n, e);
     let r = this._0;
-    const u = C(t, this.ops);
-    for (let l = 0; l < n; ++l) {
-      const f = this.ops.times(e[l], u[l][i]);
+    const u = n - e.length, l = M(t, this.ops);
+    for (let a = u; a < n; ++a) {
+      const f = this.ops.times(e[a - u], l[a][i]);
       r = this.ops.plus(r, f);
     }
     return r;
   }
 }
-function C(h, t) {
-  const s = h.length, e = p(s);
+function M(o, t) {
+  const s = o.length, e = m(s);
   if (s < 1)
     return e;
-  e[s - 1] = h.slice(1);
+  e[s - 1] = o.slice(1);
   for (let n = s - 2; n > 0; --n)
     for (let i = 0; i < n; ++i)
-      e[n][i] = t.minus(e[n + 1][i + 1], h[i + 1]);
-  e[0] = Array.from(h);
+      e[n][i] = t.minus(e[n + 1][i + 1], o[i + 1]);
+  e[0] = Array.from(o);
   for (let n = 1; n < s; ++n)
     for (let i = n; i < s; ++i)
-      e[n][i] = t.plus(e[n - 1][i - 1], h[i]);
+      e[n][i] = t.plus(e[n - 1][i - 1], o[i]);
   return e;
 }
 const K = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   MatrixEncoding: X,
-  RevSumEncoding: H,
-  SumEncoding: M,
-  TermEncoding: J
+  RevSumEncoding: Y,
+  SumEncoding: E,
+  TermEncoding: H
 }, Symbol.toStringTag, { value: "Module" })), A = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  DimensionError: g,
-  IntegerError: T,
+  DimensionError: _,
+  IntegerError: C,
   OutOfBoundsError: c,
-  UnsafeError: $
+  UnsafeError: N
 }, Symbol.toStringTag, { value: "Module" }));
 class z {
   cast(t) {
@@ -798,7 +769,7 @@ class z {
     return t;
   }
 }
-class Q {
+class J {
   cast(t) {
     return Number(t);
   }
@@ -862,10 +833,10 @@ class Q {
 }
 class V {
   cast(t) {
-    return a(Number(t));
+    return g(Number(t));
   }
   dividedBy(t, s) {
-    return a(t / s);
+    return g(t / s);
   }
   equal(t, s) {
     return t == s;
@@ -883,22 +854,22 @@ class V {
     return t >= s;
   }
   minus(t, s) {
-    return a(t - s);
+    return g(t - s);
   }
   minus1(t) {
-    return a(t - 1);
+    return g(t - 1);
   }
   mod(t, s) {
     return t % s;
   }
   negative(t) {
-    return a(-t);
+    return g(-t);
   }
   plus(t, s) {
-    return a(t + s);
+    return g(t + s);
   }
   plus1(t) {
-    return a(t + 1);
+    return g(t + 1);
   }
   sign(t) {
     return t < 0n ? -1 : +(t > 0n);
@@ -910,10 +881,10 @@ class V {
     return t <= s;
   }
   square(t) {
-    return a(t ** 2);
+    return g(t ** 2);
   }
   times(t, s) {
-    return a(t * s);
+    return g(t * s);
   }
   toNumber(t) {
     return t;
@@ -925,14 +896,14 @@ class V {
 const tt = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   BigOps: z,
-  NumOps: Q,
+  NumOps: J,
   SafeNumOps: V
 }, Symbol.toStringTag, { value: "Module" }));
 class I {
   constructor(t, s, e = !0) {
-    o(this, "customs");
-    o(this, "gen");
-    const n = new z(), i = new M(n);
+    h(this, "customs");
+    h(this, "gen");
+    const n = new z(), i = new E(n);
     this.customs = s ?? [], this.gen = new S(t, { cached: e, customs: s, encoding: i, ops: n });
   }
   get K() {
@@ -963,9 +934,9 @@ class et extends I {
 }
 class P {
   constructor(t, s, e = !0) {
-    o(this, "customs");
-    o(this, "gen");
-    const n = new V(), i = new M(n);
+    h(this, "customs");
+    h(this, "gen");
+    const n = new V(), i = new E(n);
     this.customs = s ?? [], this.gen = new S(t, { cached: e, customs: s, encoding: i, ops: n });
   }
   get K() {

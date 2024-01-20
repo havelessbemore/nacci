@@ -1,6 +1,7 @@
 import { DimensionError } from "../../../error/dimensionError";
 import { OutOfBoundsError } from "../../../error/outOfBoundsError";
 import { Ops } from "../../../ops/ops";
+import { tryNumTerms } from "../../../utils/try";
 import { EncodingFormat, Encoding } from "../encoding";
 
 export class RevSumEncoding<T> implements Encoding<T, T[]> {
@@ -139,12 +140,11 @@ export class RevSumEncoding<T> implements Encoding<T, T[]> {
     if (terms == null) {
       return this.get(data, 0, x);
     }
-    if (terms.length !== K) {
-      throw new DimensionError(K, terms.length);
-    }
+    tryNumTerms(K, terms);
     let value = this._0;
-    for (let y = 0; y < K; ++y) {
-      const temp = this.ops.times(this.get(data, y, x), terms[y]);
+    const minY = K - terms.length;
+    for (let y = minY; y < K; ++y) {
+      const temp = this.ops.times(terms[y - minY], this.get(data, y, x));
       value = this.ops.plus(value, temp);
     }
     return value;

@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:5](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/genConfig.ts#L5)
+[src/kbonacci/gen/genConfig.ts:5](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L5)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:6](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/genConfig.ts#L6)
+[src/kbonacci/gen/genConfig.ts:6](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L6)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:7](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/genConfig.ts#L7)
+[src/kbonacci/gen/genConfig.ts:7](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L7)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:10](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/genConfig.ts#L10)
+[src/kbonacci/gen/genConfig.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L10)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:9](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/genConfig.ts#L9)
+[src/kbonacci/gen/genConfig.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L9)
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:11](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/genConfig.ts#L11)
+[src/kbonacci/gen/genConfig.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L11)

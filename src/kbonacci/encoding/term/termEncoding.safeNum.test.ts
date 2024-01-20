@@ -268,12 +268,6 @@ describe("Term Encoding + SafeNum", () => {
       expect(() => enc.toValue(data, invalidDelta)).toThrow(OutOfBoundsError);
     });
 
-    it("should throw DimensionError when terms length < data length", () => {
-      const data = [1, 1, 1];
-      const terms = [4, 5];
-      expect(() => enc.toValue(data, 0, terms)).toThrow(DimensionError);
-    });
-
     it("should throw DimensionError when terms length > data length", () => {
       const data = [1, 1, 1];
       const terms = [4, 5, 6, 7];
@@ -284,6 +278,23 @@ describe("Term Encoding + SafeNum", () => {
       const data = [Number.MAX_SAFE_INTEGER, 1];
       const terms = [1, 1];
       expect(() => enc.toValue(data, 0, terms)).toThrow(UnsafeError);
+    });
+
+    it("should return correct value when no terms given", () => {
+      const data = [2, 3, 5];
+      expect(enc.toValue(data, 0, undefined)).toBe(5);
+      expect(enc.toValue(data, -1, undefined)).toBe(3);
+      expect(enc.toValue(data, -2, undefined)).toBe(2);
+    });
+
+    it("should return correct value when terms given", () => {
+      const data = [2, 3, 5];
+      expect(enc.toValue(data, 0, [1])).toBe(10);
+      expect(enc.toValue(data, 0, [1, 1])).toBe(18);
+      expect(enc.toValue(data, 0, [1, 1, 2])).toBe(33);
+      expect(enc.toValue(data, 0, [2])).toBe(20);
+      expect(enc.toValue(data, 0, [2, 3])).toBe(46);
+      expect(enc.toValue(data, 0, [2, 3, 5])).toBe(84);
     });
   });
 });

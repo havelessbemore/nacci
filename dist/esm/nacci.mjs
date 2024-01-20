@@ -21,47 +21,6 @@ var __publicField = (obj, key, value) => {
   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
   return value;
 };
-function copy(A, B, target = 0, start = 0, end = A.length) {
-  if (A === B) {
-    return A.copyWithin(target, start, end);
-  }
-  if (target < 0) {
-    target = Math.max(0, B.length + target);
-  }
-  if (start < 0) {
-    start = Math.max(0, A.length + start);
-  }
-  if (end < 0) {
-    end = Math.max(0, A.length + end);
-  }
-  end = start + Math.max(0, Math.min(B.length - target, end - start));
-  while (start < end) {
-    B[target++] = A[start++];
-  }
-  return B;
-}
-function getSum(arr, ops) {
-  const N = arr.length;
-  if (N < 1) {
-    return void 0;
-  }
-  let value = arr[0];
-  for (let i = 1; i < N; ++i) {
-    value = ops.plus(value, arr[i]);
-  }
-  return value;
-}
-function padStart(array, targetLength, padValue) {
-  if (targetLength <= array.length) {
-    return;
-  }
-  const N = array.length;
-  const i = targetLength - N;
-  array.length = targetLength;
-  array.fill(padValue, N, i);
-  array.copyWithin(i, 0, N);
-  array.fill(padValue, 0, Math.min(i, N));
-}
 class DimensionError extends RangeError {
   constructor(actual, expected, relation = "!=") {
     const a = Array.isArray(actual) ? actual.join("x") : `${actual}`;
@@ -193,22 +152,17 @@ class KPowerGen {
     __publicField(this, "neg");
     __publicField(this, "pos");
     __publicField(this, "v0");
-    __publicField(this, "valueOps");
     __publicField(this, "zero");
     tryK(K);
     const cached = config.cached ?? true;
     const customs = config.customs ?? [];
     const encoding = config.encoding;
     const indexOps = config.indexOps ?? config.ops;
-    const valueOps = config.valueOps ?? config.ops;
     if (encoding == null) {
       throw new TypeError(`Missing encoding`);
     }
     if (indexOps == null) {
       throw new TypeError(`Missing index operations`);
-    }
-    if (valueOps == null) {
-      throw new TypeError(`Missing value operations`);
     }
     this.cached = cached;
     this.customs = customs;
@@ -220,7 +174,6 @@ class KPowerGen {
     this.pos = new Powers(encoding.genK(K), indexOps, encoding, cached);
     this.zero = encoding.genZero(K);
     this.v0 = encoding.toValue(this.zero, 0);
-    this.valueOps = valueOps;
     this.setCustoms(customs);
   }
   get K() {
@@ -267,24 +220,14 @@ class KPowerGen {
     this.pos.setCached(value);
   }
   setCustoms(customs) {
-    const vOps = this.valueOps;
     if (customs == null || customs.length < 1) {
       this.isStd = true;
       this.customs = [this.v0];
-      return;
+    } else {
+      tryNumTerms(this.K, customs);
+      this.isStd = false;
+      this.customs = customs;
     }
-    const K = this.K;
-    this.isStd = false;
-    tryNumTerms(K, customs);
-    customs = Array.from(customs);
-    if (customs.length < K) {
-      let value = getSum(customs, vOps);
-      for (let i = K - customs.length; i > 0; --i) {
-        customs.push(value);
-        value = vOps.plus(value, value);
-      }
-    }
-    this.customs = customs;
   }
 }
 class PowerGen {
@@ -298,21 +241,16 @@ class PowerGen {
     __publicField(this, "neg");
     __publicField(this, "pos");
     __publicField(this, "v0");
-    __publicField(this, "valueOps");
     tryK(K);
     const cached = config.cached ?? true;
     const customs = config.customs ?? [];
     const encoding = config.encoding;
     const indexOps = config.indexOps ?? config.ops;
-    const valueOps = config.valueOps ?? config.ops;
     if (encoding == null) {
       throw new TypeError(`Missing encoding`);
     }
     if (indexOps == null) {
       throw new TypeError(`Missing index operations`);
-    }
-    if (valueOps == null) {
-      throw new TypeError(`Missing value operations`);
     }
     this.cached = cached;
     this.customs = [];
@@ -324,7 +262,6 @@ class PowerGen {
     const one = encoding.genOne(K);
     this.pos = new Powers(one, indexOps, encoding, cached);
     this.v0 = encoding.toValue(one, -1);
-    this.valueOps = valueOps;
     this.setCustoms(customs);
   }
   get K() {
@@ -353,25 +290,56 @@ class PowerGen {
     this.pos.setCached(value);
   }
   setCustoms(customs) {
-    const vOps = this.valueOps;
     if (customs == null || customs.length < 1) {
       this.isStd = true;
       this.customs = [this.v0];
-      return;
+    } else {
+      tryNumTerms(this.K, customs);
+      this.isStd = false;
+      this.customs = customs;
     }
-    const K = this.K;
-    this.isStd = false;
-    tryNumTerms(K, customs);
-    customs = Array.from(customs);
-    if (customs.length < K) {
-      let value = getSum(customs, vOps);
-      for (let i = K - customs.length; i > 0; --i) {
-        customs.push(value);
-        value = vOps.plus(value, value);
-      }
-    }
-    this.customs = customs;
   }
+}
+function copy(A, B, target = 0, start = 0, end = A.length) {
+  if (A === B) {
+    return A.copyWithin(target, start, end);
+  }
+  if (target < 0) {
+    target = Math.max(0, B.length + target);
+  }
+  if (start < 0) {
+    start = Math.max(0, A.length + start);
+  }
+  if (end < 0) {
+    end = Math.max(0, A.length + end);
+  }
+  end = start + Math.max(0, Math.min(B.length - target, end - start));
+  while (start < end) {
+    B[target++] = A[start++];
+  }
+  return B;
+}
+function getSum(arr, ops) {
+  const N = arr.length;
+  if (N < 1) {
+    return void 0;
+  }
+  let value = arr[0];
+  for (let i = 1; i < N; ++i) {
+    value = ops.plus(value, arr[i]);
+  }
+  return value;
+}
+function padStart(array, targetLength, padValue) {
+  if (targetLength <= array.length) {
+    return;
+  }
+  const N = array.length;
+  const i = targetLength - N;
+  array.length = targetLength;
+  array.fill(padValue, N, i);
+  array.copyWithin(i, 0, N);
+  array.fill(padValue, 0, Math.min(i, N));
 }
 class SlidingWindowGen {
   constructor(K, config) {
@@ -636,12 +604,11 @@ class MatrixEncoding {
     if (terms == null) {
       return data[0][x];
     }
-    if (terms.length !== K) {
-      throw new DimensionError(K, terms.length);
-    }
+    tryNumTerms(K, terms);
     let val = this._0;
-    for (let y = 0; y < K; ++y) {
-      const temp = this.ops.times(terms[y], data[y][x]);
+    const minY = K - terms.length;
+    for (let y = minY; y < K; ++y) {
+      const temp = this.ops.times(terms[y - minY], data[y][x]);
       val = this.ops.plus(val, temp);
     }
     return val;
@@ -763,12 +730,11 @@ class RevSumEncoding {
     if (terms == null) {
       return this.get(data, 0, x);
     }
-    if (terms.length !== K) {
-      throw new DimensionError(K, terms.length);
-    }
+    tryNumTerms(K, terms);
     let value = this._0;
-    for (let y = 0; y < K; ++y) {
-      const temp = this.ops.times(this.get(data, y, x), terms[y]);
+    const minY = K - terms.length;
+    for (let y = minY; y < K; ++y) {
+      const temp = this.ops.times(terms[y - minY], this.get(data, y, x));
       value = this.ops.plus(value, temp);
     }
     return value;
@@ -897,12 +863,11 @@ class SumEncoding {
     if (terms == null) {
       return this.get(data, 0, x);
     }
-    if (terms.length !== K) {
-      throw new DimensionError(K, terms.length);
-    }
+    tryNumTerms(K, terms);
     let val = this._0;
-    for (let y = 0; y < K; ++y) {
-      const temp = this.ops.times(terms[y], this.get(data, y, x));
+    const minY = K - terms.length;
+    for (let y = minY; y < K; ++y) {
+      const temp = this.ops.times(terms[y - minY], this.get(data, y, x));
       val = this.ops.plus(val, temp);
     }
     return val;
@@ -1011,13 +976,12 @@ class TermEncoding {
     if (terms == null) {
       return data[x];
     }
-    if (terms.length !== K) {
-      throw new DimensionError(K, terms.length);
-    }
+    tryNumTerms(K, terms);
     let value = this._0;
+    const minY = K - terms.length;
     const mat = toMatrix(data, this.ops);
-    for (let y = 0; y < K; ++y) {
-      const temp = this.ops.times(terms[y], mat[y][x]);
+    for (let y = minY; y < K; ++y) {
+      const temp = this.ops.times(terms[y - minY], mat[y][x]);
       value = this.ops.plus(value, temp);
     }
     return value;

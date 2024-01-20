@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:10](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/kbonacci.ts#L10)
+[src/kbonacci/wrapper/kbonacci.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L10)
 
 ## Properties
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:7](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/kbonacci.ts#L7)
+[src/kbonacci/wrapper/kbonacci.ts:7](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L7)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:8](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/kbonacci.ts#L8)
+[src/kbonacci/wrapper/kbonacci.ts:8](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L8)
 
 ## Accessors
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/kbonacci.ts#L17)
+[src/kbonacci/wrapper/kbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L17)
 
 ## Methods
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/kbonacci.ts#L21)
+[src/kbonacci/wrapper/kbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L21)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/kbonacci.ts#L25)
+[src/kbonacci/wrapper/kbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L25)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/kbonacci.ts#L29)
+[src/kbonacci/wrapper/kbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L29)
 
 ___
 
@@ -166,4 +166,4 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/kbonacci.ts#L33)
+[src/kbonacci/wrapper/kbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/kbonacci.ts#L33)

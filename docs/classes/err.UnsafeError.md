@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[src/error/unsafeError.ts:5](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/error/unsafeError.ts#L5)
+[src/error/unsafeError.ts:5](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/error/unsafeError.ts#L5)
 
 ## Properties
 

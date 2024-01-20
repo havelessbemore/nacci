@@ -1,10 +1,10 @@
-import { DimensionError } from "../../../error/dimensionError";
 import { OutOfBoundsError } from "../../../error/outOfBoundsError";
 import { Ops } from "../../../ops/ops";
 import { copy } from "../../../utils/array";
 import { initMatrix, matrixMult } from "../../../utils/matrix";
 import { Matrix } from "../../../type/matrix";
 import { EncodingFormat, Encoding } from "../encoding";
+import { tryNumTerms } from "../../../utils/try";
 
 /*
 K = 4
@@ -188,12 +188,11 @@ export class MatrixEncoding<T> implements Encoding<T, Matrix<T>> {
     if (terms == null) {
       return data[0][x];
     }
-    if (terms.length !== K) {
-      throw new DimensionError(K, terms.length);
-    }
+    tryNumTerms(K, terms);
     let val = this._0;
-    for (let y = 0; y < K; ++y) {
-      const temp = this.ops.times(terms[y], data[y][x]);
+    const minY = K - terms.length;
+    for (let y = minY; y < K; ++y) {
+      const temp = this.ops.times(terms[y - minY], data[y][x]);
       val = this.ops.plus(val, temp);
     }
     return val;

@@ -38,4 +38,4 @@ nacci
 
 #### Defined in
 
-[src/type/matrix.ts:1](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/type/matrix.ts#L1)
+[src/type/matrix.ts:1](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/type/matrix.ts#L1)

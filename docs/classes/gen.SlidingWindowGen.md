@@ -67,7 +67,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:17](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L17)
+[src/kbonacci/gen/slidingWindowGen.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L17)
 
 ## Properties
 
@@ -77,7 +77,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:11](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L11)
+[src/kbonacci/gen/slidingWindowGen.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L11)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:9](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L9)
+[src/kbonacci/gen/slidingWindowGen.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L9)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:10](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L10)
+[src/kbonacci/gen/slidingWindowGen.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L10)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:12](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L12)
+[src/kbonacci/gen/slidingWindowGen.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L12)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:13](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L13)
+[src/kbonacci/gen/slidingWindowGen.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L13)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:14](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L14)
+[src/kbonacci/gen/slidingWindowGen.ts:14](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L14)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:15](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L15)
+[src/kbonacci/gen/slidingWindowGen.ts:15](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L15)
 
 ## Accessors
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:49](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L49)
+[src/kbonacci/gen/slidingWindowGen.ts:49](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L49)
 
 ## Methods
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:70](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L70)
+[src/kbonacci/gen/slidingWindowGen.ts:70](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L70)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:53](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L53)
+[src/kbonacci/gen/slidingWindowGen.ts:53](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L53)
 
 ___
 
@@ -219,4 +219,4 @@ ___
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:84](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/gen/slidingWindowGen.ts#L84)
+[src/kbonacci/gen/slidingWindowGen.ts:84](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L84)

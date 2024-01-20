@@ -427,14 +427,34 @@ describe("Matrix Encoding + SafeNum", () => {
       expect(() => enc.toValue(data, invalidDelta)).toThrow(OutOfBoundsError);
     });
 
-    it("should throw DimensionError when terms length < data length", () => {
-      const terms = [4, 5];
-      expect(() => enc.toValue(data, 0, terms)).toThrow(DimensionError);
-    });
-
     it("should throw DimensionError when terms length > data length", () => {
       const terms = [4, 5, 6, 7];
       expect(() => enc.toValue(data, 0, terms)).toThrow(DimensionError);
+    });
+
+    it("should return correct value when no terms given", () => {
+      const data = [
+        [2, 3, 5],
+        [2, 5, 8],
+        [3, 5, 10],
+      ];
+      expect(enc.toValue(data, 0, undefined)).toBe(5);
+      expect(enc.toValue(data, -1, undefined)).toBe(3);
+      expect(enc.toValue(data, -2, undefined)).toBe(2);
+    });
+
+    it("should return correct value when terms given", () => {
+      const data = [
+        [2, 3, 5],
+        [2, 5, 8],
+        [3, 5, 10],
+      ];
+      expect(enc.toValue(data, 0, [1])).toBe(10);
+      expect(enc.toValue(data, 0, [1, 1])).toBe(18);
+      expect(enc.toValue(data, 0, [1, 1, 2])).toBe(33);
+      expect(enc.toValue(data, 0, [2])).toBe(20);
+      expect(enc.toValue(data, 0, [2, 3])).toBe(46);
+      expect(enc.toValue(data, 0, [2, 3, 5])).toBe(84);
     });
   });
 });

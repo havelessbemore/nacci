@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigFibonacci.ts:4](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/bigFibonacci.ts#L4)
+[src/kbonacci/wrapper/bigFibonacci.ts:4](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/bigFibonacci.ts#L4)
 
 ## Accessors
 
@@ -66,7 +66,7 @@ BigKbonacci.K
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/bigKbonacci.ts#L17)
+[src/kbonacci/wrapper/bigKbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/bigKbonacci.ts#L17)
 
 ## Methods
 
@@ -90,7 +90,7 @@ BigKbonacci.K
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/bigKbonacci.ts#L21)
+[src/kbonacci/wrapper/bigKbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/bigKbonacci.ts#L21)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/bigKbonacci.ts#L25)
+[src/kbonacci/wrapper/bigKbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/bigKbonacci.ts#L25)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/bigKbonacci.ts#L29)
+[src/kbonacci/wrapper/bigKbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/bigKbonacci.ts#L29)
 
 ___
 
@@ -150,4 +150,4 @@ ___
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/ae7cafb/src/kbonacci/wrapper/bigKbonacci.ts#L33)
+[src/kbonacci/wrapper/bigKbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/wrapper/bigKbonacci.ts#L33)

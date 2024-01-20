@@ -20,7 +20,7 @@
   },
   "scripts": {
     "dev": "vite --host",
-    "build": "rimraf dist && tsc && vite build && vite build -c vite.config.misc.ts",
+    "build": "rimraf dist && tsc && vite build && vite build -c vite.config.misc.ts && typedoc",
     "test": "vitest --run",
     "test:coverage": "vitest --coverage --run",
     "lint:scripts": "eslint . --ext .ts",
