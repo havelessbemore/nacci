@@ -1,0 +1,11 @@
+export declare const FIB_POS: number[];
+export declare const FIB_NEG: number[];
+export declare const LUCAS_POS: number[];
+export declare const LUCAS_NEG: number[];
+export declare const TRIB_POS: number[];
+export declare const TRIB_NEG: number[];
+export declare const TETRA_POS: number[];
+export declare const PENTA_POS: number[];
+export declare const PENTA_NEG: number[];
+export declare const HEXA_POS: number[];
+export declare const HEPTA_POS: number[];
