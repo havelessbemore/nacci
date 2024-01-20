@@ -1220,7 +1220,7 @@ class BigKbonacci {
     const ops = new BigOps();
     const encoding = new SumEncoding(ops);
     this.customs = customs ?? [];
-    this.gen = new KPowerGen(K, { cached, customs, encoding, ops });
+    this.gen = new PowerGen(K, { cached, customs, encoding, ops });
   }
   get K() {
     return this.gen.K;
@@ -1255,7 +1255,7 @@ class Kbonacci {
     const ops = new SafeNumOps();
     const encoding = new SumEncoding(ops);
     this.customs = customs ?? [];
-    this.gen = new KPowerGen(K, { cached, customs, encoding, ops });
+    this.gen = new PowerGen(K, { cached, customs, encoding, ops });
   }
   get K() {
     return this.gen.K;

@@ -55,9 +55,9 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `unknown` |
+| Name | Type      |
+| :--- | :-------- |
+| `a`  | `unknown` |
 
 #### Returns
 
@@ -71,7 +71,7 @@
 
 [src/ops/numOps.ts:4](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L4)
 
-___
+---
 
 ### dividedBy
 
@@ -79,10 +79,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -96,7 +96,7 @@ ___
 
 [src/ops/numOps.ts:7](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L7)
 
-___
+---
 
 ### equal
 
@@ -104,10 +104,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -121,7 +121,7 @@ ___
 
 [src/ops/numOps.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L10)
 
-___
+---
 
 ### half
 
@@ -129,9 +129,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -145,7 +145,7 @@ ___
 
 [src/ops/numOps.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L13)
 
-___
+---
 
 ### isOdd
 
@@ -153,9 +153,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -169,7 +169,7 @@ ___
 
 [src/ops/numOps.ts:16](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L16)
 
-___
+---
 
 ### larger
 
@@ -177,10 +177,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -194,7 +194,7 @@ ___
 
 [src/ops/numOps.ts:19](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L19)
 
-___
+---
 
 ### largerEq
 
@@ -202,10 +202,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -219,7 +219,7 @@ ___
 
 [src/ops/numOps.ts:22](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L22)
 
-___
+---
 
 ### minus
 
@@ -227,10 +227,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -244,7 +244,7 @@ ___
 
 [src/ops/numOps.ts:25](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L25)
 
-___
+---
 
 ### minus1
 
@@ -252,9 +252,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -268,7 +268,7 @@ ___
 
 [src/ops/numOps.ts:28](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L28)
 
-___
+---
 
 ### mod
 
@@ -276,10 +276,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -293,7 +293,7 @@ ___
 
 [src/ops/numOps.ts:31](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L31)
 
-___
+---
 
 ### negative
 
@@ -301,9 +301,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -317,7 +317,7 @@ ___
 
 [src/ops/numOps.ts:34](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L34)
 
-___
+---
 
 ### plus
 
@@ -325,10 +325,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -342,7 +342,7 @@ ___
 
 [src/ops/numOps.ts:37](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L37)
 
-___
+---
 
 ### plus1
 
@@ -350,9 +350,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -366,7 +366,7 @@ ___
 
 [src/ops/numOps.ts:40](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L40)
 
-___
+---
 
 ### sign
 
@@ -374,9 +374,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -390,7 +390,7 @@ ___
 
 [src/ops/numOps.ts:43](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L43)
 
-___
+---
 
 ### smaller
 
@@ -398,10 +398,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -415,7 +415,7 @@ ___
 
 [src/ops/numOps.ts:46](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L46)
 
-___
+---
 
 ### smallerEq
 
@@ -423,10 +423,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -440,7 +440,7 @@ ___
 
 [src/ops/numOps.ts:49](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L49)
 
-___
+---
 
 ### square
 
@@ -448,9 +448,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -464,7 +464,7 @@ ___
 
 [src/ops/numOps.ts:52](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L52)
 
-___
+---
 
 ### times
 
@@ -472,10 +472,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -489,7 +489,7 @@ ___
 
 [src/ops/numOps.ts:55](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L55)
 
-___
+---
 
 ### toNumber
 
@@ -497,9 +497,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -513,7 +513,7 @@ ___
 
 [src/ops/numOps.ts:58](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/ops/numOps.ts#L58)
 
-___
+---
 
 ### trunc
 
@@ -521,9 +521,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 

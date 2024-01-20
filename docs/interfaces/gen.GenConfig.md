@@ -6,11 +6,11 @@
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `I` | `I` |
-| `V` | `I` |
-| `D` | `unknown` |
+| Name | Type      |
+| :--- | :-------- |
+| `I`  | `I`       |
+| `V`  | `I`       |
+| `D`  | `unknown` |
 
 ## Table of contents
 
@@ -33,7 +33,7 @@
 
 [src/kbonacci/gen/genConfig.ts:5](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L5)
 
-___
+---
 
 ### customs
 
@@ -43,7 +43,7 @@ ___
 
 [src/kbonacci/gen/genConfig.ts:6](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L6)
 
-___
+---
 
 ### encoding
 
@@ -53,7 +53,7 @@ ___
 
 [src/kbonacci/gen/genConfig.ts:7](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L7)
 
-___
+---
 
 ### indexOps
 
@@ -63,7 +63,7 @@ ___
 
 [src/kbonacci/gen/genConfig.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L10)
 
-___
+---
 
 ### ops
 
@@ -73,7 +73,7 @@ ___
 
 [src/kbonacci/gen/genConfig.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/genConfig.ts#L9)
 
-___
+---
 
 ### valueOps
 

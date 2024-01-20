@@ -7,9 +7,9 @@
 ## Type parameters
 
 | Name |
-| :------ |
-| `K` |
-| `V` |
+| :--- |
+| `K`  |
+| `V`  |
 
 ## Implements
 
@@ -50,15 +50,15 @@
 #### Type parameters
 
 | Name |
-| :------ |
-| `K` |
-| `V` |
+| :--- |
+| `K`  |
+| `V`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name     | Type                                                                                            |
+| :------- | :---------------------------------------------------------------------------------------------- |
+| `K`      | `number`                                                                                        |
 | `config` | [`GenConfig`](../interfaces/gen.GenConfig.md)\<[`K`](gen.SlidingWindowGen.md#k), `V`, `never`\> |
 
 #### Returns
@@ -79,7 +79,7 @@
 
 [src/kbonacci/gen/slidingWindowGen.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L11)
 
-___
+---
 
 ### delta
 
@@ -89,7 +89,7 @@ ___
 
 [src/kbonacci/gen/slidingWindowGen.ts:9](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L9)
 
-___
+---
 
 ### indexOps
 
@@ -99,7 +99,7 @@ ___
 
 [src/kbonacci/gen/slidingWindowGen.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L10)
 
-___
+---
 
 ### minN
 
@@ -109,7 +109,7 @@ ___
 
 [src/kbonacci/gen/slidingWindowGen.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L12)
 
-___
+---
 
 ### next
 
@@ -119,7 +119,7 @@ ___
 
 [src/kbonacci/gen/slidingWindowGen.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L13)
 
-___
+---
 
 ### valueOps
 
@@ -129,7 +129,7 @@ ___
 
 [src/kbonacci/gen/slidingWindowGen.ts:14](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L14)
 
-___
+---
 
 ### values
 
@@ -165,9 +165,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `i` | [`K`](gen.SlidingWindowGen.md#k) |
+| Name | Type                             |
+| :--- | :------------------------------- |
+| `i`  | [`K`](gen.SlidingWindowGen.md#k) |
 
 #### Returns
 
@@ -177,7 +177,7 @@ ___
 
 [src/kbonacci/gen/slidingWindowGen.ts:70](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L70)
 
-___
+---
 
 ### get
 
@@ -185,9 +185,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `N` | [`K`](gen.SlidingWindowGen.md#k) |
+| Name | Type                             |
+| :--- | :------------------------------- |
+| `N`  | [`K`](gen.SlidingWindowGen.md#k) |
 
 #### Returns
 
@@ -201,7 +201,7 @@ ___
 
 [src/kbonacci/gen/slidingWindowGen.ts:53](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/gen/slidingWindowGen.ts#L53)
 
-___
+---
 
 ### reverse
 
@@ -209,9 +209,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `i` | [`K`](gen.SlidingWindowGen.md#k) |
+| Name | Type                             |
+| :--- | :------------------------------- |
+| `i`  | [`K`](gen.SlidingWindowGen.md#k) |
 
 #### Returns
 

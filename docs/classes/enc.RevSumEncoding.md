@@ -7,8 +7,8 @@
 ## Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 ## Implements
 
@@ -51,13 +51,13 @@
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type                                     |
+| :---- | :--------------------------------------- |
 | `ops` | [`Ops`](../interfaces/ops.Ops.md)\<`T`\> |
 
 #### Returns
@@ -78,7 +78,7 @@
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L11)
 
-___
+---
 
 ### \_1
 
@@ -88,7 +88,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L12)
 
-___
+---
 
 ### \_neg1
 
@@ -98,11 +98,11 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L10)
 
-___
+---
 
 ### format
 
-• `Readonly` **format**: ``"rsum"``
+• `Readonly` **format**: `"rsum"`
 
 #### Implementation of
 
@@ -112,7 +112,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:8](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L8)
 
-___
+---
 
 ### ops
 
@@ -130,9 +130,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -146,7 +146,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:20](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L20)
 
-___
+---
 
 ### genNegK
 
@@ -154,9 +154,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -170,7 +170,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:31](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L31)
 
-___
+---
 
 ### genNegOne
 
@@ -178,9 +178,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -194,7 +194,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:39](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L39)
 
-___
+---
 
 ### genOne
 
@@ -202,9 +202,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -218,7 +218,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:47](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L47)
 
-___
+---
 
 ### genZero
 
@@ -226,9 +226,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -242,7 +242,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:51](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L51)
 
-___
+---
 
 ### get
 
@@ -250,11 +250,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
-| `y` | `number` |
-| `x` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `A`  | `T`[]    |
+| `y`  | `number` |
+| `x`  | `number` |
 
 #### Returns
 
@@ -264,7 +264,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:59](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L59)
 
-___
+---
 
 ### pow
 
@@ -272,10 +272,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
-| `n` | `T` |
+| Name | Type  |
+| :--- | :---- |
+| `A`  | `T`[] |
+| `n`  | `T`   |
 
 #### Returns
 
@@ -289,7 +289,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:75](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L75)
 
-___
+---
 
 ### shift
 
@@ -297,9 +297,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
+| Name    | Type     |
+| :------ | :------- |
+| `A`     | `T`[]    |
 | `delta` | `number` |
 
 #### Returns
@@ -314,7 +314,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:93](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L93)
 
-___
+---
 
 ### square
 
@@ -322,9 +322,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
+| Name | Type  |
+| :--- | :---- |
+| `A`  | `T`[] |
 
 #### Returns
 
@@ -338,7 +338,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:111](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L111)
 
-___
+---
 
 ### times
 
@@ -346,10 +346,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
-| `B` | `T`[] |
+| Name | Type  |
+| :--- | :---- |
+| `A`  | `T`[] |
+| `B`  | `T`[] |
 
 #### Returns
 
@@ -363,7 +363,7 @@ ___
 
 [src/kbonacci/encoding/revSum/revSumEncoding.ts:115](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/revSum/revSumEncoding.ts#L115)
 
-___
+---
 
 ### toValue
 
@@ -371,11 +371,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `data` | `T`[] | `undefined` |
-| `delta` | `number` | `0` |
-| `terms?` | `T`[] | `undefined` |
+| Name     | Type     | Default value |
+| :------- | :------- | :------------ |
+| `data`   | `T`[]    | `undefined`   |
+| `delta`  | `number` | `0`           |
+| `terms?` | `T`[]    | `undefined`   |
 
 #### Returns
 

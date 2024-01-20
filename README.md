@@ -183,7 +183,7 @@ console.log(seq.get(128));
 
 `2 <= K`
 
-There is no fixed upper bound for K. 
+There is no fixed upper bound for K.
 
 However, it is limited by 2 main factors. If large Ks are needed, it's advised to thoroughly test your use case.
 
@@ -191,27 +191,27 @@ However, it is limited by 2 main factors. If large Ks are needed, it's advised t
 
 2. Available Memory
 
-    Encoding and generation strategies may need to store information whose size scales with K. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Since the maximum value for an [array's length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length) is `2^32-1` (~4.29 billion), K is lowered to this limit.
+   Encoding and generation strategies may need to store information whose size scales with K. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Since the maximum value for an [array's length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length) is `2^32-1` (~4.29 billion), K is lowered to this limit.
 
-    Depending on the environment, the amount of available memory for this information may lower K even further. For example, a quick test on my local machine encountered fatal errors ("JavaScript heap out of memory") at `K = 43,450,368`. The test ran with Node.js, heap size of ~2GB, and used [Kbonacci](./src/kbonacci/wrapper/kbonacci.ts).
+   Depending on the environment, the amount of available memory for this information may lower K even further. For example, a quick test on my local machine encountered fatal errors ("JavaScript heap out of memory") at `K = 43,450,368`. The test ran with Node.js, heap size of ~2GB, and used [Kbonacci](./src/kbonacci/wrapper/kbonacci.ts).
 
 ### Q: What is the range for indices?
 
-There are no fixed limits for indices. 
+There are no fixed limits for indices.
 
 However, they are limited by 3 main factors. If large (based on distance from 0) indices are needed, it's advised to thoroughly test your use case.
 
 1. The index data type
 
-    For example, if using [SafeNumOps](./src/ops/safeNumOps.ts), the range is `Number.MIN_SAFE_INTEGER <= I <= Number.MAX_SAFE_INTEGER`. If using [BigOps](./src/ops/bigOps.ts), the range is based on [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)'s minumum and maximum values (yes, BigInt has limits! If reached, you can expect to encounter "RangeError: Maximum BigInt size exceeded").
+   For example, if using [SafeNumOps](./src/ops/safeNumOps.ts), the range is `Number.MIN_SAFE_INTEGER <= I <= Number.MAX_SAFE_INTEGER`. If using [BigOps](./src/ops/bigOps.ts), the range is based on [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)'s minumum and maximum values (yes, BigInt has limits! If reached, you can expect to encounter "RangeError: Maximum BigInt size exceeded").
 
 2. The value data type
 
-    Similar to above, the generated value should also be representable. This is especially true for values as they grow quickly.
+   Similar to above, the generated value should also be representable. This is especially true for values as they grow quickly.
 
 3. Available memory
 
-    Encoding and generation strategies may need to store many instances of the value's data type. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Depending on the environment, the amount of available memory may be exhausted, especially for deeper indices where the size of values grows quickly.
+   Encoding and generation strategies may need to store many instances of the value's data type. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Depending on the environment, the amount of available memory may be exhausted, especially for deeper indices where the size of values grows quickly.
 
 ## License
 

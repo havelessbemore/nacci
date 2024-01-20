@@ -97,7 +97,7 @@ class v {
     t !== this.pows[0] && (this.pows = [t], this.clear());
   }
 }
-class S {
+class W {
   constructor(t, s) {
     h(this, "cached");
     h(this, "customs");
@@ -148,7 +148,7 @@ class S {
     t == null || t.length < 1 ? (this.isStd = !0, this.customs = [this.v0]) : (p(this.K, t), this.isStd = !1, this.customs = t);
   }
 }
-class W {
+class S {
   constructor(t, s) {
     h(this, "cached");
     h(this, "customs");
@@ -270,8 +270,8 @@ class U {
 }
 const L = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  KPowerGen: S,
-  PowerGen: W,
+  KPowerGen: W,
+  PowerGen: S,
   SlidingWindowGen: U
 }, Symbol.toStringTag, { value: "Module" }));
 function m(o, t = o) {

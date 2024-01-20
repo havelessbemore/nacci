@@ -7,8 +7,8 @@
 ## Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 ## Implements
 
@@ -52,13 +52,13 @@
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type                                     |
+| :---- | :--------------------------------------- |
 | `ops` | [`Ops`](../interfaces/ops.Ops.md)\<`T`\> |
 
 #### Returns
@@ -79,7 +79,7 @@
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:11](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L11)
 
-___
+---
 
 ### \_1
 
@@ -89,7 +89,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:12](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L12)
 
-___
+---
 
 ### \_2
 
@@ -99,7 +99,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:13](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L13)
 
-___
+---
 
 ### \_neg1
 
@@ -109,11 +109,11 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:10](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L10)
 
-___
+---
 
 ### format
 
-• `Readonly` **format**: ``"sum"``
+• `Readonly` **format**: `"sum"`
 
 #### Implementation of
 
@@ -123,7 +123,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:8](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L8)
 
-___
+---
 
 ### ops
 
@@ -141,9 +141,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -157,7 +157,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:22](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L22)
 
-___
+---
 
 ### genNegK
 
@@ -165,9 +165,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -181,7 +181,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:34](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L34)
 
-___
+---
 
 ### genNegOne
 
@@ -189,9 +189,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -205,7 +205,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:42](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L42)
 
-___
+---
 
 ### genOne
 
@@ -213,9 +213,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -229,7 +229,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:52](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L52)
 
-___
+---
 
 ### genZero
 
@@ -237,9 +237,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -253,7 +253,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:60](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L60)
 
-___
+---
 
 ### get
 
@@ -261,11 +261,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
-| `y` | `number` |
-| `x` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `A`  | `T`[]    |
+| `y`  | `number` |
+| `x`  | `number` |
 
 #### Returns
 
@@ -275,7 +275,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:64](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L64)
 
-___
+---
 
 ### pow
 
@@ -283,10 +283,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
-| `n` | `T` |
+| Name | Type  |
+| :--- | :---- |
+| `A`  | `T`[] |
+| `n`  | `T`   |
 
 #### Returns
 
@@ -300,7 +300,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:78](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L78)
 
-___
+---
 
 ### shift
 
@@ -308,9 +308,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
+| Name    | Type     |
+| :------ | :------- |
+| `A`     | `T`[]    |
 | `delta` | `number` |
 
 #### Returns
@@ -325,7 +325,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:96](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L96)
 
-___
+---
 
 ### square
 
@@ -333,9 +333,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
+| Name | Type  |
+| :--- | :---- |
+| `A`  | `T`[] |
 
 #### Returns
 
@@ -349,7 +349,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:114](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L114)
 
-___
+---
 
 ### times
 
@@ -357,10 +357,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `T`[] |
-| `B` | `T`[] |
+| Name | Type  |
+| :--- | :---- |
+| `A`  | `T`[] |
+| `B`  | `T`[] |
 
 #### Returns
 
@@ -374,7 +374,7 @@ ___
 
 [src/kbonacci/encoding/sum/sumEncoding.ts:118](https://github.com/havelessbemore/nacci/blob/68d5ad6/src/kbonacci/encoding/sum/sumEncoding.ts#L118)
 
-___
+---
 
 ### toValue
 
@@ -382,11 +382,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `data` | `T`[] | `undefined` |
-| `delta` | `number` | `0` |
-| `terms?` | `T`[] | `undefined` |
+| Name     | Type     | Default value |
+| :------- | :------- | :------------ |
+| `data`   | `T`[]    | `undefined`   |
+| `delta`  | `number` | `0`           |
+| `terms?` | `T`[]    | `undefined`   |
 
 #### Returns
 
