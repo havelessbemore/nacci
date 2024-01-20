@@ -39,7 +39,7 @@ yarn install nacci
 
 ## Usage
 
-Here are some examples for getting started.
+Here are some examples for getting started. To experiment, try ([JSFiddle](https://jsfiddle.net/Lyvbj24c/)).
 
 #### Fibonacci
 
@@ -207,7 +207,7 @@ However, they are limited by 3 main factors. If large (based on distance from 0)
 
 1. The value data type
 
-   Similar to above, the generated value should also be representable. This is especially true for values as they grow quickly.
+   Similar to above, the generated value should also be representable. This is especially true for values as they grow quickly. For example, the Fibonacci value for index `2^30` is 224,398,770 digits long and over 224MB as a string.
 
 1. Available memory
 
