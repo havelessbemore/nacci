@@ -1,0 +1,25 @@
+name: Merge to Main
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  build:
+    name: Node ${{ matrix.node }} sample
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20, 21]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Clean install
+        run: npm ci
+      - name: Run linter
+        run: npm run lint
+      - name: Run tests
+        run: npm run test

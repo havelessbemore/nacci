@@ -52,6 +52,9 @@
     "url": "https://github.com/havelessbemore/nacci.git"
   },
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 18"
+  },
   "devDependencies": {
     "@types/jsdom": "^21.1.1",
     "@types/node": "^20.4.9",
