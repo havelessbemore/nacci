@@ -1,3 +1,8 @@
+/**
+ * Positive terms of the Fibonacci sequence
+ *
+ * @see {@link https://oeis.org/A000045/list | OEIS A000045}
+ */
 export const FIB_POS = [
   0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584,
   4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229,
@@ -6,11 +11,23 @@ export const FIB_POS = [
   1134903170, 1836311903, 2971215073, 4807526976, 7778742049, 12586269025,
 ];
 
+/**
+ * Negative terms of the Fibonacci sequence
+ *
+ * @see {@link https://oeis.org/A039834/list | OEIS A039834}
+ */
 export const FIB_NEG = [
   0, 1, -1, 2, -3, 5, -8, 13, -21, 34, -55, 89, -144, 233, -377, 610, -987,
-  1597, -2584, 4181, -6765, 10946, -17711, 28657, -46368, 75025,
+  1597, -2584, 4181, -6765, 10946, -17711, 28657, -46368, 75025, -121393,
+  196418, -317811, 514229, -832040, 1346269, -2178309, 3524578, -5702887,
+  9227465, -14930352, 24157817,
 ];
 
+/**
+ * Positive terms of the Lucas sequence
+ *
+ * @see {@link https://oeis.org/A000032/list | OEIS A000032}
+ */
 export const LUCAS_POS = [
   2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, 199, 322, 521, 843, 1364, 2207, 3571,
   5778, 9349, 15127, 24476, 39603, 64079, 103682, 167761, 271443, 439204,
@@ -18,11 +35,19 @@ export const LUCAS_POS = [
   33385282, 54018521, 87403803, 141422324,
 ];
 
+/**
+ * Negative terms of the Lucas sequence
+ */
 export const LUCAS_NEG = [
   2, -1, 3, -4, 7, -11, 18, -29, 47, -76, 123, -199, 322, -521, 843, -1364,
   2207, -3571, 5778, -9349, 15127, -24476, 39603, -64079, 103682, -167761,
 ];
 
+/**
+ * Positive terms of the Tribonacci sequence
+ *
+ * @see {@link https://oeis.org/A000073/list | OEIS A000073}
+ */
 export const TRIB_POS = [
   0, 1, 1, 2, 4, 7, 13, 24, 44, 81, 149, 274, 504, 927, 1705, 3136, 5768, 10609,
   19513, 35890, 66012, 121415, 223317, 410744, 755476, 1389537, 2555757,
@@ -30,11 +55,19 @@ export const TRIB_POS = [
   334745777, 615693474, 1132436852,
 ];
 
+/**
+ * Negative terms of the Tribonacci sequence
+ */
 export const TRIB_NEG = [
   0, 0, 1, -1, 0, 2, -3, 1, 4, -8, 5, 7, -20, 18, 9, -47, 56, 0, -103, 159, -56,
   -206, 421, -271, -356, 1048,
 ];
 
+/**
+ * Positive terms of the Tetranacci sequence
+ *
+ * @see {@link https://oeis.org/A000078/list | OEIS A000078}
+ */
 export const TETRA_POS = [
   0, 1, 1, 2, 4, 8, 15, 29, 56, 108, 208, 401, 773, 1490, 2872, 5536, 10671,
   20569, 39648, 76424, 147312, 283953, 547337, 1055026, 2033628, 3919944,
@@ -42,6 +75,11 @@ export const TETRA_POS = [
   747044834, 1439975216, 2775641472,
 ];
 
+/**
+ * Positive terms of the Pentanacci sequence
+ *
+ * @see {@link https://oeis.org/A001591/list | OEIS A001591}
+ */
 export const PENTA_POS = [
   0, 1, 1, 2, 4, 8, 16, 31, 61, 120, 236, 464, 912, 1793, 3525, 6930, 13624,
   26784, 52656, 103519, 203513, 400096, 786568, 1546352, 3040048, 5976577,
@@ -49,11 +87,19 @@ export const PENTA_POS = [
   1333610936, 2621810068,
 ];
 
+/**
+ * Negative terms of the Pentanacci sequence
+ */
 export const PENTA_NEG = [
   0, 0, 0, 0, 1, -1, 0, 0, 0, 2, -3, 1, 0, 0, 4, -8, 5, -1, 0, 8, -20, 18, -7,
   1, 16, -48,
 ];
 
+/**
+ * Positive terms of the Hexanacci sequence
+ *
+ * @see {@link https://oeis.org/A001592/list | OEIS A001592}
+ */
 export const HEXA_POS = [
   0, 1, 1, 2, 4, 8, 16, 32, 63, 125, 248, 492, 976, 1936, 3840, 7617, 15109,
   29970, 59448, 117920, 233904, 463968, 920319, 1825529, 3621088, 7182728,
@@ -61,6 +107,10 @@ export const HEXA_POS = [
   1721441096, 3414621024,
 ];
 
+/**
+ * Positive terms of the Heptanacci sequence
+ * @see {@link https://oeis.org/A066178/list | OEIS A066178}
+ */
 export const HEPTA_POS = [
   0, 1, 1, 2, 4, 8, 16, 32, 64, 127, 253, 504, 1004, 2000, 3984, 7936, 15808,
   31489, 62725, 124946, 248888, 495776, 987568, 1967200, 3918592, 7805695,

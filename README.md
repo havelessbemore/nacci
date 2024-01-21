@@ -216,15 +216,17 @@ However, they are limited by 3 main factors. If large (based on distance from 0)
 
 Use cases include:
 
-1. Computer Algorithms: Can be used in dynamic programming algorithms to solve specific types of problems, such as counting ways of tiling, different paths in a grid, or ways of partitioning objects.
-
-1. Algorithm Analysis: Can be used to analyze the time complexity of algorithms, especially recursive algorithms. The sequence can represent the number of operations or recursive calls being made.
+1. Rate Limiting: Use sequences to create rate limiting strategies such as exponential backoff.
 
 1. Cryptography: Sequences with good pseudo-random properties, such as k-bonacci sequences, can be used in cryptographic algorithms and for generating keys.
 
 1. Modeling: The Fibonacci sequence is well-known for appearing in natural phenomena, such as the branching of trees, the arrangement of leaves on a stem, or the fruit sprouts of a pineapple. For this and more, k-bonacci sequences can be used to model complex natural growth patterns.
 
 1. Financial Markets: Some traders and analysts use the Fibonacci sequence to predict stock market movements. k-bonacci sequences could potentially be applied in similar financial models to predict market dynamics.
+
+1. Computer Algorithms: Can be used in dynamic programming algorithms to solve specific types of problems, such as counting ways of tiling, different paths in a grid, or ways of partitioning objects.
+
+1. Algorithm Analysis: Can be used to analyze the time complexity of algorithms, especially recursive algorithms. The sequence can represent the number of operations or recursive calls being made.
 
 1. Queue Theory: In computing and mathematics, k-bonacci sequences can be applied to problems in queue theory where arrival or service follow a pattern similar to these sequences.
 
@@ -235,6 +237,8 @@ Use cases include:
 1. Physics and Chemistry: These sequences can model systems where each state is a sum of the previous states, such as in certain types of chain reactions or particle interactions.
 
 1. Biological Systems: The study of population dynamics in biology, where the population at a certain generation can depend on several previous generations, might also find k-bonacci sequences useful for modeling.
+
+1. Music and Art: K-bonacci sequences can be used to create auditory and/or visual patterns and structures
 
 ## License
 
