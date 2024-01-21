@@ -202,15 +202,25 @@ However, they are limited by 3 main factors. If large (based on distance from 0)
 
 1. The index data type
 
-   For example, if using [SafeNumOps](./src/ops/safeNumOps.ts), the range is `Number.MIN_SAFE_INTEGER <= I <= Number.MAX_SAFE_INTEGER`. If using [BigOps](./src/ops/bigOps.ts), the range is based on [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)'s minimum and maximum values (yes, BigInt has limits! If reached, you can expect to encounter "RangeError: Maximum BigInt size exceeded").
+   - Using safe numbers, the range is `Number.MIN_SAFE_INTEGER <= I <= Number.MAX_SAFE_INTEGER`.
+   - Using BigInt, the range is based on [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)'s minimum and maximum values. Yes, BigInt has limits!
+   - Custom data types will have their own range.
 
 1. The value data type
 
-   Similar to above, the generated value should also be representable. This is especially true for values as they grow quickly. For example, the Fibonacci value for index `2^30` is 224,398,770 digits long and over 224MB as a string.
+   Values can grow quickly. It is important that the data type is able to adequately represent them.
+
+   At the time of writing:
+
+   - Using safe numbers, the Fibonacci sequence can reach index `±77`. Beyond this throws an [UnsafeError](./src/error/unsafeError.ts).
+   - Using BigInt, the Fibonacci sequence can reach index `±1,546,639,204`. Beyond this throws a RangeError ("Maximum BigInt size exceeded").
+   - Custom data types will have their own range.
 
 1. Available memory
 
    Encoding and generation strategies may need to store many instances of the value's data type. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. Depending on the environment, the amount of available memory may be exhausted, especially for deeper indices where the size of values grows quickly.
+
+   For example, the Fibonacci value for index `2^30` is 224,398,770 digits long and over 224MB as a string!
 
 ### Q: What can I use this for?
 
