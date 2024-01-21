@@ -1,7 +1,7 @@
 {
   "name": "nacci",
   "version": "1.0.5",
-  "description": "Generate numbers in a kbonacci sequence (where each term is the sum of the previous k terms) with customizable k, initial terms, strategy and data types (number, bigint, etc)",
+  "description": "Generate numbers in a k-bonacci sequence (where each term is the sum of the previous k terms) with customizable k, initial terms, strategies and data types (number, bigint, etc).",
   "files": [
     "dist/",
     "LICENSE",
