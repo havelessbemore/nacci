@@ -17,15 +17,7 @@ import { Ops } from "../../ops/ops";
 import { K_MIN } from "../../globals";
 import { Generator } from "./generator";
 import { BigOps } from "../../ops/bigOps";
-
-function castArray<T>(array: unknown[], ops: Ops<T>): T[] {
-  const N = array.length;
-  const out = new Array<T>(N);
-  for (let i = 0; i < N; ++i) {
-    out[i] = ops.cast(array[i]);
-  }
-  return out;
-}
+import { castArray } from "../../utils/array";
 
 export function run<K, V>(
   name: string,
