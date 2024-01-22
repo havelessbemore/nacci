@@ -2,6 +2,18 @@ import { DimensionError } from "../error/dimensionError";
 import { Ops } from "../ops/ops";
 import { Matrix } from "../type/matrix";
 
+export function castMatrix<T>(mat: Matrix<unknown>, ops: Ops<T>): Matrix<T> {
+  const Y = mat.length;
+  const X = mat[0]?.length ?? 0;
+  const out = initMatrix<T>(Y, X);
+  for (let y = 0; y < Y; ++y) {
+    for (let x = 0; x < X; ++x) {
+      out[y][x] = ops.cast(mat[y][x]);
+    }
+  }
+  return out;
+}
+
 export function fillMatrix<T>(matrix: Matrix<T>, value: T): void {
   const M = matrix.length;
   for (let m = 0; m < M; ++m) {
