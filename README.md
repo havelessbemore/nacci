@@ -218,8 +218,8 @@ However, they are limited by 3 main factors. If large (based on distance from 0)
 
 1. Available memory
 
-   Encoding and generation strategies may need to store many instances of the value's data type. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K. 
-   
+   Encoding and generation strategies may need to store many instances of the value's data type. For example, [MatrixEncoding](./src/kbonacci/encoding/matrix/matrixEncoding.ts) creates KxK matrices, while [SumEncoding](./src/kbonacci/encoding/sum/sumEncoding.ts) uses arrays of length K.
+
    Depending on the environment, the amount of available memory may be exhausted, especially for deeper indices where values are large. For example, the Fibonacci value for index `2^30` is 224,398,770 digits long and over 224MB as a string!
 
 ### Q: What can I use this for?
