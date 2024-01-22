@@ -55,9 +55,9 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `unknown` |
+| Name | Type      |
+| :--- | :-------- |
+| `a`  | `unknown` |
 
 #### Returns
 
@@ -71,7 +71,7 @@
 
 [src/ops/safeNumOps.ts:5](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L5)
 
-___
+---
 
 ### dividedBy
 
@@ -79,10 +79,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -96,7 +96,7 @@ ___
 
 [src/ops/safeNumOps.ts:8](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L8)
 
-___
+---
 
 ### equal
 
@@ -104,10 +104,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -121,7 +121,7 @@ ___
 
 [src/ops/safeNumOps.ts:11](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L11)
 
-___
+---
 
 ### half
 
@@ -129,9 +129,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -145,7 +145,7 @@ ___
 
 [src/ops/safeNumOps.ts:14](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L14)
 
-___
+---
 
 ### isOdd
 
@@ -153,9 +153,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -169,7 +169,7 @@ ___
 
 [src/ops/safeNumOps.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L17)
 
-___
+---
 
 ### larger
 
@@ -177,10 +177,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -194,7 +194,7 @@ ___
 
 [src/ops/safeNumOps.ts:20](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L20)
 
-___
+---
 
 ### largerEq
 
@@ -202,10 +202,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -219,7 +219,7 @@ ___
 
 [src/ops/safeNumOps.ts:23](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L23)
 
-___
+---
 
 ### minus
 
@@ -227,10 +227,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -244,7 +244,7 @@ ___
 
 [src/ops/safeNumOps.ts:26](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L26)
 
-___
+---
 
 ### minus1
 
@@ -252,9 +252,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -268,7 +268,7 @@ ___
 
 [src/ops/safeNumOps.ts:29](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L29)
 
-___
+---
 
 ### mod
 
@@ -276,10 +276,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -293,7 +293,7 @@ ___
 
 [src/ops/safeNumOps.ts:32](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L32)
 
-___
+---
 
 ### negative
 
@@ -301,9 +301,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -317,7 +317,7 @@ ___
 
 [src/ops/safeNumOps.ts:35](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L35)
 
-___
+---
 
 ### plus
 
@@ -325,10 +325,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -342,7 +342,7 @@ ___
 
 [src/ops/safeNumOps.ts:38](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L38)
 
-___
+---
 
 ### plus1
 
@@ -350,9 +350,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -366,7 +366,7 @@ ___
 
 [src/ops/safeNumOps.ts:41](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L41)
 
-___
+---
 
 ### sign
 
@@ -374,9 +374,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -390,7 +390,7 @@ ___
 
 [src/ops/safeNumOps.ts:44](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L44)
 
-___
+---
 
 ### smaller
 
@@ -398,10 +398,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -415,7 +415,7 @@ ___
 
 [src/ops/safeNumOps.ts:47](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L47)
 
-___
+---
 
 ### smallerEq
 
@@ -423,10 +423,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -440,7 +440,7 @@ ___
 
 [src/ops/safeNumOps.ts:50](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L50)
 
-___
+---
 
 ### square
 
@@ -448,9 +448,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -464,7 +464,7 @@ ___
 
 [src/ops/safeNumOps.ts:53](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L53)
 
-___
+---
 
 ### times
 
@@ -472,10 +472,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
-| `b` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
+| `b`  | `number` |
 
 #### Returns
 
@@ -489,7 +489,7 @@ ___
 
 [src/ops/safeNumOps.ts:56](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L56)
 
-___
+---
 
 ### toNumber
 
@@ -497,9 +497,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 
@@ -513,7 +513,7 @@ ___
 
 [src/ops/safeNumOps.ts:59](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/safeNumOps.ts#L59)
 
-___
+---
 
 ### trunc
 
@@ -521,9 +521,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `a`  | `number` |
 
 #### Returns
 

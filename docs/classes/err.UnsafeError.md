@@ -37,8 +37,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type     |
+| :------- | :------- |
 | `actual` | `number` |
 
 #### Returns
@@ -67,7 +67,7 @@
 
 node_modules/typescript/lib/lib.es2022.error.d.ts:24
 
-___
+---
 
 ### message
 
@@ -81,7 +81,7 @@ ___
 
 node_modules/typescript/lib/lib.es5.d.ts:1076
 
-___
+---
 
 ### name
 
@@ -95,7 +95,7 @@ ___
 
 node_modules/typescript/lib/lib.es5.d.ts:1075
 
-___
+---
 
 ### stack
 
@@ -109,7 +109,7 @@ ___
 
 node_modules/typescript/lib/lib.es5.d.ts:1077
 
-___
+---
 
 ### prepareStackTrace
 
@@ -129,9 +129,9 @@ Optional override for formatting stack traces
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
+| Name          | Type         |
+| :------------ | :----------- |
+| `err`         | `Error`      |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -150,7 +150,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 node_modules/@types/node/globals.d.ts:28
 
-___
+---
 
 ### stackTraceLimit
 
@@ -174,9 +174,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
+| Name              | Type       |
+| :---------------- | :--------- |
+| `targetObject`    | `object`   |
 | `constructorOpt?` | `Function` |
 
 #### Returns

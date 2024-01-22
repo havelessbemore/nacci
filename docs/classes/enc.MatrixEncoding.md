@@ -7,8 +7,8 @@
 ## Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 ## Implements
 
@@ -51,13 +51,13 @@
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type                                     |
+| :---- | :--------------------------------------- |
 | `ops` | [`Ops`](../interfaces/ops.Ops.md)\<`T`\> |
 
 #### Returns
@@ -78,7 +78,7 @@
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:27](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L27)
 
-___
+---
 
 ### \_1
 
@@ -88,7 +88,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:28](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L28)
 
-___
+---
 
 ### \_2
 
@@ -98,7 +98,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:29](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L29)
 
-___
+---
 
 ### \_neg1
 
@@ -108,11 +108,11 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:26](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L26)
 
-___
+---
 
 ### format
 
-• `Readonly` **format**: ``"mat"``
+• `Readonly` **format**: `"mat"`
 
 #### Implementation of
 
@@ -122,7 +122,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:24](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L24)
 
-___
+---
 
 ### ops
 
@@ -140,9 +140,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -156,7 +156,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:38](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L38)
 
-___
+---
 
 ### genNegK
 
@@ -164,9 +164,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -180,7 +180,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:64](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L64)
 
-___
+---
 
 ### genNegOne
 
@@ -188,9 +188,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -204,7 +204,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:82](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L82)
 
-___
+---
 
 ### genOne
 
@@ -212,9 +212,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -228,7 +228,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:97](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L97)
 
-___
+---
 
 ### genZero
 
@@ -236,9 +236,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -252,7 +252,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:112](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L112)
 
-___
+---
 
 ### pow
 
@@ -260,10 +260,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | [`Matrix`](../README.md#matrix)\<`T`\> |
-| `n` | `T` |
+| Name | Type                                   |
+| :--- | :------------------------------------- |
+| `A`  | [`Matrix`](../README.md#matrix)\<`T`\> |
+| `n`  | `T`                                    |
 
 #### Returns
 
@@ -277,7 +277,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:127](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L127)
 
-___
+---
 
 ### shift
 
@@ -285,10 +285,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | [`Matrix`](../README.md#matrix)\<`T`\> |
-| `delta` | `number` |
+| Name    | Type                                   |
+| :------ | :------------------------------------- |
+| `A`     | [`Matrix`](../README.md#matrix)\<`T`\> |
+| `delta` | `number`                               |
 
 #### Returns
 
@@ -302,7 +302,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:145](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L145)
 
-___
+---
 
 ### square
 
@@ -310,9 +310,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | [`Matrix`](../README.md#matrix)\<`T`\> |
+| Name | Type                                   |
+| :--- | :------------------------------------- |
+| `A`  | [`Matrix`](../README.md#matrix)\<`T`\> |
 
 #### Returns
 
@@ -326,7 +326,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:174](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L174)
 
-___
+---
 
 ### times
 
@@ -334,10 +334,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | [`Matrix`](../README.md#matrix)\<`T`\> |
-| `B` | [`Matrix`](../README.md#matrix)\<`T`\> |
+| Name | Type                                   |
+| :--- | :------------------------------------- |
+| `A`  | [`Matrix`](../README.md#matrix)\<`T`\> |
+| `B`  | [`Matrix`](../README.md#matrix)\<`T`\> |
 
 #### Returns
 
@@ -351,7 +351,7 @@ ___
 
 [src/kbonacci/encoding/matrix/matrixEncoding.ts:178](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/matrix/matrixEncoding.ts#L178)
 
-___
+---
 
 ### toValue
 
@@ -359,11 +359,11 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `data` | [`Matrix`](../README.md#matrix)\<`T`\> | `undefined` |
-| `delta` | `number` | `0` |
-| `terms?` | `T`[] | `undefined` |
+| Name     | Type                                   | Default value |
+| :------- | :------------------------------------- | :------------ |
+| `data`   | [`Matrix`](../README.md#matrix)\<`T`\> | `undefined`   |
+| `delta`  | `number`                               | `0`           |
+| `terms?` | `T`[]                                  | `undefined`   |
 
 #### Returns
 

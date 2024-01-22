@@ -7,9 +7,9 @@
 ## Type parameters
 
 | Name |
-| :------ |
-| `K` |
-| `V` |
+| :--- |
+| `K`  |
+| `V`  |
 
 ## Implemented by
 
@@ -49,9 +49,9 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `key` | `K` |
+| Name  | Type |
+| :---- | :--- |
+| `key` | `K`  |
 
 #### Returns
 

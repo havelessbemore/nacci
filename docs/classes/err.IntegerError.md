@@ -37,10 +37,10 @@
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `value` | `unknown` | `undefined` |
-| `label` | `string` | `"Value"` |
+| Name    | Type      | Default value |
+| :------ | :-------- | :------------ |
+| `value` | `unknown` | `undefined`   |
+| `label` | `string`  | `"Value"`     |
 
 #### Returns
 
@@ -68,7 +68,7 @@ TypeError.cause
 
 node_modules/typescript/lib/lib.es2022.error.d.ts:24
 
-___
+---
 
 ### message
 
@@ -82,7 +82,7 @@ TypeError.message
 
 node_modules/typescript/lib/lib.es5.d.ts:1076
 
-___
+---
 
 ### name
 
@@ -96,7 +96,7 @@ TypeError.name
 
 node_modules/typescript/lib/lib.es5.d.ts:1075
 
-___
+---
 
 ### stack
 
@@ -110,7 +110,7 @@ TypeError.stack
 
 node_modules/typescript/lib/lib.es5.d.ts:1077
 
-___
+---
 
 ### prepareStackTrace
 
@@ -130,9 +130,9 @@ Optional override for formatting stack traces
 
 ##### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `err` | `Error` |
+| Name          | Type         |
+| :------------ | :----------- |
+| `err`         | `Error`      |
 | `stackTraces` | `CallSite`[] |
 
 ##### Returns
@@ -151,7 +151,7 @@ TypeError.prepareStackTrace
 
 node_modules/@types/node/globals.d.ts:28
 
-___
+---
 
 ### stackTraceLimit
 
@@ -175,9 +175,9 @@ Create .stack property on a target object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `targetObject` | `object` |
+| Name              | Type       |
+| :---------------- | :--------- |
+| `targetObject`    | `object`   |
 | `constructorOpt?` | `Function` |
 
 #### Returns

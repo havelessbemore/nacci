@@ -6,9 +6,9 @@
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
+| Name | Type      |
+| :--- | :-------- |
+| `T`  | `unknown` |
 
 ## Implemented by
 
@@ -49,8 +49,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type      |
+| :------ | :-------- |
 | `value` | `unknown` |
 
 #### Returns
@@ -61,7 +61,7 @@
 
 [src/ops/ops.ts:3](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L3)
 
-___
+---
 
 ### dividedBy
 
@@ -69,10 +69,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dividend` | `T` |
-| `divisor` | `T` |
+| Name       | Type |
+| :--------- | :--- |
+| `dividend` | `T`  |
+| `divisor`  | `T`  |
 
 #### Returns
 
@@ -82,7 +82,7 @@ ___
 
 [src/ops/ops.ts:15](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L15)
 
-___
+---
 
 ### equal
 
@@ -91,9 +91,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
-| `b` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
+| `b`  | `T`  |
 
 #### Returns
 
@@ -103,7 +103,7 @@ ___
 
 [src/ops/ops.ts:8](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L8)
 
-___
+---
 
 ### half
 
@@ -111,9 +111,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `T` |
+| Name    | Type |
+| :------ | :--- |
+| `value` | `T`  |
 
 #### Returns
 
@@ -123,7 +123,7 @@ ___
 
 [src/ops/ops.ts:16](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L16)
 
-___
+---
 
 ### isOdd
 
@@ -131,9 +131,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `T` |
+| Name    | Type |
+| :------ | :--- |
+| `value` | `T`  |
 
 #### Returns
 
@@ -143,7 +143,7 @@ ___
 
 [src/ops/ops.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L17)
 
-___
+---
 
 ### larger
 
@@ -152,9 +152,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
-| `b` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
+| `b`  | `T`  |
 
 #### Returns
 
@@ -164,7 +164,7 @@ ___
 
 [src/ops/ops.ts:9](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L9)
 
-___
+---
 
 ### largerEq
 
@@ -173,9 +173,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
-| `b` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
+| `b`  | `T`  |
 
 #### Returns
 
@@ -185,7 +185,7 @@ ___
 
 [src/ops/ops.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L10)
 
-___
+---
 
 ### minus
 
@@ -193,10 +193,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `minuend` | `T` |
-| `subtrahend` | `T` |
+| Name         | Type |
+| :----------- | :--- |
+| `minuend`    | `T`  |
+| `subtrahend` | `T`  |
 
 #### Returns
 
@@ -206,7 +206,7 @@ ___
 
 [src/ops/ops.ts:18](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L18)
 
-___
+---
 
 ### minus1
 
@@ -215,8 +215,8 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
 
 #### Returns
 
@@ -226,7 +226,7 @@ ___
 
 [src/ops/ops.ts:19](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L19)
 
-___
+---
 
 ### mod
 
@@ -234,10 +234,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `dividend` | `T` |
-| `divisor` | `T` |
+| Name       | Type |
+| :--------- | :--- |
+| `dividend` | `T`  |
+| `divisor`  | `T`  |
 
 #### Returns
 
@@ -247,7 +247,7 @@ ___
 
 [src/ops/ops.ts:20](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L20)
 
-___
+---
 
 ### negative
 
@@ -256,8 +256,8 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
 
 #### Returns
 
@@ -267,7 +267,7 @@ ___
 
 [src/ops/ops.ts:21](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L21)
 
-___
+---
 
 ### plus
 
@@ -276,9 +276,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
-| `b` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
+| `b`  | `T`  |
 
 #### Returns
 
@@ -288,7 +288,7 @@ ___
 
 [src/ops/ops.ts:22](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L22)
 
-___
+---
 
 ### plus1
 
@@ -297,8 +297,8 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
 
 #### Returns
 
@@ -308,7 +308,7 @@ ___
 
 [src/ops/ops.ts:23](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L23)
 
-___
+---
 
 ### sign
 
@@ -317,8 +317,8 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
 
 #### Returns
 
@@ -328,7 +328,7 @@ ___
 
 [src/ops/ops.ts:24](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L24)
 
-___
+---
 
 ### smaller
 
@@ -337,9 +337,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
-| `b` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
+| `b`  | `T`  |
 
 #### Returns
 
@@ -349,7 +349,7 @@ ___
 
 [src/ops/ops.ts:11](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L11)
 
-___
+---
 
 ### smallerEq
 
@@ -358,9 +358,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
-| `b` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
+| `b`  | `T`  |
 
 #### Returns
 
@@ -370,7 +370,7 @@ ___
 
 [src/ops/ops.ts:12](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L12)
 
-___
+---
 
 ### square
 
@@ -378,9 +378,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `T` |
+| Name    | Type |
+| :------ | :--- |
+| `value` | `T`  |
 
 #### Returns
 
@@ -390,7 +390,7 @@ ___
 
 [src/ops/ops.ts:25](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L25)
 
-___
+---
 
 ### times
 
@@ -399,9 +399,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
-| `b` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
+| `b`  | `T`  |
 
 #### Returns
 
@@ -411,7 +411,7 @@ ___
 
 [src/ops/ops.ts:26](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L26)
 
-___
+---
 
 ### toNumber
 
@@ -420,8 +420,8 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `a` | `T` |
+| :--- | :--- |
+| `a`  | `T`  |
 
 #### Returns
 
@@ -431,7 +431,7 @@ ___
 
 [src/ops/ops.ts:4](https://github.com/havelessbemore/nacci/blob/13a7465/src/ops/ops.ts#L4)
 
-___
+---
 
 ### trunc
 
@@ -439,9 +439,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `value` | `T` |
+| Name    | Type |
+| :------ | :--- |
+| `value` | `T`  |
 
 #### Returns
 

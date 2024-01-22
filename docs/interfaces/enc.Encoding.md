@@ -6,10 +6,10 @@
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `V` | `V` |
-| `D` | `unknown` |
+| Name | Type      |
+| :--- | :-------- |
+| `V`  | `V`       |
+| `D`  | `unknown` |
 
 ## Implemented by
 
@@ -55,9 +55,9 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -67,7 +67,7 @@
 
 [src/kbonacci/encoding/encoding.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L10)
 
-___
+---
 
 ### genNegK
 
@@ -75,9 +75,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -87,7 +87,7 @@ ___
 
 [src/kbonacci/encoding/encoding.ts:11](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L11)
 
-___
+---
 
 ### genNegOne
 
@@ -95,9 +95,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -107,7 +107,7 @@ ___
 
 [src/kbonacci/encoding/encoding.ts:12](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L12)
 
-___
+---
 
 ### genOne
 
@@ -115,9 +115,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -127,7 +127,7 @@ ___
 
 [src/kbonacci/encoding/encoding.ts:13](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L13)
 
-___
+---
 
 ### genZero
 
@@ -135,9 +135,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `K` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `K`  | `number` |
 
 #### Returns
 
@@ -147,7 +147,7 @@ ___
 
 [src/kbonacci/encoding/encoding.ts:14](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L14)
 
-___
+---
 
 ### pow
 
@@ -156,9 +156,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `A` | `D` |
-| `n` | `V` |
+| :--- | :--- |
+| `A`  | `D`  |
+| `n`  | `V`  |
 
 #### Returns
 
@@ -168,7 +168,7 @@ ___
 
 [src/kbonacci/encoding/encoding.ts:15](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L15)
 
-___
+---
 
 ### shift
 
@@ -176,9 +176,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `A` | `D` |
+| Name    | Type     |
+| :------ | :------- |
+| `A`     | `D`      |
 | `delta` | `number` |
 
 #### Returns
@@ -189,7 +189,7 @@ ___
 
 [src/kbonacci/encoding/encoding.ts:16](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L16)
 
-___
+---
 
 ### square
 
@@ -198,8 +198,8 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `A` | `D` |
+| :--- | :--- |
+| `A`  | `D`  |
 
 #### Returns
 
@@ -209,7 +209,7 @@ ___
 
 [src/kbonacci/encoding/encoding.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L17)
 
-___
+---
 
 ### times
 
@@ -218,9 +218,9 @@ ___
 #### Parameters
 
 | Name | Type |
-| :------ | :------ |
-| `A` | `D` |
-| `B` | `D` |
+| :--- | :--- |
+| `A`  | `D`  |
+| `B`  | `D`  |
 
 #### Returns
 
@@ -230,7 +230,7 @@ ___
 
 [src/kbonacci/encoding/encoding.ts:18](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/encoding/encoding.ts#L18)
 
-___
+---
 
 ### toValue
 
@@ -238,11 +238,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `D` |
-| `delta?` | `number` |
-| `customTerms?` | `V`[] |
+| Name           | Type     |
+| :------------- | :------- |
+| `data`         | `D`      |
+| `delta?`       | `number` |
+| `customTerms?` | `V`[]    |
 
 #### Returns
 
