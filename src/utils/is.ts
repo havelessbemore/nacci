@@ -1,5 +1,9 @@
 import { SAFE_MIN, SAFE_MAX } from "../globals";
 
+export function isArray(value: unknown): value is Array<unknown> {
+  return Array.isArray(value);
+}
+
 export function isBigInt(value: unknown): value is bigint {
   return typeof value === "bigint";
 }
@@ -19,4 +23,8 @@ export function isNumber(value: unknown): value is number {
 
 export function isSafeNumber(value: number): boolean {
   return value >= SAFE_MIN && value <= SAFE_MAX;
+}
+
+export function isSymbol(value: unknown): value is Symbol {
+  return typeof value === "symbol";
 }

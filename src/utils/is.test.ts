@@ -1,6 +1,13 @@
 import { describe, expect, test } from "vitest";
 
-import { isBigInt, isFunction, isInteger, isNumber, isSafeNumber } from "./is";
+import {
+  isBigInt,
+  isFunction,
+  isInteger,
+  isNumber,
+  isSafeNumber,
+  isSymbol,
+} from "./is";
 import { SAFE_MAX, SAFE_MIN } from "../globals";
 
 describe("isBigInt", () => {
@@ -142,5 +149,25 @@ describe("isSafeNumber", () => {
   test("returns false for a non-safe integer", () => {
     expect(isSafeNumber(SAFE_MAX + 1)).toBe(false);
     expect(isSafeNumber(SAFE_MIN - 1)).toBe(false);
+  });
+});
+
+describe("isSymbol", () => {
+  test("returns true for a symbol", () => {
+    expect(isSymbol(Symbol())).toBe(true);
+  });
+
+  test("returns false for non-symbol types", () => {
+    expect(isSymbol(123)).toBe(false);
+    expect(isSymbol("string")).toBe(false);
+    expect(isSymbol({})).toBe(false);
+    expect(isSymbol([])).toBe(false);
+    expect(isSymbol(() => {})).toBe(false);
+    expect(isSymbol(true)).toBe(false);
+  });
+
+  test("returns false for null and undefined", () => {
+    expect(isSymbol(null)).toBe(false);
+    expect(isSymbol(undefined)).toBe(false);
   });
 });
