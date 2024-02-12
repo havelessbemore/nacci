@@ -1,9 +1,5 @@
 import { SAFE_MIN, SAFE_MAX } from "../globals";
 
-export function isArray(value: unknown): value is Array<unknown> {
-  return Array.isArray(value);
-}
-
 export function isBigInt(value: unknown): value is bigint {
   return typeof value === "bigint";
 }
