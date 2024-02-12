@@ -25,6 +25,6 @@ export function isSafeNumber(value: number): boolean {
   return value >= SAFE_MIN && value <= SAFE_MAX;
 }
 
-export function isSymbol(value: unknown): value is Symbol {
+export function isSymbol(value: unknown): value is symbol {
   return typeof value === "symbol";
 }
