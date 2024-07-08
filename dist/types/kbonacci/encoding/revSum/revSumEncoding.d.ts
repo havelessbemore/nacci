@@ -1,5 +1,6 @@
-import { Ops } from "../../../ops/ops";
-import { Encoding } from "../encoding";
+import { Ops } from '../../../ops/ops';
+import { Encoding } from '../encoding';
+
 export declare class RevSumEncoding<T> implements Encoding<T, T[]> {
     private ops;
     readonly format: "rsum";

@@ -1,6 +1,7 @@
-import { Ops } from "../../../ops/ops";
-import { Matrix } from "../../../type/matrix";
-import { Encoding } from "../encoding";
+import { Ops } from '../../../ops/ops';
+import { Matrix } from '../../../type/matrix';
+import { Encoding } from '../encoding';
+
 export declare class MatrixEncoding<T> implements Encoding<T, Matrix<T>> {
     private ops;
     readonly format: "mat";

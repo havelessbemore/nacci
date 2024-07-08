@@ -1,5 +1,6 @@
-import { Generator } from "./generator";
-import { GenConfig } from "./genConfig";
+import { Generator } from './generator';
+import { GenConfig } from './genConfig';
+
 export declare class SlidingWindowGen<K, V> implements Generator<K, V> {
     private delta;
     private indexOps;

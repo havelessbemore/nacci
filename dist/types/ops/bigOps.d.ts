@@ -1,4 +1,5 @@
-import { Ops } from "./ops";
+import { Ops } from './ops';
+
 export declare class BigOps implements Ops<bigint> {
     cast(a: bigint | boolean | number | string): bigint;
     dividedBy(a: bigint, b: bigint): bigint;

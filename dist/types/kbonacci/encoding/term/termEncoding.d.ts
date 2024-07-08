@@ -1,5 +1,6 @@
-import { Encoding } from "../encoding";
-import { Ops } from "../../../ops/ops";
+import { Encoding } from '../encoding';
+import { Ops } from '../../../ops/ops';
+
 export declare class TermEncoding<T> implements Encoding<T, T[]> {
     private ops;
     readonly format: "term";

@@ -1,4 +1,5 @@
-import { Generator } from "../gen/generator";
+import { Generator } from '../gen/generator';
+
 export declare class BigKbonacci implements Generator<bigint, bigint> {
     private customs;
     private gen;

@@ -1,54 +1,33 @@
+[**nacci**](../README.md) • **Docs**
+
+***
+
 [nacci](../README.md) / Kbonacci
 
 # Class: Kbonacci
 
-## Hierarchy
+## Extended by
 
-- **`Kbonacci`**
-
-  ↳ [`Fibonacci`](Fibonacci.md)
-
-  ↳ [`Tribonacci`](Tribonacci.md)
+- [`Fibonacci`](Fibonacci.md)
+- [`Tribonacci`](Tribonacci.md)
 
 ## Implements
 
-- [`Generator`](../interfaces/gen.Generator.md)\<`number`, `number`\>
-
-## Table of contents
-
-### Constructors
-
-- [constructor](Kbonacci.md#constructor)
-
-### Properties
-
-- [customs](Kbonacci.md#customs)
-- [gen](Kbonacci.md#gen)
-
-### Accessors
-
-- [K](Kbonacci.md#k)
-
-### Methods
-
-- [get](Kbonacci.md#get)
-- [getCached](Kbonacci.md#getcached)
-- [getCustoms](Kbonacci.md#getcustoms)
-- [setCached](Kbonacci.md#setcached)
+- [`Generator`](../namespaces/gen/interfaces/Generator.md)\<`number`, `number`\>
 
 ## Constructors
 
-### constructor
+### new Kbonacci()
 
-• **new Kbonacci**(`K`, `customs?`, `cached?`): [`Kbonacci`](Kbonacci.md)
+> **new Kbonacci**(`K`, `customs`?, `cached`?): [`Kbonacci`](Kbonacci.md)
 
 #### Parameters
 
-| Name       | Type       | Default value |
-| :--------- | :--------- | :------------ |
-| `K`        | `number`   | `undefined`   |
-| `customs?` | `number`[] | `undefined`   |
-| `cached`   | `boolean`  | `true`        |
+• **K**: `number`
+
+• **customs?**: `number`[]
+
+• **cached?**: `boolean` = `true`
 
 #### Returns
 
@@ -56,33 +35,13 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:10](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L10)
-
-## Properties
-
-### customs
-
-• `Private` **customs**: `number`[]
-
-#### Defined in
-
-[src/kbonacci/wrapper/kbonacci.ts:7](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L7)
-
----
-
-### gen
-
-• `Private` **gen**: [`PowerGen`](gen.PowerGen.md)\<`number`, `number`\>
-
-#### Defined in
-
-[src/kbonacci/wrapper/kbonacci.ts:8](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L8)
+[src/kbonacci/wrapper/kbonacci.ts:10](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/wrapper/kbonacci.ts#L10)
 
 ## Accessors
 
 ### K
 
-• `get` **K**(): `number`
+> `get` **K**(): `number`
 
 #### Returns
 
@@ -90,23 +49,21 @@
 
 #### Implementation of
 
-[Generator](../interfaces/gen.Generator.md).[K](../interfaces/gen.Generator.md#k)
+[`Generator`](../namespaces/gen/interfaces/Generator.md).[`K`](../namespaces/gen/interfaces/Generator.md#k)
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L17)
+[src/kbonacci/wrapper/kbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/wrapper/kbonacci.ts#L17)
 
 ## Methods
 
-### get
+### get()
 
-▸ **get**(`index`): `number`
+> **get**(`index`): `number`
 
 #### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
-| `index` | `number` |
+• **index**: `number`
 
 #### Returns
 
@@ -114,17 +71,17 @@
 
 #### Implementation of
 
-[Generator](../interfaces/gen.Generator.md).[get](../interfaces/gen.Generator.md#get)
+[`Generator`](../namespaces/gen/interfaces/Generator.md).[`get`](../namespaces/gen/interfaces/Generator.md#get)
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L21)
+[src/kbonacci/wrapper/kbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/wrapper/kbonacci.ts#L21)
 
----
+***
 
-### getCached
+### getCached()
 
-▸ **getCached**(): `boolean`
+> **getCached**(): `boolean`
 
 #### Returns
 
@@ -132,13 +89,13 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L25)
+[src/kbonacci/wrapper/kbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/wrapper/kbonacci.ts#L25)
 
----
+***
 
-### getCustoms
+### getCustoms()
 
-▸ **getCustoms**(): `number`[]
+> **getCustoms**(): `number`[]
 
 #### Returns
 
@@ -146,19 +103,17 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L29)
+[src/kbonacci/wrapper/kbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/wrapper/kbonacci.ts#L29)
 
----
+***
 
-### setCached
+### setCached()
 
-▸ **setCached**(`value`): `void`
+> **setCached**(`value`): `void`
 
 #### Parameters
 
-| Name    | Type      |
-| :------ | :-------- |
-| `value` | `boolean` |
+• **value**: `boolean`
 
 #### Returns
 
@@ -166,4 +121,4 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/kbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/13a7465/src/kbonacci/wrapper/kbonacci.ts#L33)
+[src/kbonacci/wrapper/kbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/wrapper/kbonacci.ts#L33)

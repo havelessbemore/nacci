@@ -17,7 +17,7 @@ limitations under the License.
  */
 var R = Object.defineProperty;
 var G = (o, t, s) => t in o ? R(o, t, { enumerable: !0, configurable: !0, writable: !0, value: s }) : o[t] = s;
-var h = (o, t, s) => (G(o, typeof t != "symbol" ? t + "" : t, s), s);
+var h = (o, t, s) => G(o, typeof t != "symbol" ? t + "" : t, s);
 class _ extends RangeError {
   constructor(t, s, e = "!=") {
     const n = Array.isArray(t) ? t.join("x") : `${t}`, i = Array.isArray(s) ? s.join("x") : `${s}`;
@@ -130,8 +130,7 @@ class W {
     if (s.sign(t) > 0) {
       const l = s.mod(s.minus1(t), r);
       i = s.minus1(r), t = s.trunc(s.dividedBy(t, r)), t = s.equal(l, i) ? t : s.plus1(t), i = s.plus(s.negative(i), l), n = this.pos.get(t);
-    } else
-      s.larger(t, s.negative(r)) ? (i = t, n = this.zero) : (i = s.mod(t, r), t = s.negative(t), t = s.trunc(s.dividedBy(t, r)), n = this.neg.get(t));
+    } else s.larger(t, s.negative(r)) ? (i = t, n = this.zero) : (i = s.mod(t, r), t = s.negative(t), t = s.trunc(s.dividedBy(t, r)), n = this.neg.get(t));
     const u = this.isStd ? void 0 : this.customs;
     return this.encoding.toValue(n, s.toNumber(i), u);
   }

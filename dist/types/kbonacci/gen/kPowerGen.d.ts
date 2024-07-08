@@ -1,5 +1,6 @@
-import { Generator } from "./generator";
-import { GenConfig } from "./genConfig";
+import { Generator } from './generator';
+import { GenConfig } from './genConfig';
+
 export declare class KPowerGen<K, V> implements Generator<K, V> {
     private cached;
     private customs;

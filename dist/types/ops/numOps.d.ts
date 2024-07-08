@@ -1,4 +1,5 @@
-import { Ops } from "./ops";
+import { Ops } from './ops';
+
 export declare class NumOps implements Ops<number> {
     cast(a: unknown): number;
     dividedBy(a: number, b: number): number;

@@ -1,17 +1,17 @@
-nacci
+**nacci** • **Docs**
+
+***
 
 # nacci
 
-## Table of contents
+## Namespaces
 
-### Namespaces
+- [enc](namespaces/enc/README.md)
+- [err](namespaces/err/README.md)
+- [gen](namespaces/gen/README.md)
+- [ops](namespaces/ops/README.md)
 
-- [enc](modules/enc.md)
-- [err](modules/err.md)
-- [gen](modules/gen.md)
-- [ops](modules/ops.md)
-
-### Classes
+## Classes
 
 - [BigFibonacci](classes/BigFibonacci.md)
 - [BigKbonacci](classes/BigKbonacci.md)
@@ -20,22 +20,6 @@ nacci
 - [Kbonacci](classes/Kbonacci.md)
 - [Tribonacci](classes/Tribonacci.md)
 
-### Type Aliases
-
-- [Matrix](README.md#matrix)
-
 ## Type Aliases
 
-### Matrix
-
-Ƭ **Matrix**\<`T`\>: `T`[][]
-
-#### Type parameters
-
-| Name |
-| :--- |
-| `T`  |
-
-#### Defined in
-
-[src/type/matrix.ts:1](https://github.com/havelessbemore/nacci/blob/13a7465/src/type/matrix.ts#L1)
+- [Matrix](type-aliases/Matrix.md)

@@ -1,4 +1,5 @@
-import { Generator } from "../gen/generator";
+import { Generator } from '../gen/generator';
+
 export declare class Kbonacci implements Generator<number, number> {
     private customs;
     private gen;
