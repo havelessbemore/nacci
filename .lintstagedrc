@@ -1,3 +1,7 @@
 {
-  "*.ts": ["prettier --write", "eslint eslint.config.js", "jest -o --passWithNoTests"]
+  "*.ts": [
+    "prettier --write",
+    "eslint eslint.config.js",
+    "jest -o --passWithNoTests"
+  ]
 }

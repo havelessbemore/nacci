@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[src/error/outOfBoundsError.ts:2](https://github.com/havelessbemore/nacci/blob/21485e9dc2afbb8011ec9c684a1da3778babea29/src/error/outOfBoundsError.ts#L2)
+[src/error/outOfBoundsError.ts:2](https://github.com/havelessbemore/nacci/blob/419f197f5b23c39cb7eb82ae19af760497a0d10d/src/error/outOfBoundsError.ts#L2)
 
 ## Properties
 
