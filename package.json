@@ -1,25 +1,38 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "nacci",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Generate numbers in a k-bonacci sequence (where each term is the sum of the previous k terms) with customizable k, initial terms, strategies and data types (number, bigint, etc).",
+  "license": "Apache-2.0",
+  "author": "Michael Rojas <dev.michael.rojas@gmail.com> (https://github.com/havelessbemore)",
+  "homepage": "https://github.com/havelessbemore/nacci",
+  "bugs": "https://github.com/havelessbemore/nacci/issues",
+  "sideEffects": false,
+  "engines": {
+    "node": ">= 18"
+  },
+  "type": "module",
+  "main": "./dist/nacci.cjs",
+  "module": "./dist/nacci.mjs",
+  "types": "./dist/nacci.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/nacci.mjs",
+      "require": "./dist/nacci.cjs",
+      "types": "./dist/nacci.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/havelessbemore/nacci.git"
+  },
   "files": [
     "dist/",
     "LICENSE",
     "README.md"
   ],
-  "type": "module",
-  "main": "./dist/cjs/nacci.cjs",
-  "module": "./dist/esm/nacci.mjs",
-  "types": "./dist/types/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/esm/nacci.mjs",
-      "require": "./dist/cjs/nacci.cjs",
-      "types": "./dist/types/index.d.ts"
-    }
-  },
   "scripts": {
-    "build": "rimraf dist && tsc && vite build && vite build -c vite.config.misc.ts",
+    "build": "rimraf dist && tsc && rollup -c",
     "build:docs": "typedoc",
     "format": "prettier . --write",
     "lint": "eslint . --ext .ts",
@@ -28,7 +41,6 @@
     "test": "jest",
     "test:coverage": "jest --collect-coverage"
   },
-  "sideEffects": false,
   "keywords": [
     "math",
     "mathematics",
@@ -43,17 +55,8 @@
     "number",
     "sequence"
   ],
-  "author": "Michael Rojas <dev.michael.rojas@gmail.com> (https://github.com/havelessbemore)",
-  "homepage": "https://github.com/havelessbemore/nacci",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/havelessbemore/nacci.git"
-  },
-  "license": "Apache-2.0",
-  "engines": {
-    "node": ">= 18"
-  },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/jest": "^29.5.12",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^20.14.11",
@@ -68,13 +71,15 @@
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
+    "rollup": "^4.18.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "rollup-plugin-license": "^3.5.2",
     "ts-jest": "^29.2.3",
     "ts-node": "^10.9.2",
     "typedoc": "^0.26.4",
     "typedoc-plugin-markdown": "^4.2.1",
     "typescript": "^5.5.3",
-    "vite": "^5.3.4",
-    "vite-plugin-banner": "^0.7.1",
-    "vite-plugin-dts": "^4.0.0-beta.1"
+    "typescript-eslint": "^7.16.1"
   }
 }

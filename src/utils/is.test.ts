@@ -31,8 +31,8 @@ describe("isBigInt", () => {
 
 describe("isFunction", () => {
   test("should return true for a function", () => {
-    const func = () => {};
-    expect(isFunction(func)).toBe(true);
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    expect(isFunction(() => {})).toBe(true);
   });
 
   test("should return false for a number", () => {
@@ -162,6 +162,7 @@ describe("isSymbol", () => {
     expect(isSymbol("string")).toBe(false);
     expect(isSymbol({})).toBe(false);
     expect(isSymbol([])).toBe(false);
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     expect(isSymbol(() => {})).toBe(false);
     expect(isSymbol(true)).toBe(false);
   });

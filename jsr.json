@@ -1,0 +1,13 @@
+{
+    "$schema": "https://jsr.io/schema/config-file.v1.json",
+    "name": "@rojas/nacci",
+    "version": "1.0.6",
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "publish": {
+      "include": ["LICENSE", "README.md", "src"],
+      "exclude": ["src/**/*.test.ts"]
+    }
+  }
+  

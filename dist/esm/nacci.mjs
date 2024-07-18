@@ -1,23 +1,22 @@
-/*! nacci
-https://github.com/havelessbemore/nacci
-
-Copyright (C) 2023-2024 Michael Rojas <dev.michael.rojas@gmail.com>
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   https://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+/*!
+ * nacci
+ * https://github.com/havelessbemore/nacci
+ *
+ * Copyright (C) 2023-2024 Michael Rojas <dev.michael.rojas@gmail.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
-var __defProp = Object.defineProperty;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+
 class DimensionError extends RangeError {
   constructor(actual, expected, relation = "!=") {
     const a = Array.isArray(actual) ? actual.join("x") : `${actual}`;
@@ -25,11 +24,13 @@ class DimensionError extends RangeError {
     super(`Dimension mismatch. ${a} ${relation} ${b}`);
   }
 }
+
 class IntegerError extends TypeError {
   constructor(value, label = "Value") {
     super(`Not an integer. ${label}: ${String(value)}`);
   }
 }
+
 class OutOfBoundsError extends RangeError {
   constructor(actual, min, max, label = "index", msg = "Out of bounds") {
     const message = [msg];
@@ -47,20 +48,24 @@ class OutOfBoundsError extends RangeError {
     super(message.join(""));
   }
 }
+
 const K_MIN = 2;
 const SAFE_MAX = Number.MAX_SAFE_INTEGER;
 const SAFE_MIN = Number.MIN_SAFE_INTEGER;
+
 class UnsafeError extends OutOfBoundsError {
   constructor(actual) {
     super(actual, SAFE_MIN, SAFE_MAX, "value", "Unsafe value");
   }
 }
+
 function isInteger(value) {
   return Number.isInteger(value);
 }
 function isSafeNumber(value) {
   return value >= SAFE_MIN && value <= SAFE_MAX;
 }
+
 function tryK(K) {
   if (!isInteger(K)) {
     throw new IntegerError(K, "K");
@@ -82,12 +87,16 @@ function trySafe(n) {
   }
   return n;
 }
+
+var __defProp$9 = Object.defineProperty;
+var __defNormalProp$9 = (obj, key, value) => key in obj ? __defProp$9(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$9 = (obj, key, value) => __defNormalProp$9(obj, typeof key !== "symbol" ? key + "" : key, value);
 class Powers {
   constructor(value, keyOps, valOps, cached = true) {
-    __publicField(this, "cached");
-    __publicField(this, "keyOps");
-    __publicField(this, "valOps");
-    __publicField(this, "pows");
+    __publicField$9(this, "cached");
+    __publicField$9(this, "keyOps");
+    __publicField$9(this, "valOps");
+    __publicField$9(this, "pows");
     this.cached = cached;
     this.keyOps = keyOps;
     this.pows = [value];
@@ -138,18 +147,22 @@ class Powers {
     }
   }
 }
+
+var __defProp$8 = Object.defineProperty;
+var __defNormalProp$8 = (obj, key, value) => key in obj ? __defProp$8(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$8 = (obj, key, value) => __defNormalProp$8(obj, typeof key !== "symbol" ? key + "" : key, value);
 class KPowerGen {
   constructor(K, config) {
-    __publicField(this, "cached");
-    __publicField(this, "customs");
-    __publicField(this, "encoding");
-    __publicField(this, "indexOps");
-    __publicField(this, "isStd");
-    __publicField(this, "_K");
-    __publicField(this, "neg");
-    __publicField(this, "pos");
-    __publicField(this, "v0");
-    __publicField(this, "zero");
+    __publicField$8(this, "cached");
+    __publicField$8(this, "customs");
+    __publicField$8(this, "encoding");
+    __publicField$8(this, "indexOps");
+    __publicField$8(this, "isStd");
+    __publicField$8(this, "_K");
+    __publicField$8(this, "neg");
+    __publicField$8(this, "pos");
+    __publicField$8(this, "v0");
+    __publicField$8(this, "zero");
     tryK(K);
     const cached = config.cached ?? true;
     const customs = config.customs ?? [];
@@ -227,17 +240,21 @@ class KPowerGen {
     }
   }
 }
+
+var __defProp$7 = Object.defineProperty;
+var __defNormalProp$7 = (obj, key, value) => key in obj ? __defProp$7(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$7 = (obj, key, value) => __defNormalProp$7(obj, typeof key !== "symbol" ? key + "" : key, value);
 class PowerGen {
   constructor(K, config) {
-    __publicField(this, "cached");
-    __publicField(this, "customs");
-    __publicField(this, "encoding");
-    __publicField(this, "indexOps");
-    __publicField(this, "isStd");
-    __publicField(this, "_K");
-    __publicField(this, "neg");
-    __publicField(this, "pos");
-    __publicField(this, "v0");
+    __publicField$7(this, "cached");
+    __publicField$7(this, "customs");
+    __publicField$7(this, "encoding");
+    __publicField$7(this, "indexOps");
+    __publicField$7(this, "isStd");
+    __publicField$7(this, "_K");
+    __publicField$7(this, "neg");
+    __publicField$7(this, "pos");
+    __publicField$7(this, "v0");
     tryK(K);
     const cached = config.cached ?? true;
     const customs = config.customs ?? [];
@@ -297,6 +314,7 @@ class PowerGen {
     }
   }
 }
+
 function copy(A, B, target = 0, start = 0, end = A.length) {
   if (A === B) {
     return A.copyWithin(target, start, end);
@@ -338,15 +356,19 @@ function padStart(array, targetLength, padValue) {
   array.copyWithin(i, 0, N);
   array.fill(padValue, 0, Math.min(i, N));
 }
+
+var __defProp$6 = Object.defineProperty;
+var __defNormalProp$6 = (obj, key, value) => key in obj ? __defProp$6(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$6 = (obj, key, value) => __defNormalProp$6(obj, typeof key !== "symbol" ? key + "" : key, value);
 class SlidingWindowGen {
   constructor(K, config) {
-    __publicField(this, "delta");
-    __publicField(this, "indexOps");
-    __publicField(this, "_K");
-    __publicField(this, "minN");
-    __publicField(this, "next");
-    __publicField(this, "valueOps");
-    __publicField(this, "values");
+    __publicField$6(this, "delta");
+    __publicField$6(this, "indexOps");
+    __publicField$6(this, "_K");
+    __publicField$6(this, "minN");
+    __publicField$6(this, "next");
+    __publicField$6(this, "valueOps");
+    __publicField$6(this, "values");
     tryK(K);
     let customs = config.customs ?? [];
     const indexOps = config.indexOps ?? config.ops;
@@ -416,12 +438,14 @@ class SlidingWindowGen {
     }
   }
 }
-const index$3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+
+var index$3 = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  KPowerGen,
-  PowerGen,
-  SlidingWindowGen
-}, Symbol.toStringTag, { value: "Module" }));
+  KPowerGen: KPowerGen,
+  PowerGen: PowerGen,
+  SlidingWindowGen: SlidingWindowGen
+});
+
 function initMatrix(Y, X = Y) {
   const matrix = new Array(Y);
   for (let i = 0; i < Y; ++i) {
@@ -430,10 +454,9 @@ function initMatrix(Y, X = Y) {
   return matrix;
 }
 function matrixMult(A, B, ops, zero = ops.cast(0)) {
-  var _a, _b;
   const M = A.length;
-  const N = ((_a = A[0]) == null ? void 0 : _a.length) ?? 0;
-  const P = ((_b = B[0]) == null ? void 0 : _b.length) ?? 0;
+  const N = A[0]?.length ?? 0;
+  const P = B[0]?.length ?? 0;
   if (N !== B.length) {
     throw new DimensionError([M, N], [B.length, P]);
   }
@@ -450,20 +473,25 @@ function matrixMult(A, B, ops, zero = ops.cast(0)) {
   }
   return C;
 }
+
 const EncodingFormat = {
   Matrix: "mat",
   RevSum: "rsum",
   Sum: "sum",
   Term: "term"
 };
+
+var __defProp$5 = Object.defineProperty;
+var __defNormalProp$5 = (obj, key, value) => key in obj ? __defProp$5(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$5 = (obj, key, value) => __defNormalProp$5(obj, typeof key !== "symbol" ? key + "" : key, value);
 class MatrixEncoding {
   constructor(ops) {
-    __publicField(this, "format", EncodingFormat.Matrix);
-    __publicField(this, "_neg1");
-    __publicField(this, "_0");
-    __publicField(this, "_1");
-    __publicField(this, "_2");
     this.ops = ops;
+    __publicField$5(this, "format", EncodingFormat.Matrix);
+    __publicField$5(this, "_neg1");
+    __publicField$5(this, "_0");
+    __publicField$5(this, "_1");
+    __publicField$5(this, "_2");
     this._neg1 = ops.cast(-1);
     this._0 = ops.cast(0);
     this._1 = ops.cast(1);
@@ -611,13 +639,17 @@ class MatrixEncoding {
     return val;
   }
 }
+
+var __defProp$4 = Object.defineProperty;
+var __defNormalProp$4 = (obj, key, value) => key in obj ? __defProp$4(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$4 = (obj, key, value) => __defNormalProp$4(obj, typeof key !== "symbol" ? key + "" : key, value);
 class RevSumEncoding {
   constructor(ops) {
-    __publicField(this, "format", EncodingFormat.RevSum);
-    __publicField(this, "_neg1");
-    __publicField(this, "_0");
-    __publicField(this, "_1");
     this.ops = ops;
+    __publicField$4(this, "format", EncodingFormat.RevSum);
+    __publicField$4(this, "_neg1");
+    __publicField$4(this, "_0");
+    __publicField$4(this, "_1");
     this._neg1 = ops.cast(-1);
     this._0 = ops.cast(0);
     this._1 = ops.cast(1);
@@ -737,14 +769,18 @@ class RevSumEncoding {
     return value;
   }
 }
+
+var __defProp$3 = Object.defineProperty;
+var __defNormalProp$3 = (obj, key, value) => key in obj ? __defProp$3(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$3 = (obj, key, value) => __defNormalProp$3(obj, typeof key !== "symbol" ? key + "" : key, value);
 class SumEncoding {
   constructor(ops) {
-    __publicField(this, "format", EncodingFormat.Sum);
-    __publicField(this, "_neg1");
-    __publicField(this, "_0");
-    __publicField(this, "_1");
-    __publicField(this, "_2");
     this.ops = ops;
+    __publicField$3(this, "format", EncodingFormat.Sum);
+    __publicField$3(this, "_neg1");
+    __publicField$3(this, "_0");
+    __publicField$3(this, "_1");
+    __publicField$3(this, "_2");
     this._neg1 = ops.cast(-1);
     this._0 = ops.cast(0);
     this._1 = ops.cast(1);
@@ -870,14 +906,18 @@ class SumEncoding {
     return val;
   }
 }
+
+var __defProp$2 = Object.defineProperty;
+var __defNormalProp$2 = (obj, key, value) => key in obj ? __defProp$2(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$2 = (obj, key, value) => __defNormalProp$2(obj, typeof key !== "symbol" ? key + "" : key, value);
 class TermEncoding {
   constructor(ops) {
-    __publicField(this, "format", EncodingFormat.Term);
-    __publicField(this, "_neg1");
-    __publicField(this, "_0");
-    __publicField(this, "_1");
-    __publicField(this, "_2");
     this.ops = ops;
+    __publicField$2(this, "format", EncodingFormat.Term);
+    __publicField$2(this, "_neg1");
+    __publicField$2(this, "_0");
+    __publicField$2(this, "_1");
+    __publicField$2(this, "_2");
     this._neg1 = ops.cast(-1);
     this._0 = ops.cast(0);
     this._1 = ops.cast(1);
@@ -1004,20 +1044,23 @@ function toMatrix(arr, ops) {
   }
   return mat;
 }
-const index$2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+
+var index$2 = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  MatrixEncoding,
-  RevSumEncoding,
-  SumEncoding,
-  TermEncoding
-}, Symbol.toStringTag, { value: "Module" }));
-const index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  MatrixEncoding: MatrixEncoding,
+  RevSumEncoding: RevSumEncoding,
+  SumEncoding: SumEncoding,
+  TermEncoding: TermEncoding
+});
+
+var index$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  DimensionError,
-  IntegerError,
-  OutOfBoundsError,
-  UnsafeError
-}, Symbol.toStringTag, { value: "Module" }));
+  DimensionError: DimensionError,
+  IntegerError: IntegerError,
+  OutOfBoundsError: OutOfBoundsError,
+  UnsafeError: UnsafeError
+});
+
 class BigOps {
   cast(a) {
     return BigInt(a);
@@ -1080,6 +1123,7 @@ class BigOps {
     return a;
   }
 }
+
 class NumOps {
   cast(a) {
     return Number(a);
@@ -1142,6 +1186,7 @@ class NumOps {
     return Math.trunc(a);
   }
 }
+
 class SafeNumOps {
   cast(a) {
     return trySafe(Number(a));
@@ -1204,16 +1249,21 @@ class SafeNumOps {
     return Math.trunc(a);
   }
 }
-const index = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+
+var index = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  BigOps,
-  NumOps,
-  SafeNumOps
-}, Symbol.toStringTag, { value: "Module" }));
+  BigOps: BigOps,
+  NumOps: NumOps,
+  SafeNumOps: SafeNumOps
+});
+
+var __defProp$1 = Object.defineProperty;
+var __defNormalProp$1 = (obj, key, value) => key in obj ? __defProp$1(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField$1 = (obj, key, value) => __defNormalProp$1(obj, typeof key !== "symbol" ? key + "" : key, value);
 class BigKbonacci {
   constructor(K, customs, cached = true) {
-    __publicField(this, "customs");
-    __publicField(this, "gen");
+    __publicField$1(this, "customs");
+    __publicField$1(this, "gen");
     const ops = new BigOps();
     const encoding = new SumEncoding(ops);
     this.customs = customs ?? [];
@@ -1222,8 +1272,8 @@ class BigKbonacci {
   get K() {
     return this.gen.K;
   }
-  get(index2) {
-    return this.gen.get(index2);
+  get(index) {
+    return this.gen.get(index);
   }
   getCached() {
     return this.gen.getCached();
@@ -1235,16 +1285,22 @@ class BigKbonacci {
     this.gen.setCached(value);
   }
 }
+
 class BigFibonacci extends BigKbonacci {
   constructor(customs, cached) {
     super(2, customs, cached);
   }
 }
+
 class BigTribonacci extends BigKbonacci {
   constructor(customs, cached) {
     super(3, customs, cached);
   }
 }
+
+var __defProp = Object.defineProperty;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
 class Kbonacci {
   constructor(K, customs, cached = true) {
     __publicField(this, "customs");
@@ -1257,8 +1313,8 @@ class Kbonacci {
   get K() {
     return this.gen.K;
   }
-  get(index2) {
-    return this.gen.get(index2);
+  get(index) {
+    return this.gen.get(index);
   }
   getCached() {
     return this.gen.getCached();
@@ -1270,26 +1326,18 @@ class Kbonacci {
     this.gen.setCached(value);
   }
 }
+
 class Fibonacci extends Kbonacci {
   constructor(customs, cached) {
     super(2, customs, cached);
   }
 }
+
 class Tribonacci extends Kbonacci {
   constructor(customs, cached) {
     super(3, customs, cached);
   }
 }
-export {
-  BigFibonacci,
-  BigKbonacci,
-  BigTribonacci,
-  Fibonacci,
-  Kbonacci,
-  Tribonacci,
-  index$2 as enc,
-  index$1 as err,
-  index$3 as gen,
-  index as ops
-};
+
+export { BigFibonacci, BigKbonacci, BigTribonacci, Fibonacci, Kbonacci, Tribonacci, index$2 as enc, index$1 as err, index$3 as gen, index as ops };
 //# sourceMappingURL=nacci.mjs.map
