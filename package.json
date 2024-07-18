@@ -35,7 +35,7 @@
     "build": "rimraf dist && tsc && rollup -c",
     "build:docs": "typedoc",
     "format": "prettier . --write",
-    "lint": "npx eslint .",
+    "lint": "eslint .",
     "prepare": "husky",
     "prepublishOnly": "npm run lint && npm run test && npm run build",
     "test": "jest",
@@ -56,16 +56,17 @@
     "sequence"
   ],
   "devDependencies": {
+    "@eslint/js": "^9.7.0",
     "@rollup/plugin-typescript": "^11.1.6",
+    "@types/eslint__js": "^8.42.3",
     "@types/jest": "^29.5.12",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^20.14.11",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
-    "eslint": "^8.57.0",
+    "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-tsdoc": "^0.3.0",
+    "globals": "^15.8.0",
     "husky": "^9.1.1",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.7",
@@ -80,6 +81,9 @@
     "typedoc": "^0.26.4",
     "typedoc-plugin-markdown": "^4.2.1",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^7.16.1"
+    "typescript-eslint": "^8.0.0-alpha.45"
+  },
+  "overrides": {
+    "eslint": "^9.7.0"
   }
 }
