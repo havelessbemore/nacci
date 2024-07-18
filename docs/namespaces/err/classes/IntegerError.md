@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/error/integerError.ts:2](https://github.com/havelessbemore/nacci/blob/419f197f5b23c39cb7eb82ae19af760497a0d10d/src/error/integerError.ts#L2)
+[src/error/integerError.ts:2](https://github.com/havelessbemore/nacci/blob/3cbe0b7b12cdcaf753d48aef5739bde5f440356e/src/error/integerError.ts#L2)
 
 ## Properties
 

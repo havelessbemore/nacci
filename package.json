@@ -3,7 +3,7 @@
   "name": "nacci",
   "version": "1.0.6",
   "description": "Generate numbers in a k-bonacci sequence (where each term is the sum of the previous k terms) with customizable k, initial terms, strategies and data types (number, bigint, etc).",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "author": "Michael Rojas <dev.michael.rojas@gmail.com> (https://github.com/havelessbemore)",
   "homepage": "https://github.com/havelessbemore/nacci",
   "bugs": "https://github.com/havelessbemore/nacci/issues",
