@@ -1,4 +1,4 @@
-import { describe, expect, test } from "vitest";
+import { describe, expect, test } from "@jest/globals";
 
 import { tryK, trySafe, tryNumTerms, tryInteger } from "./try";
 import { K_MIN, SAFE_MAX, SAFE_MIN } from "../globals";

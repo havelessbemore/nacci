@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/generator.ts:1](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/gen/generator.ts#L1)
+[src/kbonacci/gen/generator.ts:1](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/gen/generator.ts#L1)
 
 ## Methods
 
@@ -38,4 +38,4 @@
 
 #### Defined in
 
-[src/kbonacci/gen/generator.ts:3](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/gen/generator.ts#L3)
+[src/kbonacci/gen/generator.ts:3](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/gen/generator.ts#L3)

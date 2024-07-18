@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:9](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L9)
+[src/kbonacci/encoding/encoding.ts:9](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L9)
 
 ## Methods
 
@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:10](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L10)
+[src/kbonacci/encoding/encoding.ts:10](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L10)
 
 ***
 
@@ -56,7 +56,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:11](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L11)
+[src/kbonacci/encoding/encoding.ts:11](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L11)
 
 ***
 
@@ -74,7 +74,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:12](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L12)
+[src/kbonacci/encoding/encoding.ts:12](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L12)
 
 ***
 
@@ -92,7 +92,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:13](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L13)
+[src/kbonacci/encoding/encoding.ts:13](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L13)
 
 ***
 
@@ -110,7 +110,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:14](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L14)
+[src/kbonacci/encoding/encoding.ts:14](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L14)
 
 ***
 
@@ -130,7 +130,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:15](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L15)
+[src/kbonacci/encoding/encoding.ts:15](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L15)
 
 ***
 
@@ -150,7 +150,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:16](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L16)
+[src/kbonacci/encoding/encoding.ts:16](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L16)
 
 ***
 
@@ -168,7 +168,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:17](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L17)
+[src/kbonacci/encoding/encoding.ts:17](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L17)
 
 ***
 
@@ -188,7 +188,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:18](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L18)
+[src/kbonacci/encoding/encoding.ts:18](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L18)
 
 ***
 
@@ -210,4 +210,4 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/encoding.ts:19](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/kbonacci/encoding/encoding.ts#L19)
+[src/kbonacci/encoding/encoding.ts:19](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/kbonacci/encoding/encoding.ts#L19)

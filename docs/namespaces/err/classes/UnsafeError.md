@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/error/unsafeError.ts:5](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/error/unsafeError.ts#L5)
+[src/error/unsafeError.ts:5](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/error/unsafeError.ts#L5)
 
 ## Properties
 

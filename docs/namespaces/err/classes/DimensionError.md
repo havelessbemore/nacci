@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/error/dimensionError.ts:2](https://github.com/havelessbemore/nacci/blob/c935ac2e44daa562932932808e6c68b5725c7123/src/error/dimensionError.ts#L2)
+[src/error/dimensionError.ts:2](https://github.com/havelessbemore/nacci/blob/59fe6bc863f01040e1266e1c800d1b96fc19b6ae/src/error/dimensionError.ts#L2)
 
 ## Properties
 

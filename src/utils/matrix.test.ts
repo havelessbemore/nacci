@@ -1,4 +1,4 @@
-import { describe, expect, test } from "vitest";
+import { describe, expect, test } from "@jest/globals";
 import { fillMatrix, initMatrix } from "./matrix";
 
 describe("fillMatrix", () => {

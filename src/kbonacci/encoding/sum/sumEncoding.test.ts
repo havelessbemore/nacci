@@ -1,4 +1,4 @@
-import { beforeAll, describe, expect, it, test } from "vitest";
+import { beforeAll, describe, expect, it, test } from "@jest/globals";
 
 import { SumEncoding as Encoding } from "./sumEncoding";
 import { Ops } from "../../../ops/ops";

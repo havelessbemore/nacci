@@ -1,0 +1,13 @@
+/** @type {import('ts-jest').JestConfigWithTsJest} */
+export default {
+  preset: "ts-jest",
+  coverageDirectory: "<rootDir>/coverage/",
+  collectCoverageFrom: [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "!**/node_modules/**",
+    "!**/vendor/**",
+  ],
+  coveragePathIgnorePatterns: ["<rootDir>/src/index.ts"],
+  passWithNoTests: true,
+  testEnvironment: "node",
+};

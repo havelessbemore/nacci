@@ -1,13 +1,13 @@
-import { beforeAll, describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it } from "@jest/globals";
 
 import { Powers } from "./powers";
-import { NumericOps } from "../ops/numericOps";
+import { Ops } from "../ops/ops";
 import { SafeNumOps } from "../ops/safeNumOps";
 
 describe("Powers", () => {
   let initVal: number;
-  let keyOps: NumericOps<number>;
-  let valOps: NumericOps<number>;
+  let keyOps: Ops<number>;
+  let valOps: Ops<number>;
 
   beforeAll(() => {
     initVal = 2;
