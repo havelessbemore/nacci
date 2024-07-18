@@ -4,7 +4,7 @@ export class OutOfBoundsError extends RangeError {
     min?: unknown,
     max?: unknown,
     label = "index",
-    msg = "Out of bounds"
+    msg = "Out of bounds",
   ) {
     const message = [msg];
     if (min != null || max != null) {

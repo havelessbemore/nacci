@@ -166,7 +166,7 @@ export function run<V>(ops: Ops<V>): void {
             [7, 14, 27, 52],
             [8, 15, 29, 56],
           ],
-          ops
+          ops,
         );
         A = cast([4, 12, 27, 56]);
         for (let y = 0; y < A.length; ++y) {
@@ -183,7 +183,7 @@ export function run<V>(ops: Ops<V>): void {
             [1, 2, 4, 8, 15],
             [1, 2, 4, 8, 16],
           ],
-          ops
+          ops,
         );
         A = cast([1, 2, 4, 8, 16]);
         for (let y = 0; y < A.length; ++y) {
@@ -201,7 +201,7 @@ export function run<V>(ops: Ops<V>): void {
             [7, 14, 27, 52],
             [8, 15, 29, 56],
           ],
-          ops
+          ops,
         );
         const A = cast([4, 12, 27, 56]);
         const N = A.length;
@@ -221,7 +221,7 @@ export function run<V>(ops: Ops<V>): void {
             [1, 2, 4, 8, 15],
             [1, 2, 4, 8, 16],
           ],
-          ops
+          ops,
         );
         const A = cast([1, 2, 4, 8, 16]);
         const N = A.length;

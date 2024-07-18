@@ -13,7 +13,7 @@ for (const indexOps of ops) {
       valueOps,
       (K, indexOps, valueOps, customs?: unknown[]) => {
         return new SlidingWindowGen(K, { customs, indexOps, valueOps });
-      }
+      },
     );
   }
 }

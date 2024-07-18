@@ -14,7 +14,7 @@ export function copy<T>(
   B: T[],
   target = 0,
   start = 0,
-  end = A.length
+  end = A.length,
 ): T[] {
   if (A === B) {
     return A.copyWithin(target, start, end);
@@ -50,7 +50,7 @@ export function getSum<T>(arr: T[], ops: Ops<T>): T | undefined {
 export function padStart<T>(
   array: T[],
   targetLength: number,
-  padValue: T
+  padValue: T,
 ): void {
   if (targetLength <= array.length) {
     return;

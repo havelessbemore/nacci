@@ -46,14 +46,14 @@ export function run<V>(ops: Ops<V>): void {
           cast([
             [1, 1],
             [1, 2],
-          ])
+          ]),
         );
         expect(enc.genK(3)).toEqual(
           cast([
             [1, 1, 2],
             [1, 2, 3],
             [1, 2, 4],
-          ])
+          ]),
         );
         expect(enc.genK(4)).toEqual(
           cast([
@@ -61,7 +61,7 @@ export function run<V>(ops: Ops<V>): void {
             [1, 2, 3, 6],
             [1, 2, 4, 7],
             [1, 2, 4, 8],
-          ])
+          ]),
         );
         expect(enc.genK(5)).toEqual(
           cast([
@@ -70,7 +70,7 @@ export function run<V>(ops: Ops<V>): void {
             [1, 2, 4, 7, 14],
             [1, 2, 4, 8, 15],
             [1, 2, 4, 8, 16],
-          ])
+          ]),
         );
       });
     });
@@ -91,14 +91,14 @@ export function run<V>(ops: Ops<V>): void {
           cast([
             [2, -1],
             [-1, 1],
-          ])
+          ]),
         );
         expect(enc.genNegK(3)).toEqual(
           cast([
             [2, 0, -1],
             [-1, 2, -1],
             [0, -1, 1],
-          ])
+          ]),
         );
         expect(enc.genNegK(4)).toEqual(
           cast([
@@ -106,7 +106,7 @@ export function run<V>(ops: Ops<V>): void {
             [-1, 2, 0, -1],
             [0, -1, 2, -1],
             [0, 0, -1, 1],
-          ])
+          ]),
         );
         expect(enc.genNegK(5)).toEqual(
           cast([
@@ -115,7 +115,7 @@ export function run<V>(ops: Ops<V>): void {
             [0, -1, 2, 0, -1],
             [0, 0, -1, 2, -1],
             [0, 0, 0, -1, 1],
-          ])
+          ]),
         );
       });
     });
@@ -263,21 +263,21 @@ export function run<V>(ops: Ops<V>): void {
             [4, 7, 13],
             [6, 11, 20],
             [7, 13, 24],
-          ])
+          ]),
         );
         expect(enc.shift(A, -1)).toEqual(
           cast([
             [2, 4, 7],
             [3, 6, 11],
             [4, 7, 13],
-          ])
+          ]),
         );
         expect(enc.shift(A, -2)).toEqual(
           cast([
             [1, 2, 4],
             [2, 3, 6],
             [2, 4, 7],
-          ])
+          ]),
         );
       });
     });

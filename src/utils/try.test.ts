@@ -54,10 +54,10 @@ describe("tryNumTerms", () => {
 
   test("throws error if array exceeds max length", () => {
     expect(() => tryNumTerms(maxLen, [1, 2, 3, 4, 5, 6])).toThrowError(
-      DimensionError
+      DimensionError,
     );
     expect(() =>
-      tryNumTerms(maxLen, new Array<number>(maxLen + 1).fill(0))
+      tryNumTerms(maxLen, new Array<number>(maxLen + 1).fill(0)),
     ).toThrowError(DimensionError);
   });
 });

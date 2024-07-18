@@ -27,8 +27,8 @@ export function run<K, V>(
     K: number,
     indexOps: Ops<K>,
     valueOps: Ops<V>,
-    customs?: V[]
-  ) => Generator<K, V>
+    customs?: V[],
+  ) => Generator<K, V>,
 ): void {
   describe(name, () => {
     describe("new ()", () => {

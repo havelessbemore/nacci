@@ -25,7 +25,7 @@ for (const indexOps of ops) {
         (K, indexOps, valueOps, customs?: unknown[]) => {
           const encoding = new encodingCls(valueOps);
           return new KPowerGen(K, { customs, encoding, indexOps, valueOps });
-        }
+        },
       );
     }
   }

@@ -33,7 +33,7 @@ export function matrixMult<T>(
   A: Matrix<T>,
   B: Matrix<T>,
   ops: Ops<T>,
-  zero: T = ops.cast(0)
+  zero: T = ops.cast(0),
 ): Matrix<T> {
   const M = A.length;
   const N = A[0]?.length ?? 0;

@@ -22,13 +22,13 @@ describe("initMatrix", () => {
   test("creates a matrix with the specified number of rows and columns", () => {
     const result = initMatrix(3, 4);
     expect(result.length).toBe(3);
-    expect(result.every(row => row.length === 4)).toBe(true);
+    expect(result.every((row) => row.length === 4)).toBe(true);
   });
 
   test("creates a square matrix when only one dimension is specified", () => {
     const result = initMatrix(3);
     expect(result.length).toBe(3);
-    expect(result.every(row => row.length === 3)).toBe(true);
+    expect(result.every((row) => row.length === 3)).toBe(true);
   });
 
   test("creates an empty matrix for zero dimensions", () => {
