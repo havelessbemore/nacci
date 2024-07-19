@@ -4,7 +4,11 @@ import prettierConfig from "eslint-config-prettier";
 import tseslint from "typescript-eslint";
 
 export default [
-  { ignores: ["coverage", "dist"] },
+  {
+    // Define global ignores. Must be used without
+    // any other keys in the configuration object.
+    ignores: ["coverage", "dist", "docs", "examples"],
+  },
   { files: ["**/*.{js,mjs,cjs,ts}"] },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   eslint.configs.recommended,

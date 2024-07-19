@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:5](https://github.com/havelessbemore/nacci/blob/3cbe0b7b12cdcaf753d48aef5739bde5f440356e/src/kbonacci/gen/genConfig.ts#L5)
+[src/kbonacci/gen/genConfig.ts:5](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/gen/genConfig.ts#L5)
 
 ***
 
@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:6](https://github.com/havelessbemore/nacci/blob/3cbe0b7b12cdcaf753d48aef5739bde5f440356e/src/kbonacci/gen/genConfig.ts#L6)
+[src/kbonacci/gen/genConfig.ts:6](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/gen/genConfig.ts#L6)
 
 ***
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:7](https://github.com/havelessbemore/nacci/blob/3cbe0b7b12cdcaf753d48aef5739bde5f440356e/src/kbonacci/gen/genConfig.ts#L7)
+[src/kbonacci/gen/genConfig.ts:7](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/gen/genConfig.ts#L7)
 
 ***
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:10](https://github.com/havelessbemore/nacci/blob/3cbe0b7b12cdcaf753d48aef5739bde5f440356e/src/kbonacci/gen/genConfig.ts#L10)
+[src/kbonacci/gen/genConfig.ts:10](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/gen/genConfig.ts#L10)
 
 ***
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:9](https://github.com/havelessbemore/nacci/blob/3cbe0b7b12cdcaf753d48aef5739bde5f440356e/src/kbonacci/gen/genConfig.ts#L9)
+[src/kbonacci/gen/genConfig.ts:9](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/gen/genConfig.ts#L9)
 
 ***
 
@@ -72,4 +72,4 @@
 
 #### Defined in
 
-[src/kbonacci/gen/genConfig.ts:11](https://github.com/havelessbemore/nacci/blob/3cbe0b7b12cdcaf753d48aef5739bde5f440356e/src/kbonacci/gen/genConfig.ts#L11)
+[src/kbonacci/gen/genConfig.ts:11](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/gen/genConfig.ts#L11)

@@ -14,4 +14,4 @@
 
 ## Defined in
 
-[src/type/matrix.ts:1](https://github.com/havelessbemore/nacci/blob/3cbe0b7b12cdcaf753d48aef5739bde5f440356e/src/type/matrix.ts#L1)
+[src/type/matrix.ts:1](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/type/matrix.ts#L1)

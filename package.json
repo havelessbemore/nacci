@@ -33,9 +33,9 @@
   ],
   "scripts": {
     "build": "rimraf dist && tsc && rollup -c",
-    "build:docs": "typedoc",
+    "build:docs": "rimraf docs && typedoc",
     "format": "prettier . --write",
-    "lint": "eslint eslint.config.js",
+    "lint": "eslint .",
     "prepare": "husky",
     "prepublishOnly": "npm run lint && npm run test && npm run build",
     "test": "jest",
