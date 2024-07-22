@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:17](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L17)
+[src/kbonacci/encoding/term/termEncoding.ts:17](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L17)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:10](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L10)
+[src/kbonacci/encoding/term/termEncoding.ts:10](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L10)
 
 ## Methods
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:24](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L24)
+[src/kbonacci/encoding/term/termEncoding.ts:24](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L24)
 
 ***
 
@@ -88,7 +88,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:32](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L32)
+[src/kbonacci/encoding/term/termEncoding.ts:32](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L32)
 
 ***
 
@@ -110,7 +110,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:43](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L43)
+[src/kbonacci/encoding/term/termEncoding.ts:43](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L43)
 
 ***
 
@@ -132,7 +132,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:52](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L52)
+[src/kbonacci/encoding/term/termEncoding.ts:52](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L52)
 
 ***
 
@@ -154,7 +154,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:60](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L60)
+[src/kbonacci/encoding/term/termEncoding.ts:60](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L60)
 
 ***
 
@@ -178,7 +178,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:68](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L68)
+[src/kbonacci/encoding/term/termEncoding.ts:68](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L68)
 
 ***
 
@@ -202,7 +202,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:86](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L86)
+[src/kbonacci/encoding/term/termEncoding.ts:86](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L86)
 
 ***
 
@@ -224,7 +224,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:112](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L112)
+[src/kbonacci/encoding/term/termEncoding.ts:112](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L112)
 
 ***
 
@@ -248,7 +248,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:116](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L116)
+[src/kbonacci/encoding/term/termEncoding.ts:116](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L116)
 
 ***
 
@@ -274,4 +274,4 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/term/termEncoding.ts:120](https://github.com/havelessbemore/nacci/blob/c6f96c3a1698a1264d4da4fdd38d44da87b50766/src/kbonacci/encoding/term/termEncoding.ts#L120)
+[src/kbonacci/encoding/term/termEncoding.ts:120](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/encoding/term/termEncoding.ts#L120)
