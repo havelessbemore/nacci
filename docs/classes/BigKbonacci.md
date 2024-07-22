@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:10](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/wrapper/bigKbonacci.ts#L10)
+[src/kbonacci/wrapper/bigKbonacci.ts:10](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/wrapper/bigKbonacci.ts#L10)
 
 ## Accessors
 
@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/wrapper/bigKbonacci.ts#L17)
+[src/kbonacci/wrapper/bigKbonacci.ts:17](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/wrapper/bigKbonacci.ts#L17)
 
 ## Methods
 
@@ -75,7 +75,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/wrapper/bigKbonacci.ts#L21)
+[src/kbonacci/wrapper/bigKbonacci.ts:21](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/wrapper/bigKbonacci.ts#L21)
 
 ***
 
@@ -89,7 +89,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/wrapper/bigKbonacci.ts#L25)
+[src/kbonacci/wrapper/bigKbonacci.ts:25](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/wrapper/bigKbonacci.ts#L25)
 
 ***
 
@@ -103,7 +103,7 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/wrapper/bigKbonacci.ts#L29)
+[src/kbonacci/wrapper/bigKbonacci.ts:29](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/wrapper/bigKbonacci.ts#L29)
 
 ***
 
@@ -121,4 +121,4 @@
 
 #### Defined in
 
-[src/kbonacci/wrapper/bigKbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/wrapper/bigKbonacci.ts#L33)
+[src/kbonacci/wrapper/bigKbonacci.ts:33](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/wrapper/bigKbonacci.ts#L33)

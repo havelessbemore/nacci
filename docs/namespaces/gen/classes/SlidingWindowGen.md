@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:17](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/gen/slidingWindowGen.ts#L17)
+[src/kbonacci/gen/slidingWindowGen.ts:17](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/gen/slidingWindowGen.ts#L17)
 
 ## Accessors
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:49](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/gen/slidingWindowGen.ts#L49)
+[src/kbonacci/gen/slidingWindowGen.ts:49](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/gen/slidingWindowGen.ts#L49)
 
 ## Methods
 
@@ -74,4 +74,4 @@
 
 #### Defined in
 
-[src/kbonacci/gen/slidingWindowGen.ts:53](https://github.com/havelessbemore/nacci/blob/3ccd482484f8992156abf94ed5dc512ad62f4b44/src/kbonacci/gen/slidingWindowGen.ts#L53)
+[src/kbonacci/gen/slidingWindowGen.ts:53](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/gen/slidingWindowGen.ts#L53)
