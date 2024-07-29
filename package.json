@@ -61,7 +61,7 @@
     "@types/eslint__js": "^8.42.3",
     "@types/jest": "^29.5.12",
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^20.14.11",
+    "@types/node": "^22.0.0",
     "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
