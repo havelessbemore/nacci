@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:31](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L31)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:31](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L31)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:24](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L24)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:24](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L24)
 
 ## Methods
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:38](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L38)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:38](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L38)
 
 ***
 
@@ -88,7 +88,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:64](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L64)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:64](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L64)
 
 ***
 
@@ -110,7 +110,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:82](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L82)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:82](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L82)
 
 ***
 
@@ -132,7 +132,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:97](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L97)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:97](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L97)
 
 ***
 
@@ -154,7 +154,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:112](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L112)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:112](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L112)
 
 ***
 
@@ -178,7 +178,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:127](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L127)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:127](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L127)
 
 ***
 
@@ -202,7 +202,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:145](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L145)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:145](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L145)
 
 ***
 
@@ -224,7 +224,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:174](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L174)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:174](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L174)
 
 ***
 
@@ -248,7 +248,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:178](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L178)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:178](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L178)
 
 ***
 
@@ -274,4 +274,4 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/matrix/matrixEncoding.ts:182](https://github.com/havelessbemore/nacci/blob/19c265384213dac93b72925f12b93fd11a874a66/src/kbonacci/encoding/matrix/matrixEncoding.ts#L182)
+[src/kbonacci/encoding/matrix/matrixEncoding.ts:182](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/matrix/matrixEncoding.ts#L182)
