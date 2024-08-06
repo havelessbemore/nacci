@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:5](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L5)
+[src/ops/safeNumOps.ts:5](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L5)
 
 ***
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:8](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L8)
+[src/ops/safeNumOps.ts:8](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L8)
 
 ***
 
@@ -88,7 +88,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:11](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L11)
+[src/ops/safeNumOps.ts:11](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L11)
 
 ***
 
@@ -110,7 +110,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:14](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L14)
+[src/ops/safeNumOps.ts:14](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L14)
 
 ***
 
@@ -132,7 +132,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:17](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L17)
+[src/ops/safeNumOps.ts:17](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L17)
 
 ***
 
@@ -156,7 +156,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:20](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L20)
+[src/ops/safeNumOps.ts:20](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L20)
 
 ***
 
@@ -180,7 +180,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:23](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L23)
+[src/ops/safeNumOps.ts:23](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L23)
 
 ***
 
@@ -204,7 +204,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:26](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L26)
+[src/ops/safeNumOps.ts:26](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L26)
 
 ***
 
@@ -226,7 +226,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:29](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L29)
+[src/ops/safeNumOps.ts:29](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L29)
 
 ***
 
@@ -250,7 +250,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:32](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L32)
+[src/ops/safeNumOps.ts:32](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L32)
 
 ***
 
@@ -272,7 +272,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:35](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L35)
+[src/ops/safeNumOps.ts:35](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L35)
 
 ***
 
@@ -296,7 +296,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:38](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L38)
+[src/ops/safeNumOps.ts:38](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L38)
 
 ***
 
@@ -318,7 +318,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:41](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L41)
+[src/ops/safeNumOps.ts:41](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L41)
 
 ***
 
@@ -340,7 +340,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:44](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L44)
+[src/ops/safeNumOps.ts:44](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L44)
 
 ***
 
@@ -364,7 +364,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:47](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L47)
+[src/ops/safeNumOps.ts:47](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L47)
 
 ***
 
@@ -388,7 +388,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:50](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L50)
+[src/ops/safeNumOps.ts:50](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L50)
 
 ***
 
@@ -410,7 +410,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:53](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L53)
+[src/ops/safeNumOps.ts:53](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L53)
 
 ***
 
@@ -434,7 +434,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:56](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L56)
+[src/ops/safeNumOps.ts:56](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L56)
 
 ***
 
@@ -456,7 +456,7 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:59](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L59)
+[src/ops/safeNumOps.ts:59](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L59)
 
 ***
 
@@ -478,4 +478,4 @@
 
 #### Defined in
 
-[src/ops/safeNumOps.ts:62](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/ops/safeNumOps.ts#L62)
+[src/ops/safeNumOps.ts:62](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/safeNumOps.ts#L62)

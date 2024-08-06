@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[src/error/integerError.ts:2](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/error/integerError.ts#L2)
+[src/error/integerError.ts:2](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/error/integerError.ts#L2)
 
 ## Properties
 
@@ -118,7 +118,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 #### Defined in
 
-node\_modules/@types/node/globals.d.ts:28
+node\_modules/@types/node/globals.d.ts:29
 
 ***
 
@@ -132,7 +132,7 @@ node\_modules/@types/node/globals.d.ts:28
 
 #### Defined in
 
-node\_modules/@types/node/globals.d.ts:30
+node\_modules/@types/node/globals.d.ts:31
 
 ## Methods
 
@@ -158,4 +158,4 @@ Create .stack property on a target object
 
 #### Defined in
 
-node\_modules/@types/node/globals.d.ts:21
+node\_modules/@types/node/globals.d.ts:22

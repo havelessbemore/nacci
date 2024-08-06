@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:15](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L15)
+[src/kbonacci/encoding/sum/sumEncoding.ts:15](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L15)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:8](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L8)
+[src/kbonacci/encoding/sum/sumEncoding.ts:8](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L8)
 
 ## Methods
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:22](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L22)
+[src/kbonacci/encoding/sum/sumEncoding.ts:22](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L22)
 
 ***
 
@@ -88,7 +88,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:34](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L34)
+[src/kbonacci/encoding/sum/sumEncoding.ts:34](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L34)
 
 ***
 
@@ -110,7 +110,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:42](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L42)
+[src/kbonacci/encoding/sum/sumEncoding.ts:42](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L42)
 
 ***
 
@@ -132,7 +132,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:52](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L52)
+[src/kbonacci/encoding/sum/sumEncoding.ts:52](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L52)
 
 ***
 
@@ -154,7 +154,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:60](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L60)
+[src/kbonacci/encoding/sum/sumEncoding.ts:60](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L60)
 
 ***
 
@@ -176,7 +176,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:64](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L64)
+[src/kbonacci/encoding/sum/sumEncoding.ts:64](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L64)
 
 ***
 
@@ -200,7 +200,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:78](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L78)
+[src/kbonacci/encoding/sum/sumEncoding.ts:78](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L78)
 
 ***
 
@@ -224,7 +224,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:96](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L96)
+[src/kbonacci/encoding/sum/sumEncoding.ts:96](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L96)
 
 ***
 
@@ -246,7 +246,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:114](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L114)
+[src/kbonacci/encoding/sum/sumEncoding.ts:114](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L114)
 
 ***
 
@@ -270,7 +270,7 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:118](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L118)
+[src/kbonacci/encoding/sum/sumEncoding.ts:118](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L118)
 
 ***
 
@@ -296,4 +296,4 @@
 
 #### Defined in
 
-[src/kbonacci/encoding/sum/sumEncoding.ts:136](https://github.com/havelessbemore/nacci/blob/0e5a21e6c43aeb5913f37277f73a4fdd947434aa/src/kbonacci/encoding/sum/sumEncoding.ts#L136)
+[src/kbonacci/encoding/sum/sumEncoding.ts:136](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/encoding/sum/sumEncoding.ts#L136)
