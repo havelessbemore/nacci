@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[src/error/unsafeError.ts:5](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/error/unsafeError.ts#L5)
+[src/error/unsafeError.ts:5](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/error/unsafeError.ts#L5)
 
 ## Properties
 
@@ -116,7 +116,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 #### Defined in
 
-node\_modules/@types/node/globals.d.ts:29
+node\_modules/@types/node/globals.d.ts:31
 
 ***
 
@@ -130,7 +130,7 @@ node\_modules/@types/node/globals.d.ts:29
 
 #### Defined in
 
-node\_modules/@types/node/globals.d.ts:31
+node\_modules/@types/node/globals.d.ts:33
 
 ## Methods
 
@@ -156,4 +156,4 @@ Create .stack property on a target object
 
 #### Defined in
 
-node\_modules/@types/node/globals.d.ts:22
+node\_modules/@types/node/globals.d.ts:24

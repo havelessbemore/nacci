@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:19](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/gen/powerGen.ts#L19)
+[src/kbonacci/gen/powerGen.ts:19](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/kbonacci/gen/powerGen.ts#L19)
 
 ## Accessors
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:46](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/gen/powerGen.ts#L46)
+[src/kbonacci/gen/powerGen.ts:46](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/kbonacci/gen/powerGen.ts#L46)
 
 ## Methods
 
@@ -74,7 +74,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:50](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/gen/powerGen.ts#L50)
+[src/kbonacci/gen/powerGen.ts:50](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/kbonacci/gen/powerGen.ts#L50)
 
 ***
 
@@ -88,7 +88,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:66](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/gen/powerGen.ts#L66)
+[src/kbonacci/gen/powerGen.ts:66](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/kbonacci/gen/powerGen.ts#L66)
 
 ***
 
@@ -102,7 +102,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:70](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/gen/powerGen.ts#L70)
+[src/kbonacci/gen/powerGen.ts:70](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/kbonacci/gen/powerGen.ts#L70)
 
 ***
 
@@ -120,7 +120,7 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:74](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/gen/powerGen.ts#L74)
+[src/kbonacci/gen/powerGen.ts:74](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/kbonacci/gen/powerGen.ts#L74)
 
 ***
 
@@ -138,4 +138,4 @@
 
 #### Defined in
 
-[src/kbonacci/gen/powerGen.ts:80](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/kbonacci/gen/powerGen.ts#L80)
+[src/kbonacci/gen/powerGen.ts:80](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/kbonacci/gen/powerGen.ts#L80)

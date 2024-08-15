@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:3](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L3)
+[src/ops/ops.ts:3](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L3)
 
 ***
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:15](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L15)
+[src/ops/ops.ts:15](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L15)
 
 ***
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:8](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L8)
+[src/ops/ops.ts:8](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L8)
 
 ***
 
@@ -84,7 +84,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:16](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L16)
+[src/ops/ops.ts:16](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L16)
 
 ***
 
@@ -102,7 +102,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:17](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L17)
+[src/ops/ops.ts:17](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L17)
 
 ***
 
@@ -122,7 +122,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:9](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L9)
+[src/ops/ops.ts:9](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L9)
 
 ***
 
@@ -142,7 +142,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:10](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L10)
+[src/ops/ops.ts:10](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L10)
 
 ***
 
@@ -162,7 +162,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:18](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L18)
+[src/ops/ops.ts:18](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L18)
 
 ***
 
@@ -180,7 +180,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:19](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L19)
+[src/ops/ops.ts:19](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L19)
 
 ***
 
@@ -200,7 +200,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:20](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L20)
+[src/ops/ops.ts:20](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L20)
 
 ***
 
@@ -218,7 +218,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:21](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L21)
+[src/ops/ops.ts:21](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L21)
 
 ***
 
@@ -238,7 +238,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:22](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L22)
+[src/ops/ops.ts:22](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L22)
 
 ***
 
@@ -256,7 +256,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:23](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L23)
+[src/ops/ops.ts:23](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L23)
 
 ***
 
@@ -274,7 +274,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:24](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L24)
+[src/ops/ops.ts:24](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L24)
 
 ***
 
@@ -294,7 +294,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:11](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L11)
+[src/ops/ops.ts:11](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L11)
 
 ***
 
@@ -314,7 +314,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:12](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L12)
+[src/ops/ops.ts:12](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L12)
 
 ***
 
@@ -332,7 +332,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:25](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L25)
+[src/ops/ops.ts:25](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L25)
 
 ***
 
@@ -352,7 +352,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:26](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L26)
+[src/ops/ops.ts:26](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L26)
 
 ***
 
@@ -370,7 +370,7 @@
 
 #### Defined in
 
-[src/ops/ops.ts:4](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L4)
+[src/ops/ops.ts:4](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L4)
 
 ***
 
@@ -388,4 +388,4 @@
 
 #### Defined in
 
-[src/ops/ops.ts:27](https://github.com/havelessbemore/nacci/blob/100a647d54551c11326bb238d34a9ee4a7659632/src/ops/ops.ts#L27)
+[src/ops/ops.ts:27](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/ops.ts#L27)
