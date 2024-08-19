@@ -40,7 +40,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:4](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L4)
+[src/ops/numOps.ts:4](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L4)
 
 ***
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:7](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L7)
+[src/ops/numOps.ts:7](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L7)
 
 ***
 
@@ -88,7 +88,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:10](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L10)
+[src/ops/numOps.ts:10](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L10)
 
 ***
 
@@ -110,7 +110,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:13](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L13)
+[src/ops/numOps.ts:13](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L13)
 
 ***
 
@@ -132,7 +132,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:16](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L16)
+[src/ops/numOps.ts:16](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L16)
 
 ***
 
@@ -156,7 +156,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:19](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L19)
+[src/ops/numOps.ts:19](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L19)
 
 ***
 
@@ -180,7 +180,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:22](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L22)
+[src/ops/numOps.ts:22](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L22)
 
 ***
 
@@ -204,7 +204,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:25](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L25)
+[src/ops/numOps.ts:25](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L25)
 
 ***
 
@@ -226,7 +226,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:28](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L28)
+[src/ops/numOps.ts:28](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L28)
 
 ***
 
@@ -250,7 +250,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:31](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L31)
+[src/ops/numOps.ts:31](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L31)
 
 ***
 
@@ -272,7 +272,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:34](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L34)
+[src/ops/numOps.ts:34](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L34)
 
 ***
 
@@ -296,7 +296,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:37](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L37)
+[src/ops/numOps.ts:37](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L37)
 
 ***
 
@@ -318,7 +318,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:40](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L40)
+[src/ops/numOps.ts:40](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L40)
 
 ***
 
@@ -340,7 +340,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:43](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L43)
+[src/ops/numOps.ts:43](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L43)
 
 ***
 
@@ -364,7 +364,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:46](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L46)
+[src/ops/numOps.ts:46](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L46)
 
 ***
 
@@ -388,7 +388,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:49](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L49)
+[src/ops/numOps.ts:49](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L49)
 
 ***
 
@@ -410,7 +410,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:52](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L52)
+[src/ops/numOps.ts:52](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L52)
 
 ***
 
@@ -434,7 +434,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:55](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L55)
+[src/ops/numOps.ts:55](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L55)
 
 ***
 
@@ -456,7 +456,7 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:58](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L58)
+[src/ops/numOps.ts:58](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L58)
 
 ***
 
@@ -478,4 +478,4 @@
 
 #### Defined in
 
-[src/ops/numOps.ts:61](https://github.com/havelessbemore/nacci/blob/bc4a36e15908f86b73f26cfd35bbc6f31d0881eb/src/ops/numOps.ts#L61)
+[src/ops/numOps.ts:61](https://github.com/havelessbemore/nacci/blob/8a57bf02a6acda77de317b31d69be5b3c9a07902/src/ops/numOps.ts#L61)
